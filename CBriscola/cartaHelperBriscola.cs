@@ -12,7 +12,7 @@ namespace CBriscola {
 	class cartaHelperBriscola : cartaHelper {
 		private UInt16 cartaBriscola;
 		public cartaHelperBriscola(UInt16 briscola) { cartaBriscola = briscola; }
-		private static cartaHelperBriscola? istanza;
+		private static cartaHelperBriscola istanza;
 		public static cartaHelperBriscola getIstanza(elaboratoreCarteBriscola e) {
 			if (istanza == null) {
 				if (e == null)
@@ -41,10 +41,10 @@ namespace CBriscola {
 		public string getSemeStr(UInt16 carta) {
 			string s = "a";
 			switch (carta / 10) {
-				case 0: s = Program.mgr.GetString("bastoni"); break;
-				case 1: s = Program.mgr.GetString("coppe"); break;
-				case 2: s = Program.mgr.GetString("denari"); break;
-				default: s = Program.mgr.GetString("spade"); break;
+				case 0: s ="bastoni"; break;
+				case 1: s = "coppe"; break;
+				case 2: s = "denari"; break;
+				default: s = "spade"; break;
 			}
 			return s;
 		}

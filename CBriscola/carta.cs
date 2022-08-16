@@ -9,6 +9,8 @@
 
 
 using System;
+using Windows.UI.Xaml.Media.Imaging;
+
 namespace CBriscola
 {
 	class carta {
@@ -18,6 +20,7 @@ namespace CBriscola
 		private string semeStr;
 		private cartaHelperBriscola helper;
 		private static carta[] carte = new carta[40];
+		private BitmapImage img;
 		private carta(UInt16 n, cartaHelperBriscola h) {
 			helper = h;
 			seme = helper.getSeme(n);
@@ -28,6 +31,7 @@ namespace CBriscola
 		public static void inizializza(UInt16 n, cartaHelperBriscola h) {
 			for (UInt16 i = 0; i < n; i++) {
 				carte[i] = new carta(i, h);
+				carte[i].img = new BitmapImage(new Uri("ms-appx:///Resources/" + i + ".png"));
 			}
 		}
 		public static carta getCarta(UInt16 quale) { return carte[quale]; }
@@ -45,7 +49,12 @@ namespace CBriscola
 
 		public override string ToString()
 		{
-			return $"{valore + 1} {Program.mgr.GetString("di")} {semeStr}{(stessoSeme(helper.getCartaBriscola())?"*":" ")} ";
+			return $"{valore + 1} di {semeStr}{(stessoSeme(helper.getCartaBriscola())?"*":" ")} ";
 	    }
+
+		public BitmapImage getImmagine()
+		{
+			return img;
+		}
 	}
 }

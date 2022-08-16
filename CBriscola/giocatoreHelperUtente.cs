@@ -8,6 +8,9 @@
  */
 
 using System;
+using Windows.UI.Xaml.Controls;
+using static CBriscola.giocatore;
+
 namespace CBriscola
 {
 	class giocatoreHelperUtente : giocatoreHelper
@@ -16,31 +19,21 @@ namespace CBriscola
 		{
 			;
 		}
-		public UInt16 gioca(carta[] v, UInt16 numeroCarte)
+		public UInt16 gioca(UInt16 i, carta[] v, UInt16 numeroCarte)
 		{
-			UInt16 c;
-			bool ok;
-			for (UInt16 i = 0; i < numeroCarte; i++)
-				Console.Write($"{v[i]} ");
-			Console.WriteLine();
-			Console.Write($"{Program.mgr.GetString("CartaDaGiocare")}: ");
-			do
-			{
-				try { c = System.Convert.ToUInt16(Console.ReadLine()); }
-				catch (FormatException e) { Console.WriteLine($"{Program.mgr.GetString("ValoreNonValido")}."); c = (UInt16)(numeroCarte + 1); }
-				c--;
-				if (!(ok = c < numeroCarte))
-					Console.Write($"{Program.mgr.GetString("InserisciNuovoNumero")} { numeroCarte}: ");
-			} while (!ok);
-			return c;
+			if (i < numeroCarte)
+				return i;
+			else
+				throw new ArgumentException("");
 		}
-		public UInt16 gioca(carta[] v, UInt16 numeroCarte, carta c)
+		public UInt16 gioca(UInt16 i, carta[] v, UInt16 numeroCarte, carta c)
 		{
-			return gioca(v, numeroCarte);
+			return gioca(i, v, numeroCarte);
 		}
 		public void aggiornaPunteggio(ref UInt16 punteggioAttuale, carta c, carta c1)
 		{
 			punteggioAttuale = (UInt16)(punteggioAttuale + c.getPunteggio() + c1.getPunteggio());
 		}
-	};
+
+    };
 }

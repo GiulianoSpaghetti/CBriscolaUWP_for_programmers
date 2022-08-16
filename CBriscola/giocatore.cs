@@ -8,6 +8,8 @@
  */
 
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace CBriscola {
 	class giocatore
 	{
@@ -96,17 +98,32 @@ namespace CBriscola {
 			return mano[iCartaGiocata];
 		}
 		public UInt16 getPunteggio() { return punteggio; }
-		public void gioca()
+		public void gioca(UInt16 i)
 		{
-			iCartaGiocata = helper.gioca(mano, numeroCarte);
+			iCartaGiocata = helper.gioca(i, mano, numeroCarte);
 		}
-		public void gioca(giocatore g1)
+		public void gioca(UInt16 i, giocatore g1)
 		{
-			iCartaGiocata = helper.gioca(mano, numeroCarte, g1.getCartaGiocata());
+			iCartaGiocata = helper.gioca(i, mano, numeroCarte, g1.getCartaGiocata());
 		}
 		public void aggiornaPunteggio(giocatore g)
 		{
 			helper.aggiornaPunteggio(ref punteggio, getCartaGiocata(), g.getCartaGiocata());
+		}
+
+		public Windows.UI.Xaml.Media.Imaging.BitmapImage getImmagine(UInt16 quale)
+		{
+			return mano[quale].getImmagine();
+		}
+
+		public UInt16 getICartaGiocata()
+		{
+			return iCartaGiocata;
+		}
+
+		public UInt16 getNumeroCarte()
+		{
+			return numeroCarte;
 		}
 	}
 

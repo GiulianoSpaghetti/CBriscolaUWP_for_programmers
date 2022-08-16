@@ -8,6 +8,9 @@
  */
 
 using System;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
+
 namespace CBriscola
 {
     class giocatoreHelperCpu : giocatoreHelper
@@ -54,7 +57,7 @@ namespace CBriscola
             else
                 return (UInt16)mano.Length;
         }
-        public UInt16 gioca(carta[] mano, UInt16 numeroCarte)
+        public UInt16 gioca(UInt16 x, carta[] mano, UInt16 numeroCarte)
         {
             UInt16 i;
             for (i = (UInt16)(numeroCarte - 1); i > 0; i--) ;
@@ -63,7 +66,7 @@ namespace CBriscola
             return i;
 
         }
-        public UInt16 gioca(carta[] mano, UInt16 numeroCarte, carta c)
+        public UInt16 gioca(UInt16 x, carta[] mano, UInt16 numeroCarte, carta c)
         {
             UInt16 i = (UInt16)elaboratoreCarteBriscola.r.Next(0, UInt16.MaxValue);
             if (!briscola.stessoSeme(c))
@@ -88,5 +91,5 @@ namespace CBriscola
             return i;
         }
         public void aggiornaPunteggio(ref UInt16 punteggioAttuale, carta c, carta c1) { punteggioAttuale = (UInt16)(punteggioAttuale + c.getPunteggio() + c1.getPunteggio()); }
-    };
+    }
 }

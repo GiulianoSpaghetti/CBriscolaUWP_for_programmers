@@ -8,12 +8,15 @@
  */
 
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace CBriscola
 {
 	interface giocatoreHelper
 	{
-		abstract UInt16 gioca(carta[] v, UInt16 numeroCarte);
-		abstract UInt16 gioca(carta[] v, UInt16 numeroCarte, carta c);
-		abstract void aggiornaPunteggio(ref UInt16 punteggio, carta c, carta c1);
-	};
+		UInt16 gioca(UInt16 i, carta[] v, UInt16 numeroCarte);
+		UInt16 gioca(UInt16 i, carta[] v, UInt16 numeroCarte, carta c);
+		void aggiornaPunteggio(ref UInt16 punteggio, carta c, carta c1);
+
+    };
 }

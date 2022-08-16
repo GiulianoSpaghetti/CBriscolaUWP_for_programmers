@@ -15,6 +15,7 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -22,11 +23,22 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <TextBlock Name="NomeUtente" Text="Nome Utente" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
-        <TextBlock Name="NomeCpu" Text="Nome Cpu" Grid.Row="4" Grid.Column="0" Grid.RowSpan="3" />
-        <TextBlock Name="PuntiUtente" Text="Punti dell'utente" Grid.Row="0" Grid.Column="4" />
-        <TextBlock Name="PuntiCpu" Text="Punti della Cpu" Grid.Row="1" Grid.Column="4" />
-        <TextBlock Name="NelMazzoRimangono" Text="Nel Mazzo Rimangono" Grid.Row="2" Grid.Column="4" />
-        <TextBlock Text="Creato da Giulio Sorrentino, il coglione Italo-Napoletano" Grid.Row="4" Grid.Column="4" />
+        <TextBlock x:Name="NomeUtente" Text="Nome Utente" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
+        <Image x:Name="Utente0" Grid.Row="1" Tapped="Image_Tapped" Grid.Column="0" />
+        <Image x:Name="Utente1" Grid.Row="1"  Tapped="Image_Tapped" Grid.Column="1" />
+        <Image x:Name="Utente2" Grid.Row="1"  Tapped="Image_Tapped" Grid.Column="2" />
+        <Image x:Name="Giocata0" Grid.Row="2" Grid.Column="0" />
+        <Image x:Name="Giocata1" Grid.Row="2" Grid.Column="1" />
+        <Image x:Name="Cpu0" Grid.Row="3" Grid.Column="0" />
+        <Image x:Name="Cpu1" Grid.Row="3" Grid.Column="1" />
+        <Image x:Name="Cpu2" Grid.Row="3" Grid.Column="2" />
+        <TextBlock x:Name="NomeCpu" Text="Nome Cpu" Grid.Row="4" Grid.Column="0" Grid.RowSpan="3" />
+        <TextBlock x:Name="PuntiUtente" Text="Punti dell'utente" Grid.Row="0" Grid.Column="4" />
+        <TextBlock x:Name="PuntiCpu" Text="Punti della Cpu" Grid.Row="1" Grid.Column="4" />
+        <TextBlock x:Name="NelMazzoRimangono" Text="Nel Mazzo Rimangono" Grid.Row="2" Grid.Column="4" />
+        <TextBlock x:Name="CartaBriscola" Text="Il seme di briscola è" Grid.Row="3" Grid.Column="4" />
+        <Image x:Name="Briscola" Grid.Row="4" Grid.Column="4" />
+        <Image x:Name="Tallone" Grid.Row="4" Grid.Column="4"/>
+        <TextBlock x:Name="greeting" Text="Creato da Giulio Sorrentino, il coglione Italo-Napoletano" Grid.Row="5" Grid.Column="4" />
     </Grid>
 </Page>

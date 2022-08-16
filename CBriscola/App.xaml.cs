@@ -22,6 +22,7 @@ namespace CBriscola
     /// </summary>
     sealed partial class App : Application
     {
+        public static string vers = "0.1";
         /// <summary>
         /// Inizializza l'oggetto Application singleton. Si tratta della prima riga del codice creato
         /// creato e, come tale, corrisponde all'equivalente logico di main() o WinMain().

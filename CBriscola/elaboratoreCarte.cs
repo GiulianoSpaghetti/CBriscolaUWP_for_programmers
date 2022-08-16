@@ -12,6 +12,6 @@ namespace CBriscola
 {
     interface elaboratoreCarte
     {
-        public abstract UInt16 getCarta();
+        UInt16 getCarta();
     };
 }
