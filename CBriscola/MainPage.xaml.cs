@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System.Threading;
@@ -34,6 +35,8 @@ namespace CBriscola
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
         private static bool enableClick = true;
+        private static ResourceMap resourceMap = ResourceManager.Current.MainResourceMap.GetSubtree("Resources");
+        private static ResourceContext resourceContext = ResourceContext.GetForCurrentView();
         public MainPage()
         {
             this.InitializeComponent();
@@ -61,10 +64,10 @@ namespace CBriscola
             Cpu1.Source = cartaCpu;
             Cpu2.Source = cartaCpu;
             Tallone.Source = new BitmapImage(new Uri("ms-appx:///Resources/retro carte mazzo.png"));
-            PuntiCpu.Text = "Punti di " + cpu.getNome() + ":" + cpu.getPunteggio();
-            PuntiUtente.Text = "Punti di " + g.getNome() + ": " + g.getPunteggio();
-            NelMazzoRimangono.Text = "Nel mazzo rimangono " + m.getNumeroCarte() + " carte.";
-            CartaBriscola.Text = "Il seme di briscola è: " + briscola.getSemeStr();
+            PuntiCpu.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
+            PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
+            NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " "+ resourceMap.GetValue("carte", resourceContext).ValueAsString;
+            CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
             //Briscola.Source = briscola.getImmagine();
         }
         private Image giocaUtente(Image img)
@@ -147,9 +150,10 @@ namespace CBriscola
                     primo.aggiornaPunteggio(secondo);
                     if (aggiungiCarte())
                     {
-                        PuntiCpu.Text = "Punti di " + cpu.getNome() + ":" + cpu.getPunteggio();
-                        PuntiUtente.Text = "Punti di " + g.getNome() + ": " + g.getPunteggio();
-                        NelMazzoRimangono.Text = "Nel mazzo rimangono " + m.getNumeroCarte() + " carte.";
+                        PuntiCpu.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
+                        PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
+                        NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " " + resourceMap.GetValue("carte", resourceContext).ValueAsString;
+                        CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
                         if (Tallone.Visibility==Visibility.Visible && m.getNumeroCarte() == 0)
                         {
                             NelMazzoRimangono.Visibility = Visibility.Collapsed;
@@ -182,7 +186,7 @@ namespace CBriscola
 
                     }
                     else
-                        greeting.Text = "Partita finita";
+                        greeting.Text = resourceMap.GetValue("PartitaFinita", resourceContext).ValueAsString;
                 });
             }, delay);
             enableClick = true;
