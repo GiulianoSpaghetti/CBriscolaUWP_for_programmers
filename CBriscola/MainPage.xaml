@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="CBriscola.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CBriscola"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="NomeUtente" Text="Nome Utente" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
+        <TextBlock Name="NomeCpu" Text="Nome Cpu" Grid.Row="4" Grid.Column="0" Grid.RowSpan="3" />
+        <TextBlock Name="PuntiUtente" Text="Punti dell'utente" Grid.Row="0" Grid.Column="4" />
+        <TextBlock Name="PuntiCpu" Text="Punti della Cpu" Grid.Row="1" Grid.Column="4" />
+        <TextBlock Name="NelMazzoRimangono" Text="Nel Mazzo Rimangono" Grid.Row="2" Grid.Column="4" />
+        <TextBlock Text="Creato da Giulio Sorrentino, il coglione Italo-Napoletano" Grid.Row="4" Grid.Column="4" />
+    </Grid>
+</Page>
