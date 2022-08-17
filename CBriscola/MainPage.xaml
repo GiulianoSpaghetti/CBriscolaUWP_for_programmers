@@ -39,18 +39,22 @@
             <TextBlock x:Name="NelMazzoRimangono" Text="Nel Mazzo Rimangono" Grid.Row="2" Grid.Column="4" />
             <TextBlock x:Name="CartaBriscola" Text="Il seme di briscola è" Grid.Row="3" Grid.Column="4" />
             <Image x:Name="Briscola" Grid.Row="4" Grid.Column="4" />
-            <Image x:Name="Tallone" Grid.Row="4" Grid.Column="4"/>
-            <TextBlock x:Name="greeting" Text="Creato da Giulio Sorrentino, il coglione Italo-Napoletano" Grid.Row="5" Grid.Column="4" />
-            <TextBlock Text="Informazioni" Grid.Row="5" Grid.Column="1" Tapped="OnInfo_Click" />
+            <TextBlock x:Name="greeting" Text="" Grid.Row="5" Grid.Column="4" />
+            <TextBlock Text="Informazioni" Grid.Row="5" Grid.Column="0" Tapped="OnInfo_Click" />
         </Grid>
         <Grid x:Name="Info" Visibility="Collapsed">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <TextBlock Text="CBriscola versione 0.1" Grid.Row="0" Grid.Column="0" />
-            <TextBlock Text="Autore: Giulio Sorrentino" />
-            <TextBlock Text="Applicazione" Grid.Row="1" Grid.Column="0" Tapped="OnApp_Click" />
+            <TextBlock Text="CBriscola versione 0.1" Grid.Row="0" />
+            <TextBlock Text="Autore: Giulio Sorrentino" Grid.Row="1" />
+            <TextBlock Text="Licenza: GPL o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="2"/>
+            <TextBlock Text="Special Thanks: Francesca Milano: la beta tester dell'app" Grid.Row="3"/>
+            <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="4"/>
         </Grid>
     </Grid>
 </Page>

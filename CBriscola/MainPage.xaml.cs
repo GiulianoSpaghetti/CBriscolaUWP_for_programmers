@@ -63,12 +63,11 @@ namespace CBriscola
             Cpu0.Source = cartaCpu;
             Cpu1.Source = cartaCpu;
             Cpu2.Source = cartaCpu;
-            Tallone.Source = new BitmapImage(new Uri("ms-appx:///Resources/retro carte mazzo.png"));
             PuntiCpu.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
             PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
             NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " "+ resourceMap.GetValue("carte", resourceContext).ValueAsString;
             CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
-            //Briscola.Source = briscola.getImmagine();
+            Briscola.Source = briscola.getImmagine();
         }
         private Image giocaUtente(Image img)
         {
@@ -144,7 +143,7 @@ namespace CBriscola
             i = giocaUtente(img);
             if (secondo == cpu)
                 i1 = giocaCpu();
-            TimeSpan delay = TimeSpan.FromSeconds(5);
+            TimeSpan delay = TimeSpan.FromSeconds(3);
             ThreadPoolTimer t = ThreadPoolTimer.CreateTimer((source) =>
             {
 
@@ -167,10 +166,9 @@ namespace CBriscola
                         PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
                         NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " " + resourceMap.GetValue("carte", resourceContext).ValueAsString;
                         CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
-                        if (Tallone.Visibility==Visibility.Visible && m.getNumeroCarte() == 0)
+                        if (Briscola.Visibility==Visibility.Visible && m.getNumeroCarte() == 0)
                         {
                             NelMazzoRimangono.Visibility = Visibility.Collapsed;
-                            Tallone.Visibility = Visibility.Collapsed;
                             Briscola.Visibility = Visibility.Collapsed;
                         }
                             Utente0.Source = g.getImmagine(0);

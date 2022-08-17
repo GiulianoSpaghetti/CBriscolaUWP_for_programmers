@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="f1a65b5b-1923-43fc-a965-f7d17ffbccae"
-    Publisher="CN=numer"
-    Version="1.0.0.0" />
+    Name="21961GiulioSorrentino.CBriscola"
+    Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B"
+    Version="1.0.1.0" />
 
-  <mp:PhoneIdentity PhoneProductId="f1a65b5b-1923-43fc-a965-f7d17ffbccae" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="6b37e6ec-30e9-4ea7-b29f-6de179ad622d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CBriscola</DisplayName>
-    <PublisherDisplayName>numer</PublisherDisplayName>
+    <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
