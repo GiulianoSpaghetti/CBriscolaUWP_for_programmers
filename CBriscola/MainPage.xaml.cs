@@ -90,6 +90,19 @@ namespace CBriscola
             g.gioca(quale);
             return img1;
         }
+
+        private void OnInfo_Click(object sender, TappedRoutedEventArgs e)
+        {
+            Applicazione.Visibility = Visibility.Collapsed;
+            Info.Visibility = Visibility.Visible;
+        }
+
+        private void OnApp_Click(object sender, TappedRoutedEventArgs e)
+        {
+            Info.Visibility = Visibility.Collapsed;
+            Applicazione.Visibility = Visibility.Visible;
+        }
+
         private Image giocaCpu()
         {
             UInt16 quale = 0;

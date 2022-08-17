@@ -129,7 +129,7 @@
   <data name="PuntiDi" xml:space="preserve">
     <value>Punti di</value>
   </data>
-  <data name="SenmeBriscola" xml:space="preserve">
+  <data name="SemeBriscola" xml:space="preserve">
     <value>Il seme di briscola è</value>
   </data>
 </root>

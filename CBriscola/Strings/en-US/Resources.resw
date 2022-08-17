@@ -129,7 +129,7 @@
   <data name="PuntiDi" xml:space="preserve">
     <value>Points of</value>
   </data>
-  <data name="SenmeBriscola" xml:space="preserve">
+  <data name="SemeBriscola" xml:space="preserve">
     <value>The seed of trump is</value>
   </data>
 </root>
