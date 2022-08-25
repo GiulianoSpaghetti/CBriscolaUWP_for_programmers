@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,7 +23,8 @@ namespace CBriscola
     /// </summary>
     sealed partial class App : Application
     {
-        public static string vers = "0.1";
+        public static ResourceMap resourceMap = ResourceManager.Current.MainResourceMap.GetSubtree("Resources");
+        public static ResourceContext resourceContext = ResourceContext.GetForCurrentView();
         /// <summary>
         /// Inizializza l'oggetto Application singleton. Si tratta della prima riga del codice creato
         /// creato e, come tale, corrisponde all'equivalente logico di main() o WinMain().

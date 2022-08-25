@@ -8,7 +8,6 @@
  */
 
 using System;
-using Windows.UI.Xaml.Controls;
 
 namespace CBriscola {
 	class giocatore

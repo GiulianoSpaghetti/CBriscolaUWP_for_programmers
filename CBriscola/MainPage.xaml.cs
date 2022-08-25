@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System.Threading;
@@ -35,8 +34,8 @@ namespace CBriscola
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
         private static bool enableClick = true;
-        private static ResourceMap resourceMap = ResourceManager.Current.MainResourceMap.GetSubtree("Resources");
-        private static ResourceContext resourceContext = ResourceContext.GetForCurrentView();
+        private static UInt16 secondi = 5;
+        private static TimeSpan delay;
         public MainPage()
         {
             this.InitializeComponent();
@@ -48,6 +47,7 @@ namespace CBriscola
             primo = g;
             secondo = cpu;
             briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
+            delay = TimeSpan.FromSeconds(secondi);
             Image[] img = new Image[3];
             for (UInt16 i = 0; i < 3; i++)
             {
@@ -63,10 +63,10 @@ namespace CBriscola
             Cpu0.Source = cartaCpu;
             Cpu1.Source = cartaCpu;
             Cpu2.Source = cartaCpu;
-            PuntiCpu.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
-            PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
-            NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " "+ resourceMap.GetValue("carte", resourceContext).ValueAsString;
-            CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
+            PuntiCpu.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
+            PuntiUtente.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
+            NelMazzoRimangono.Text = App.resourceMap.GetValue("NelMazzoRimangono", App.resourceContext).ValueAsString+" "+ m.getNumeroCarte() + " "+ App.resourceMap.GetValue("carte", App.resourceContext).ValueAsString;
+            CartaBriscola.Text = App.resourceMap.GetValue("SemeBriscola", App.resourceContext).ValueAsString + ": " + briscola.getSemeStr();
             Briscola.Source = briscola.getImmagine();
         }
         private Image giocaUtente(Image img)
@@ -90,16 +90,31 @@ namespace CBriscola
             return img1;
         }
 
-        private void OnInfo_Click(object sender, TappedRoutedEventArgs e)
-        {
-            Applicazione.Visibility = Visibility.Collapsed;
-            Info.Visibility = Visibility.Visible;
-        }
 
         private void OnApp_Click(object sender, TappedRoutedEventArgs e)
         {
             Info.Visibility = Visibility.Collapsed;
+            GOpzioni.Visibility = Visibility.Collapsed;
             Applicazione.Visibility = Visibility.Visible;
+        }
+
+        private void OnInfo_Click(object sender, TappedRoutedEventArgs e)
+        {
+            GOpzioni.Visibility = Visibility.Collapsed;
+            Applicazione.Visibility = Visibility.Collapsed;
+            Info.Visibility = Visibility.Visible;
+
+        }
+        private void OnOpzioni_Click(object sender, TappedRoutedEventArgs e)
+        {
+            txtNomeUtente.Text = g.getNome();
+            txtNomeCpu.Text = cpu.getNome();
+            txtSecondi.Text = "" + secondi;
+            Applicazione.Visibility = Visibility.Collapsed;
+            Info.Visibility = Visibility.Collapsed;
+            GOpzioni.Visibility = Visibility.Visible;
+
+
         }
 
         private Image giocaCpu()
@@ -143,7 +158,6 @@ namespace CBriscola
             i = giocaUtente(img);
             if (secondo == cpu)
                 i1 = giocaCpu();
-            TimeSpan delay = TimeSpan.FromSeconds(3);
             ThreadPoolTimer t = ThreadPoolTimer.CreateTimer((source) =>
             {
 
@@ -160,18 +174,18 @@ namespace CBriscola
                     }
 
                     primo.aggiornaPunteggio(secondo);
+                    PuntiCpu.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
+                    PuntiUtente.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
                     if (aggiungiCarte())
                     {
-                        PuntiCpu.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + cpu.getNome() + ":" + cpu.getPunteggio();
-                        PuntiUtente.Text = resourceMap.GetValue("PuntiDi", resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
-                        NelMazzoRimangono.Text = resourceMap.GetValue("NelMazzoRimangono", resourceContext).ValueAsString + m.getNumeroCarte() + " " + resourceMap.GetValue("carte", resourceContext).ValueAsString;
-                        CartaBriscola.Text = resourceMap.GetValue("SemeBriscola", resourceContext).ValueAsString + ": " + briscola.getSemeStr();
-                        if (Briscola.Visibility==Visibility.Visible && m.getNumeroCarte() == 0)
+                        NelMazzoRimangono.Text = App.resourceMap.GetValue("NelMazzoRimangono", App.resourceContext).ValueAsString + m.getNumeroCarte() + " " + App.resourceMap.GetValue("carte", App.resourceContext).ValueAsString;
+                        CartaBriscola.Text = App.resourceMap.GetValue("SemeBriscola", App.resourceContext).ValueAsString + ": " + briscola.getSemeStr();
+                        if (Briscola.Visibility == Visibility.Visible && m.getNumeroCarte() == 0)
                         {
                             NelMazzoRimangono.Visibility = Visibility.Collapsed;
                             Briscola.Visibility = Visibility.Collapsed;
                         }
-                            Utente0.Source = g.getImmagine(0);
+                        Utente0.Source = g.getImmagine(0);
                         if (cpu.getNumeroCarte() > 1)
                             Utente1.Source = g.getImmagine(1);
                         if (cpu.getNumeroCarte() > 2)
@@ -197,10 +211,37 @@ namespace CBriscola
 
                     }
                     else
-                        greeting.Text = resourceMap.GetValue("PartitaFinita", resourceContext).ValueAsString;
+                    {
+                        string s;
+                        Applicazione.Visibility = Visibility.Collapsed;
+                        if (g.getPunteggio() == cpu.getPunteggio())
+                            s = "La partita è patta";
+                        else
+                        {
+                            if (g.getPunteggio() > cpu.getPunteggio())
+                                s = "Hai vinto per";
+                            else
+                                s = "Hai perso per";
+                            s = s + " " + Math.Abs(g.getPunteggio() - cpu.getPunteggio()) + " punti. Vuoi effertuare una nuova partita?";
+                        }
+                        risultato.Text = App.resourceMap.GetValue("PartitaFinita", App.resourceContext).ValueAsString + " " + s;
+                        Greetings.Visibility = Visibility.Visible;
+                    }
                 });
             }, delay);
             enableClick = true;
         }
+        private void OnOpOk_Click(object sender, TappedRoutedEventArgs e)
+        {
+            g.setNome(txtNomeUtente.Text);
+            cpu.setNome(txtNomeCpu.Text);
+            NomeUtente.Text = g.getNome();
+            NomeCpu.Text = cpu.getNome();
+            secondi = UInt16.Parse(txtSecondi.Text);
+            delay = TimeSpan.FromSeconds(secondi);
+            GOpzioni.Visibility = Visibility.Collapsed;
+            Applicazione.Visibility = Visibility.Visible;
+        }
+
     }
 }

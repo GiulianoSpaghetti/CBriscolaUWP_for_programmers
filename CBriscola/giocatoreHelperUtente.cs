@@ -8,7 +8,6 @@
  */
 
 using System;
-using Windows.UI.Xaml.Controls;
 using static CBriscola.giocatore;
 
 namespace CBriscola
