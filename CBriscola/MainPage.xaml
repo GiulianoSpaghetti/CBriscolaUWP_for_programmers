@@ -9,7 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid x:Name="Applicazione">
+        <Image Source="ms-appx:///background.jpg" />
+            <Grid x:Name="Applicazione">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />
@@ -50,10 +51,10 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <TextBlock Text="CBriscola versione 0.3" Grid.Row="0" />
+            <TextBlock Text="Project Carmela, ovvero come trovarsi un lavoro" Grid.Row="0" />
             <TextBlock Text="Autore: Giulio Sorrentino" Grid.Row="1" />
             <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="2"/>
-            <TextBlock Text="http://github.com/numerunix/CBriscolaUWP" Grid.Row="3"/>
+            <TextBlock Foreground="White" Text="Dedicato a Annachiara, Francesca San Severino, Giovanna Minsitieri e al Centro Informatico Campano. Si ringrazia Francesso Sorrentino." Grid.Row="3"/>
             <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="4"/>
         </Grid>
         <Grid x:Name="GOpzioni" Visibility="Collapsed">
