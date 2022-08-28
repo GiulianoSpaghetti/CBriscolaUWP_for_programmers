@@ -10,7 +10,7 @@
 
     <Grid>
         <Image Source="ms-appx:///background.jpg" />
-            <Grid x:Name="Applicazione">
+            <Grid x:Name="Applicazione" Visibility="Visible">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />
@@ -75,7 +75,7 @@
             <TextBox x:Name="txtNomeCpu" Grid.Row="1" Grid.Column="1" />
             <TextBlock x:Name="tbSecondi" Text="Secondi" Grid.Row="2" Grid.Column="0" />
             <TextBox x:Name="txtSecondi" Grid.Row="2" Grid.Column="1" />
-            <Button Content="Ok" Grid.Row="3" Grid.Column="1" Tapped="OnOpOk_Click"/>
+            <Button Content="Accetta" Grid.Row="3" Grid.Column="1" Tapped="OnOpOk_Click"/>
             <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="4" Grid.Column="0"/>
             <TextBlock Text="Informazioni" Tapped="OnInfo_Click" Grid.Row="4" Grid.Column="1"/>
         </Grid>
@@ -89,9 +89,9 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="risultato" Text="Hai vinto" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
-            <Button Content="Ok" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" />
-            <Button Content="Cancel" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" />
+            <TextBlock x:Name="risultato" Text="Hai vinto per 900 punti. Vuoi effettuare una seconda partita?" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+            <Button Content="Accetta" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" />
+            <Button Content="Annulla" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" />
         </Grid>
     </Grid>
 </Page>
