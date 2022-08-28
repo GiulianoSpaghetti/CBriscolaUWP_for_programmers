@@ -248,6 +248,7 @@ namespace CBriscola
             bool primoUtente = primo == g;
             Greetings.Visibility = Visibility.Collapsed;
             e = new elaboratoreCarteBriscola();
+            briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
             m = new mazzo(e);
             g = new giocatore(new giocatoreHelperUtente(), g.getNome(), 3);
             cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), cpu.getNome(), 3);
@@ -278,7 +279,6 @@ namespace CBriscola
             CartaBriscola.Text = App.resourceMap.GetValue("SemeBriscola", App.resourceContext).ValueAsString + ": " + briscola.getSemeStr();
             CartaBriscola.Visibility = Visibility.Visible;
             Briscola.Source = briscola.getImmagine();
-            briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
             Briscola.Source = briscola.getImmagine();
             Briscola.Visibility = Visibility.Visible;
 
