@@ -3,7 +3,7 @@ La cbriscola con GUI in UWP, ossia Project Carmela
 
 Se il sistema pare non prendere il click sulla carta, fare di nuovo click sulla stessa carta, non selezionare una carta diversa, se no si falsa il gioco.
 
-[![youtube](https://ibb.co/9njwvsg)](https://youtu.be/w9OO5Ey8tt0)
+[![youtube]([https://ibb.co/9njwvsg](https://i.ibb.co/nrS30zm/image-83c10f90-2b28-4fd7-9d15-ac1ba3fe7d0f20220820-192705.jpg))](https://youtu.be/w9OO5Ey8tt0)
 
 # Come installare
 
