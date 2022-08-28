@@ -36,10 +36,11 @@ namespace CBriscola
         private static bool enableClick = true;
         private static UInt16 secondi = 5;
         private static TimeSpan delay;
+        private static elaboratoreCarteBriscola e;
         public MainPage()
         {
             this.InitializeComponent();
-            elaboratoreCarteBriscola e = new elaboratoreCarteBriscola();
+            e = new elaboratoreCarteBriscola();
             m = new mazzo(e);
             carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
             g = new giocatore(new giocatoreHelperUtente(), "Giulio", 3);
@@ -241,6 +242,63 @@ namespace CBriscola
             delay = TimeSpan.FromSeconds(secondi);
             GOpzioni.Visibility = Visibility.Collapsed;
             Applicazione.Visibility = Visibility.Visible;
+        }
+        private void OnFpOk_Click(object sender, TappedRoutedEventArgs evt)
+        {
+            bool primoUtente = primo == g;
+            Greetings.Visibility = Visibility.Collapsed;
+            e = new elaboratoreCarteBriscola();
+            m = new mazzo(e);
+            g = new giocatore(new giocatoreHelperUtente(), g.getNome(), 3);
+            cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), cpu.getNome(), 3);
+            for (UInt16 i = 0; i < 3; i++)
+            {
+                g.addCarta(m);
+                cpu.addCarta(m);
+
+            }
+            Utente0.Source = g.getImmagine(0);
+            Utente0.Visibility = Visibility.Visible;
+            Utente1.Source = g.getImmagine(1);
+            Utente1.Visibility = Visibility.Visible;
+            Utente2.Source = g.getImmagine(2);
+            Utente2.Visibility = Visibility.Visible;
+            Cpu0.Source = cartaCpu;
+            Cpu0.Visibility = Visibility.Visible;
+            Cpu1.Source = cartaCpu;
+            Cpu1.Visibility = Visibility.Visible;
+            Cpu2.Source = cartaCpu;
+            Cpu2.Visibility = Visibility.Visible;
+            Giocata0.Visibility = Visibility.Collapsed;
+            Giocata1.Visibility = Visibility.Collapsed;
+            PuntiCpu.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + cpu.getNome() + ": " + cpu.getPunteggio();
+            PuntiUtente.Text = App.resourceMap.GetValue("PuntiDi", App.resourceContext).ValueAsString + " " + g.getNome() + ": " + g.getPunteggio();
+            NelMazzoRimangono.Text = App.resourceMap.GetValue("NelMazzoRimangono", App.resourceContext).ValueAsString + " " + m.getNumeroCarte() + " " + App.resourceMap.GetValue("carte", App.resourceContext).ValueAsString;
+            NelMazzoRimangono.Visibility = Visibility.Visible;
+            CartaBriscola.Text = App.resourceMap.GetValue("SemeBriscola", App.resourceContext).ValueAsString + ": " + briscola.getSemeStr();
+            CartaBriscola.Visibility = Visibility.Visible;
+            Briscola.Source = briscola.getImmagine();
+            briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
+            Briscola.Source = briscola.getImmagine();
+            Briscola.Visibility = Visibility.Visible;
+
+            if (primoUtente)
+            {
+                secondo = g;
+                primo = cpu;
+                i1 = giocaCpu();
+            }
+            else
+            {
+                primo = g;
+                secondo = cpu;
+            }
+            Applicazione.Visibility = Visibility.Visible;
+        }
+
+        private void OnFpCancel_Click(object sender, TappedRoutedEventArgs e)
+        {
+            Application.Current.Exit();
         }
 
     }

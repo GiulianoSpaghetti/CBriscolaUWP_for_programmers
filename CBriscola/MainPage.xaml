@@ -90,8 +90,8 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="risultato" Text="Hai vinto" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
-            <Button Content="Ok" Grid.Column="0" Grid.Row="1" />
-            <Button Content="Cancel" Grid.Column="1" Grid.Row="1" />
+            <Button Content="Ok" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" />
+            <Button Content="Cancel" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" />
         </Grid>
     </Grid>
 </Page>
