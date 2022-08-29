@@ -1,9 +1,13 @@
-# CBriscolaUWP
+# CBriscolaUWP for programers
 La cbriscola con GUI in UWP, ossia Project Carmela
 
 Se il sistema pare non prendere il click sulla carta, fare di nuovo click sulla stessa carta, non selezionare una carta diversa, se no si falsa il gioco.
 
 [![youtube](https://i.ibb.co/qkbNyzb/mq2.jpg)](https://www.youtube.com/watch?v=BG12__cPoGg)
+
+Questo vuole essere una mod del project carmela, che si deve evolvere su pc col multiplayer a la tetrinet, fatta per le specifiche direttive delle aziende.
+
+Se volete contribuire siete i benvenuti
 
 # Come installare
 
