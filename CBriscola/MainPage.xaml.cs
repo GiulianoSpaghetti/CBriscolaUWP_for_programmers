@@ -64,10 +64,10 @@ namespace CBriscola
             Cpu0.Source = cartaCpu;
             Cpu1.Source = cartaCpu;
             Cpu2.Source = cartaCpu;
-            PuntiCpu.Text = "Punti di " + cpu.getNome() + ": " + cpu.getPunteggio();
-            PuntiUtente.Text = "Punti di " + g.getNome() + ": " + g.getPunteggio();
-            NelMazzoRimangono.Text = "Nel mazzo rimangono: "+ m.getNumeroCarte() + " carte";
-            CartaBriscola.Text = "Il seme di Briscola è: " + briscola.getSemeStr();
+            PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+            PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
+            NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
+            CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
             Briscola.Source = briscola.getImmagine();
         }
         private Image giocaUtente(Image img)
@@ -175,12 +175,12 @@ namespace CBriscola
                     }
 
                     primo.aggiornaPunteggio(secondo);
-                    PuntiCpu.Text = "Punti di " + cpu.getNome() + ": " + cpu.getPunteggio();
-                    PuntiUtente.Text = "Punti di: " + g.getPunteggio();
+                    PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+                    PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
                     if (aggiungiCarte())
                     {
-                        NelMazzoRimangono.Text = "Nelì mazzo rimangono "+ m.getNumeroCarte() + " carte";
-                        CartaBriscola.Text = "Il seme di Briscola è: " + briscola.getSemeStr();
+                        NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
+                        CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
                         if (Briscola.Visibility == Visibility.Visible && m.getNumeroCarte() == 0)
                         {
                             NelMazzoRimangono.Visibility = Visibility.Collapsed;
@@ -223,9 +223,9 @@ namespace CBriscola
                                 s = "Hai vinto per";
                             else
                                 s = "Hai perso per";
-                            s = s + " " + Math.Abs(g.getPunteggio() - cpu.getPunteggio()) + " punti. Vuoi effertuare una nuova partita?";
+                            s = $"{s} {Math.Abs(g.getPunteggio() - cpu.getPunteggio())} punti. Vuoi effertuare una nuova partita?";
                         }
-                        risultato.Text = "La partita è finita. " + s;
+                        risultato.Text = $"La partita è finita. {s}";
                         Greetings.Visibility = Visibility.Visible;
                     }
                 });
@@ -272,11 +272,15 @@ namespace CBriscola
             Cpu2.Visibility = Visibility.Visible;
             Giocata0.Visibility = Visibility.Collapsed;
             Giocata1.Visibility = Visibility.Collapsed;
-            PuntiCpu.Text = "Punti di " + cpu.getNome() + ": " + cpu.getPunteggio();
-            PuntiUtente.Text = "Punti di " + g.getNome() + ": " + g.getPunteggio();
-            NelMazzoRimangono.Text = "Nel mazzo rimangono " + m.getNumeroCarte() + " carte";
+            PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+            PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
+            NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
+            CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
+            PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+            PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
+            NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
             NelMazzoRimangono.Visibility = Visibility.Visible;
-            CartaBriscola.Text = "Il seme di Briscola è: " + briscola.getSemeStr();
+            CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
             CartaBriscola.Visibility = Visibility.Visible;
             Briscola.Source = briscola.getImmagine();
             Briscola.Visibility = Visibility.Visible;
