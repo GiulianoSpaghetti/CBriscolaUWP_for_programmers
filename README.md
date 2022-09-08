@@ -17,7 +17,7 @@ Installa visual studio 2022, scarica il progetto usando git selezionando downloa
 
 # Donations
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
+[![paypal](https://www.paypalobjects.com/it-IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
 
 # Bibliografia
 https://docs.microsoft.com/it-it/windows/uwp/threading-async/use-a-timer-to-submit-a-work-item
