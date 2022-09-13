@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.AccessCache;
+using Windows.Storage.Search;
 using Windows.System.Threading;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -37,6 +42,8 @@ namespace CBriscola
         private static UInt16 secondi = 1;
         private static TimeSpan delay;
         private static elaboratoreCarteBriscola e;
+        private static Opzioni o;
+        private static Windows.Storage.IStorageFile f;
         public MainPage()
         {
             this.InitializeComponent();
@@ -64,12 +71,54 @@ namespace CBriscola
             Cpu0.Source = cartaCpu;
             Cpu1.Source = cartaCpu;
             Cpu2.Source = cartaCpu;
-            PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+            PuntiCpu.Text = $"Punti di {cpu.getNome()}: {cpu.getPunteggio()}";
             PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
             Briscola.Source = briscola.getImmagine();
         }
+
+        private async Task<Opzioni> leggiOpzioni(Windows.Storage.StorageFolder folder, Windows.Storage.IStorageFile file)
+        {
+            String a = folder.Path;
+            string s = await FileIO.ReadTextAsync(file);
+            Opzioni o=Newtonsoft.Json.JsonConvert.DeserializeObject<Opzioni>(s);
+            return o;
+        }
+
+        private async void OnOpCarica_Click(Object sender, TappedRoutedEventArgs args)
+        {
+            f = await ApplicationData.Current.LocalFolder.TryGetItemAsync("opzioni.json") as IStorageFile;
+            if (f != null)
+                o = await leggiOpzioni(ApplicationData.Current.LocalFolder, f);
+            else
+                o = await creaOpzioni(ApplicationData.Current.LocalFolder, "opzioni.json");
+            txtNomeUtente.Text = o.NomeUtente;
+            txtNomeCpu.Text = o.NomeCpu;
+            txtSecondi.Text = "" + secondi;
+            bsalva.Visibility= Visibility.Visible;
+
+        }
+
+        private async void OnOpSalva_Click(Object sender, TappedRoutedEventArgs args)
+        {
+            o.NomeUtente = txtNomeUtente.Text;
+            o.NomeCpu = txtNomeCpu.Text;
+            o.secondi = secondi;
+            await FileIO.WriteTextAsync(f, Newtonsoft.Json.JsonConvert.SerializeObject(o));
+        }
+
+        private async Task<Opzioni> creaOpzioni(Windows.Storage.StorageFolder folder, String s)
+        {
+            Opzioni o = new Opzioni();
+            o.NomeUtente = g.getNome();
+            o.NomeCpu = cpu.getNome();
+            o.secondi = secondi;
+            f=await folder.CreateFileAsync(s, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(f,Newtonsoft.Json.JsonConvert.SerializeObject(o));
+            return o;
+        }
+
         private Image giocaUtente(Image img)
         {
             UInt16 quale = 0;
@@ -90,8 +139,6 @@ namespace CBriscola
             g.gioca(quale);
             return img1;
         }
-
-
         private void OnApp_Click(object sender, TappedRoutedEventArgs e)
         {
             Info.Visibility = Visibility.Collapsed;
@@ -107,6 +154,7 @@ namespace CBriscola
 
         }
         private void OnOpzioni_Click(object sender, TappedRoutedEventArgs e)
+
         {
             txtNomeUtente.Text = g.getNome();
             txtNomeCpu.Text = cpu.getNome();
@@ -175,7 +223,7 @@ namespace CBriscola
                     }
 
                     primo.aggiornaPunteggio(secondo);
-                    PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+                    PuntiCpu.Text = $"Punti di {cpu.getNome()}: {cpu.getPunteggio()}";
                     PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
                     if (aggiungiCarte())
                     {
@@ -234,14 +282,20 @@ namespace CBriscola
         }
         private void OnOpOk_Click(object sender, TappedRoutedEventArgs e)
         {
+
             g.setNome(txtNomeUtente.Text);
             cpu.setNome(txtNomeCpu.Text);
             NomeUtente.Text = g.getNome();
             NomeCpu.Text = cpu.getNome();
-            secondi = UInt16.Parse(txtSecondi.Text);
+            try
+            {
+                secondi = UInt16.Parse(txtSecondi.Text); 
+            } catch (FormatException ex)
+            {
+                txtSecondi.Text = "Valore non valido";
+                return;
+            }
             delay = TimeSpan.FromSeconds(secondi);
-            GOpzioni.Visibility = Visibility.Collapsed;
-            Applicazione.Visibility = Visibility.Visible;
         }
         private void OnFpOk_Click(object sender, TappedRoutedEventArgs evt)
         {
@@ -272,7 +326,7 @@ namespace CBriscola
             Cpu2.Visibility = Visibility.Visible;
             Giocata0.Visibility = Visibility.Collapsed;
             Giocata1.Visibility = Visibility.Collapsed;
-            PuntiCpu.Text = $"Punti di {cpu.getNome()}: ${cpu.getPunteggio()}";
+            PuntiCpu.Text = $"Punti di {cpu.getNome()}: {cpu.getPunteggio()}";
             PuntiUtente.Text = $"Punti di {g.getNome()}: {g.getPunteggio()}";
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";

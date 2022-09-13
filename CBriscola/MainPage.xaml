@@ -68,6 +68,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="tbNomeUtente" Text="Nome Utente" Grid.Row="0" Grid.Column="0" />
             <TextBox x:Name="txtNomeUtente" Grid.Row="0" Grid.Column="1" />
@@ -75,7 +76,9 @@
             <TextBox x:Name="txtNomeCpu" Grid.Row="1" Grid.Column="1" />
             <TextBlock x:Name="tbSecondi" Text="Secondi" Grid.Row="2" Grid.Column="0" />
             <TextBox x:Name="txtSecondi" Grid.Row="2" Grid.Column="1" />
+            <Button Content="Carica Opzioni" Grid.Row="3" Grid.Column="0" Tapped="OnOpCarica_Click" />
             <Button Content="Accetta" Grid.Row="3" Grid.Column="1" Tapped="OnOpOk_Click"/>
+            <Button x:Name ="bsalva" Content="Salva Opzioni" Grid.Row="3" Grid.Column="2" Tapped="OnOpSalva_Click" Visibility="collapsed" />
             <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="4" Grid.Column="0"/>
             <TextBlock Text="Informazioni" Tapped="OnInfo_Click" Grid.Row="4" Grid.Column="1"/>
         </Grid>
