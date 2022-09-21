@@ -11,5 +11,6 @@ namespace CBriscola
         public String NomeUtente { get; set; }
         public string NomeCpu { get; set; }
         public UInt16 secondi { get; set; }
+        public bool briscolaDaPunti { get; set; }
     }
 }

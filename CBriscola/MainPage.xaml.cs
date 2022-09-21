@@ -29,16 +29,12 @@ namespace CBriscola
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private static giocatore g;
-        private static giocatore cpu;
-        private static giocatore primo;
-        private static giocatore secondo;
+        private static giocatore g, cpu, primo, secondo, temp;
         private static mazzo m;
         private static carta c, c1, briscola;
-        private static giocatore temp;
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
-        private static bool enableClick = true;
+        private static bool briscolaPunti = false;
         private static UInt16 secondi = 1;
         private static TimeSpan delay;
         private static elaboratoreCarteBriscola e;
@@ -47,9 +43,9 @@ namespace CBriscola
         public MainPage()
         {
             this.InitializeComponent();
-            e = new elaboratoreCarteBriscola();
+            e = new elaboratoreCarteBriscola(briscolaPunti);
             m = new mazzo(e);
-            carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
+            carta.inizializza(40, cartaHelperBriscola.getIstanza());
             g = new giocatore(new giocatoreHelperUtente(), "numerone", 3);
             cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), "Francesca", 3);
             primo = g;
@@ -80,9 +76,16 @@ namespace CBriscola
 
         private async Task<Opzioni> leggiOpzioni(Windows.Storage.StorageFolder folder, Windows.Storage.IStorageFile file)
         {
+            Opzioni o=null;
             String a = folder.Path;
             string s = await FileIO.ReadTextAsync(file);
-            Opzioni o=Newtonsoft.Json.JsonConvert.DeserializeObject<Opzioni>(s);
+            try
+            {
+                o = Newtonsoft.Json.JsonConvert.DeserializeObject<Opzioni>(s);
+            } catch (FormatException ex)
+            {
+                o=await creaOpzioni(ApplicationData.Current.LocalFolder, "opzioni.json");
+            }
             return o;
         }
 
@@ -95,7 +98,10 @@ namespace CBriscola
                 o = await creaOpzioni(ApplicationData.Current.LocalFolder, "opzioni.json");
             txtNomeUtente.Text = o.NomeUtente;
             txtNomeCpu.Text = o.NomeCpu;
+            secondi = o.secondi;
             txtSecondi.Text = "" + secondi;
+            briscolaPunti = o.briscolaDaPunti;
+            cbBriscolaDaPunti.IsChecked = briscolaPunti;
             bsalva.Visibility= Visibility.Visible;
 
         }
@@ -105,6 +111,11 @@ namespace CBriscola
             o.NomeUtente = txtNomeUtente.Text;
             o.NomeCpu = txtNomeCpu.Text;
             o.secondi = secondi;
+            if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
+                briscolaPunti = false;
+            else
+                briscolaPunti = true;
+            o.briscolaDaPunti= briscolaPunti;
             await FileIO.WriteTextAsync(f, Newtonsoft.Json.JsonConvert.SerializeObject(o));
         }
 
@@ -113,7 +124,8 @@ namespace CBriscola
             Opzioni o = new Opzioni();
             o.NomeUtente = g.getNome();
             o.NomeCpu = cpu.getNome();
-            o.secondi = secondi;
+            o.secondi = 1;
+            o.briscolaDaPunti=false;
             f=await folder.CreateFileAsync(s, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(f,Newtonsoft.Json.JsonConvert.SerializeObject(o));
             return o;
@@ -159,6 +171,7 @@ namespace CBriscola
             txtNomeUtente.Text = g.getNome();
             txtNomeCpu.Text = cpu.getNome();
             txtSecondi.Text = "" + secondi;
+            cbBriscolaDaPunti.IsChecked = briscolaPunti;
             Applicazione.Visibility = Visibility.Collapsed;
             Info.Visibility = Visibility.Collapsed;
             GOpzioni.Visibility = Visibility.Visible;
@@ -200,9 +213,6 @@ namespace CBriscola
 
         private void Image_Tapped(object Sender, TappedRoutedEventArgs arg)
         {
-            if (!enableClick)
-                return;
-            enableClick = false;
             Image img = (Image)Sender;
             i = giocaUtente(img);
             if (secondo == cpu)
@@ -278,7 +288,6 @@ namespace CBriscola
                     }
                 });
             }, delay);
-            enableClick = true;
         }
         private void OnOpOk_Click(object sender, TappedRoutedEventArgs e)
         {
@@ -295,13 +304,17 @@ namespace CBriscola
                 txtSecondi.Text = "Valore non valido";
                 return;
             }
+            if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
+                briscolaPunti = false;
+            else
+                briscolaPunti = true;
             delay = TimeSpan.FromSeconds(secondi);
         }
         private void OnFpOk_Click(object sender, TappedRoutedEventArgs evt)
         {
             bool primoUtente = primo == g;
             Greetings.Visibility = Visibility.Collapsed;
-            e = new elaboratoreCarteBriscola();
+            e = new elaboratoreCarteBriscola(briscolaPunti);
             briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
             m = new mazzo(e);
             g = new giocatore(new giocatoreHelperUtente(), g.getNome(), 3);

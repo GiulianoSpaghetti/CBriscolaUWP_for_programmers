@@ -13,10 +13,8 @@ namespace CBriscola {
 		private UInt16 cartaBriscola;
 		public cartaHelperBriscola(UInt16 briscola) { cartaBriscola = briscola; }
 		private static cartaHelperBriscola istanza;
-		public static cartaHelperBriscola getIstanza(elaboratoreCarteBriscola e) {
+		public static cartaHelperBriscola getIstanza() {
 			if (istanza == null) {
-				if (e == null)
-					throw new AccessViolationException("Chiamata a cartaHelperBriscola::getIstanza con istanza==NULL e e==NULL");
 				istanza = new cartaHelperBriscola(elaboratoreCarteBriscola.getCartaBriscola());
 			}
 			return istanza;

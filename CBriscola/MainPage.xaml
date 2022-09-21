@@ -64,6 +64,7 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -76,11 +77,12 @@
             <TextBox x:Name="txtNomeCpu" Grid.Row="1" Grid.Column="1" />
             <TextBlock x:Name="tbSecondi" Text="Secondi" Grid.Row="2" Grid.Column="0" />
             <TextBox x:Name="txtSecondi" Grid.Row="2" Grid.Column="1" />
-            <Button Content="Carica Opzioni" Grid.Row="3" Grid.Column="0" Tapped="OnOpCarica_Click" />
-            <Button Content="Accetta" Grid.Row="3" Grid.Column="1" Tapped="OnOpOk_Click"/>
-            <Button x:Name ="bsalva" Content="Salva Opzioni" Grid.Row="3" Grid.Column="2" Tapped="OnOpSalva_Click" Visibility="collapsed" />
-            <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="4" Grid.Column="0"/>
-            <TextBlock Text="Informazioni" Tapped="OnInfo_Click" Grid.Row="4" Grid.Column="1"/>
+            <CheckBox x:Name="cbBriscolaDaPunti" Grid.Row="3" Grid.Column="0" IsThreeState="False" Grid.ColumnSpan="3">La carta che designa il seme di briscola può dar punti</CheckBox>
+            <Button Content="Carica Opzioni" Grid.Row="4" Grid.Column="0" Tapped="OnOpCarica_Click" />
+            <Button Content="Accetta" Grid.Row="4" Grid.Column="1" Tapped="OnOpOk_Click"/>
+            <Button x:Name ="bsalva" Content="Salva Opzioni" Grid.Row="4" Grid.Column="2" Tapped="OnOpSalva_Click" Visibility="collapsed" />
+            <TextBlock Text="Applicazione" Tapped="OnApp_Click" Grid.Row="5" Grid.Column="0"/>
+            <TextBlock Text="Informazioni" Tapped="OnInfo_Click" Grid.Row="5" Grid.Column="1"/>
         </Grid>
         <Grid x:Name="Greetings" Visibility="Collapsed">
             <Grid.RowDefinitions>
