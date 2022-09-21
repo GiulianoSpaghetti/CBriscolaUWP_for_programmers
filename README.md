@@ -9,6 +9,10 @@ Questo vuole essere una mod del project carmela, che si deve evolvere su pc col 
 
 Se volete contribuire siete i benvenuti
 
+# Novità
+Sono stati aggiunti due pulsanti nella schermata delle opzioni: uno per caricare le opzioni da file json ed uno per salvarle.
+Il pulsante di salvataggio verrà visualizzato solo dopo il pulsante di carica e per salvare le opzioni è necesario prima validarle.
+
 # Come installare
 
 # The old fashion compiled way
