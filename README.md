@@ -5,12 +5,14 @@ Se il sistema pare non prendere il click sulla carta, fare di nuovo click sulla 
 
 [![youtube](https://i.ibb.co/qkbNyzb/mq2.jpg)](https://www.youtube.com/watch?v=BG12__cPoGg)
 
-Questo vuole essere una mod del project carmela, che si deve evolvere su pc col multiplayer a la tetrinet, fatta per le specifiche direttive delle aziende.
+Questo vuole essere una mod del project carmela, che si deve evolvere su pc col multiplayer a la tetrinet, fatta%localappdata% delle aziende.
 
 Se volete contribuire siete i benvenuti
 
 # Novità
-Sono stati aggiunti due pulsanti nella schermata delle opzioni: uno per caricare le opzioni da file json ed uno per salvarle.
+- E' stato aggiunto un controllo per evitare le lotte per avere l'ultima carta se disegna un seme di briscola alto.
+Se si hanno problemi nel salvare l'opzione, eliminare il file in %localappdata%\Packages\21961GiulioSorrentino.CBriscola_gzdzm2aja2gcm\LocalState
+- Sono stati aggiunti due pulsanti nella schermata delle opzioni: uno per caricare le opzioni da file json ed uno per salvarle.
 Il pulsante di salvataggio verrà visualizzato solo dopo il pulsante di carica e per salvare le opzioni è necesario prima validarle.
 
 # Come installare
