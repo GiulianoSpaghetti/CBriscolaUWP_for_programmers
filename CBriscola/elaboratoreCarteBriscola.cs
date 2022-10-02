@@ -18,7 +18,7 @@ namespace CBriscola
 		private bool inizio,
 				 briscolaDaPunti;
 		public static Random r = new Random();
-		public elaboratoreCarteBriscola(bool punti = true)
+		public elaboratoreCarteBriscola(bool punti = false)
 		{
 			inizio = true;
 			briscolaDaPunti = punti;
@@ -41,9 +41,9 @@ namespace CBriscola
 					UInt16 valore = (UInt16)(carta % 10);
 					if (!briscolaDaPunti && (valore == 0 || valore == 2 || valore > 6))
 					{
-						carta = (UInt16)(carta - valore + 1);
+						carta = cartaHelperBriscola.getIstanza().getNumero(cartaHelperBriscola.getIstanza().getSeme(valore), 1);
 					}
-					cartaBriscola = carta;
+                    cartaBriscola = carta;
 					inizio = false;
 				}
 				doppione[carta] = true;
