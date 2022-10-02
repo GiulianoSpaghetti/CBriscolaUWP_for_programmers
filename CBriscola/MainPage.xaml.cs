@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -10,6 +11,7 @@ using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.AccessCache;
 using Windows.Storage.Search;
+using Windows.System;
 using Windows.System.Threading;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -256,6 +258,13 @@ namespace CBriscola
                         if (primo == cpu)
                         {
                             i1 = giocaCpu();
+                            if (cpu.getCartaGiocata().stessoSeme(briscola))
+                            {
+                                new ToastContentBuilder().AddArgument("Giocata Briscola").AddText($"La cpu ha giocato il {cpu.getCartaGiocata().getValore()+1} di briscola").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                            } else if (cpu.getCartaGiocata().getPunteggio()>0)
+                            {
+                                new ToastContentBuilder().AddArgument("Giocata Carta di valore").AddText($"La cpu ha giocato il {cpu.getCartaGiocata().getValore() + 1} di {cpu.getCartaGiocata().getSemeStr()}").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                            }
                         };
 
                     }
@@ -356,6 +365,11 @@ namespace CBriscola
         private void OnFpCancel_Click(object sender, TappedRoutedEventArgs e)
         {
             Application.Current.Exit();
+        }
+
+        private async void OnFPShare_Click(object sender, TappedRoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20la%20partita%20{g.getNome()}%20contro%20{cpu.getNome()}%20%C3%A8%20finita%20{g.getPunteggio()}%20a%20{cpu.getPunteggio()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp.old"));
         }
 
     }

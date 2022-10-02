@@ -25,7 +25,7 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="NomeUtente" Text="Nome Utente" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
+            <TextBlock x:Name="NomeUtente" Text="{Binding NomeUtente}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
             <Image x:Name="Utente0" Grid.Row="1" Tapped="Image_Tapped" Grid.Column="0" />
             <Image x:Name="Utente1" Grid.Row="1"  Tapped="Image_Tapped" Grid.Column="1" />
             <Image x:Name="Utente2" Grid.Row="1"  Tapped="Image_Tapped" Grid.Column="2" />
@@ -34,11 +34,11 @@
             <Image x:Name="Cpu0" Grid.Row="3" Grid.Column="0" />
             <Image x:Name="Cpu1" Grid.Row="3" Grid.Column="1" />
             <Image x:Name="Cpu2" Grid.Row="3" Grid.Column="2" />
-            <TextBlock x:Name="NomeCpu" Text="Nome Cpu" Grid.Row="4" Grid.Column="0" Grid.RowSpan="3" />
-            <TextBlock x:Name="PuntiUtente" Text="Punti dell'utente" Grid.Row="0" Grid.Column="4" />
-            <TextBlock x:Name="PuntiCpu" Text="Punti della Cpu" Grid.Row="1" Grid.Column="4" />
-            <TextBlock x:Name="NelMazzoRimangono" Text="Nel Mazzo Rimangono" Grid.Row="2" Grid.Column="4" />
-            <TextBlock x:Name="CartaBriscola" Text="Il seme di briscola è" Grid.Row="3" Grid.Column="4" />
+            <TextBlock x:Name="NomeCpu" Text="{Binding NomeCpu}" Grid.Row="4" Grid.Column="0" Grid.RowSpan="3" />
+            <TextBlock x:Name="PuntiUtente" Text="{Binding PuntiUtente}" Grid.Row="0" Grid.Column="4" />
+            <TextBlock x:Name="PuntiCpu" Text="{Binding PuntiCpu}" Grid.Row="1" Grid.Column="4" />
+            <TextBlock x:Name="NelMazzoRimangono" Text="{Binding NumeroCarte}" Grid.Row="2" Grid.Column="4" />
+            <TextBlock x:Name="CartaBriscola" Text="{Binding SemeBriscola}" Grid.Row="3" Grid.Column="4" />
             <Image x:Name="Briscola" Grid.Row="4" Grid.Column="4" />
             <TextBlock Text="Opzioni" Grid.Row="5" Grid.Column="0" Tapped="OnOpzioni_Click" />
             <TextBlock Text="Informazioni" Grid.Row="5" Grid.Column="1" Tapped="OnInfo_Click" />
@@ -91,10 +91,12 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="risultato" Text="Hai vinto per 900 punti. Vuoi effettuare una seconda partita?" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
             <Button Content="Accetta" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" />
             <Button Content="Annulla" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" />
+            <Button Content="Condividi" Tapped="OnFPShare_Click" Grid.Column="2" Grid.Row="1" />
         </Grid>
     </Grid>
 </Page>
