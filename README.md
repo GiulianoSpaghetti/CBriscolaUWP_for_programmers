@@ -17,6 +17,9 @@ Il pulsante di salvataggio verrà visualizzato solo dopo il pulsante di carica e
 
 # Come installare
 
+[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9NGV8ZD2HN70)
+
+
 # The old fashion compiled way
 
 Installa visual studio 2022, scarica il progetto usando git selezionando download from existing git repository e quindi compilalo.
