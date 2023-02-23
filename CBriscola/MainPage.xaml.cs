@@ -1,9 +1,11 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using Windows.Foundation;
@@ -13,6 +15,7 @@ using Windows.Storage.AccessCache;
 using Windows.Storage.Search;
 using Windows.System;
 using Windows.System.Threading;
+using Windows.UI.Core.Preview;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -37,23 +40,51 @@ namespace CBriscola
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
         private static bool briscolaPunti = false;
+        private static bool avvisaTalloneFinito = true;
         private static UInt16 secondi = 1;
         private static TimeSpan delay;
         private static elaboratoreCarteBriscola e;
-        private static Opzioni o;
-        private static Windows.Storage.IStorageFile f;
+        private Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+        private Windows.Storage.ApplicationDataContainer container;
         public MainPage()
         {
+            string s;
             this.InitializeComponent();
+            SystemNavigationManagerPreview.GetForCurrentView().CloseRequested += Close;
             e = new elaboratoreCarteBriscola(briscolaPunti);
             m = new mazzo(e);
             carta.inizializza(40, cartaHelperBriscola.getIstanza());
-            g = new giocatore(new giocatoreHelperUtente(), "numerone", 3);
-            cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), "Francesca", 3);
+            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+            s = localSettings.Containers["CBriscola"].Values["numeUtente"] as string;
+            if (s == null)
+                s = "numerone";
+            g = new giocatore(new giocatoreHelperUtente(), s, 3);
+            s = localSettings.Containers["CBriscola"].Values["nomeCpu"] as string;
+            if (s == null)
+                s = "Cpu";
+            cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), s, 3);
             primo = g;
             secondo = cpu;
             briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
+            s=localSettings.Containers["CBriscola"].Values["secondi"] as string;
+            try
+            {
+                secondi = UInt16.Parse(s);
+            } catch (Exception ex)
+            {
+                secondi = 5;
+            }
             delay = TimeSpan.FromSeconds(secondi);
+            s = localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] as string;
+            if (s == null || s == "false")
+                briscolaPunti = false;
+            else
+                briscolaPunti = true;
+            s = localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] as string;
+            if (s == null || s == "false")
+                avvisaTalloneFinito = false;
+            else
+                avvisaTalloneFinito = true;
             Image[] img = new Image[3];
             for (UInt16 i = 0; i < 3; i++)
             {
@@ -74,63 +105,6 @@ namespace CBriscola
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.getNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.getSemeStr()}";
             Briscola.Source = briscola.getImmagine();
-        }
-
-        private async Task<Opzioni> leggiOpzioni(Windows.Storage.StorageFolder folder, Windows.Storage.IStorageFile file)
-        {
-            Opzioni o=null;
-            String a = folder.Path;
-            string s = await FileIO.ReadTextAsync(file);
-            try
-            {
-                o = Newtonsoft.Json.JsonConvert.DeserializeObject<Opzioni>(s);
-            } catch (FormatException ex)
-            {
-                o=await creaOpzioni(ApplicationData.Current.LocalFolder, "opzioni.json");
-            }
-            return o;
-        }
-
-        private async void OnOpCarica_Click(Object sender, TappedRoutedEventArgs args)
-        {
-            f = await ApplicationData.Current.LocalFolder.TryGetItemAsync("opzioni.json") as IStorageFile;
-            if (f != null)
-                o = await leggiOpzioni(ApplicationData.Current.LocalFolder, f);
-            else
-                o = await creaOpzioni(ApplicationData.Current.LocalFolder, "opzioni.json");
-            txtNomeUtente.Text = o.NomeUtente;
-            txtNomeCpu.Text = o.NomeCpu;
-            secondi = o.secondi;
-            txtSecondi.Text = "" + secondi;
-            briscolaPunti = o.briscolaDaPunti;
-            cbBriscolaDaPunti.IsChecked = briscolaPunti;
-            bsalva.Visibility= Visibility.Visible;
-
-        }
-
-        private async void OnOpSalva_Click(Object sender, TappedRoutedEventArgs args)
-        {
-            o.NomeUtente = txtNomeUtente.Text;
-            o.NomeCpu = txtNomeCpu.Text;
-            o.secondi = secondi;
-            if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
-                briscolaPunti = false;
-            else
-                briscolaPunti = true;
-            o.briscolaDaPunti= briscolaPunti;
-            await FileIO.WriteTextAsync(f, Newtonsoft.Json.JsonConvert.SerializeObject(o));
-        }
-
-        private async Task<Opzioni> creaOpzioni(Windows.Storage.StorageFolder folder, String s)
-        {
-            Opzioni o = new Opzioni();
-            o.NomeUtente = g.getNome();
-            o.NomeCpu = cpu.getNome();
-            o.secondi = 1;
-            o.briscolaDaPunti=false;
-            f=await folder.CreateFileAsync(s, CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(f,Newtonsoft.Json.JsonConvert.SerializeObject(o));
-            return o;
         }
 
         private Image giocaUtente(Image img)
@@ -167,6 +141,14 @@ namespace CBriscola
             Info.Visibility = Visibility.Visible;
 
         }
+
+        private void OnEliminaOpzioni_Click(object sender, TappedRoutedEventArgs e)
+        {
+            localSettings.Containers["CBriscola"].DeleteContainer("CBriscola");
+            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+
+        }
+
         private void OnOpzioni_Click(object sender, TappedRoutedEventArgs e)
 
         {
@@ -174,6 +156,7 @@ namespace CBriscola
             txtNomeCpu.Text = cpu.getNome();
             txtSecondi.Text = "" + secondi;
             cbBriscolaDaPunti.IsChecked = briscolaPunti;
+            cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
             Applicazione.Visibility = Visibility.Collapsed;
             Info.Visibility = Visibility.Collapsed;
             GOpzioni.Visibility = Visibility.Visible;
@@ -245,6 +228,9 @@ namespace CBriscola
                         {
                             NelMazzoRimangono.Visibility = Visibility.Collapsed;
                             Briscola.Visibility = Visibility.Collapsed;
+                            if (avvisaTalloneFinito)
+                                new ToastContentBuilder().AddArgument("Tallone Finito").AddText($"Il tallone è finito").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+
                         }
                         Utente0.Source = g.getImmagine(0);
                         if (cpu.getNumeroCarte() > 1)
@@ -298,6 +284,34 @@ namespace CBriscola
                 });
             }, delay);
         }
+
+        private void SalvaOpzioni()
+        {
+            localSettings.Containers["CBriscola"].Values["numeUtente"] = txtNomeUtente.Text;
+            localSettings.Containers["CBriscola"].Values["numeCpu"] = txtNomeCpu.Text;
+            localSettings.Containers["CBriscola"].Values["secondi"] = secondi;
+            if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
+            {
+                briscolaPunti = false;
+                localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] = "false";
+            }
+            else
+            {
+                localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] = "true";
+                briscolaPunti = true;
+            }
+            if (cbAvvisaTallone.IsChecked == null || cbAvvisaTallone.IsChecked == false)
+            {
+                avvisaTalloneFinito = false;
+                localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] = "false";
+            }
+            else
+            {
+                avvisaTalloneFinito = true;
+                localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] = "true";
+            }
+
+        }
         private void OnOpOk_Click(object sender, TappedRoutedEventArgs e)
         {
 
@@ -318,6 +332,10 @@ namespace CBriscola
             else
                 briscolaPunti = true;
             delay = TimeSpan.FromSeconds(secondi);
+            SalvaOpzioni();
+            Info.Visibility = Visibility.Collapsed;
+            GOpzioni.Visibility = Visibility.Collapsed;
+            Applicazione.Visibility = Visibility.Visible;
         }
         private void OnFpOk_Click(object sender, TappedRoutedEventArgs evt)
         {
@@ -382,7 +400,12 @@ namespace CBriscola
 
         private async void OnFPShare_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20la%20partita%20{g.getNome()}%20contro%20{cpu.getNome()}%20%C3%A8%20finita%20{g.getPunteggio()}%20a%20{cpu.getPunteggio()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp.old"));
+            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20la%20partita%20{g.getNome()}%20contro%20{cpu.getNome()}%20%C3%A8%20finita%20{g.getPunteggio()}%20a%20{cpu.getPunteggio()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp_for_programmers"));
+        }
+
+        public void Close(object sender, SystemNavigationCloseRequestedPreviewEventArgs e)
+        {
+            container.Dispose();
         }
 
     }
