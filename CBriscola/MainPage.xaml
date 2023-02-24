@@ -59,7 +59,7 @@
                 <TextBlock Text="Project Carmela, ovvero come trovarsi un lavoro" Grid.Row="0" />
                 <TextBlock Text="ⓒ 2023 Giulio Sorrentino, some right reserved" Grid.Row="1" />
                 <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="2"/>
-                <TextBlock Foreground="White" Text="Dedicato alle mie tre dame. Si ringrazia il Centro Informatico Campano." Grid.Row="3"/>
+                <TextBlock Text="Dedicato alle mie tre dame. Si ringrazia il Centro Informatico Campano." Grid.Row="3"/>
                 <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="4"/>
             </Grid>
             <Grid x:Name="GOpzioni" Visibility="Collapsed">
