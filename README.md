@@ -10,12 +10,11 @@ Questo vuole essere una mod del project carmela, che si deve evolvere su pc col 
 Se volete contribuire siete i benvenuti
 
 # Novità
-- E' stato aggiunto un controllo per evitare le lotte per avere l'ultima carta se disegna un seme di briscola alto.
-Se si hanno problemi nel salvare l'opzione, eliminare il file in %localappdata%\Packages\21961GiulioSorrentino.CBriscola_gzdzm2aja2gcm\LocalState
-- Sono stati aggiunti due pulsanti nella schermata delle opzioni: uno per caricare le opzioni da file json ed uno per salvarle.
-Il pulsante di salvataggio verrà visualizzato solo dopo il pulsante di carica e per salvare le opzioni è necesario prima validarle.
-
+- Adesso le impostazioni vengono salvate in maniera più integrata ed è stato aggiunto un pulsante per cancellare le impostazioni salvate. Ovviamente se si dà l'ok nelle impostazioni dopo averle cancellate, queste vengono salvate nuovamente.
 # Come installare
+
+[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9NGV8ZD2HN70)
+
 
 # The old fashion compiled way
 
