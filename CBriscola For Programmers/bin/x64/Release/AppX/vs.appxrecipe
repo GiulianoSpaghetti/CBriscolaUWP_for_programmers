@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>NUMERONESOFT</Machine>
+    <WindowsUser>numer</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>21ae072b-1360-448e-a256-b93094e6c791</PackageIdentityName>
+    <PackageIdentityPublisher>CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>2B2C90B4587E4F1CE6516F484F00F24C0B6FE31F29EBF54C69698BAD87287AAB</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>21961GiulioSorrentino.6245445F14426_gzdzm2aja2gcm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>21961GiulioSorrentino.6245445F14426</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.11.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-26T17:55:56.539</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2023-02-14T04:17:35.358</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-14T04:17:35.365</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-14T04:17:35.371</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-14T04:17:35.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-14T04:17:35.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-25T04:11:44.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-14T04:17:35.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\background.jpg">
+      <PackagePath>background.jpg</PackagePath>
+      <Modified>2023-02-14T04:17:35.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.dll">
+      <PackagePath>CBriscola For Programmers.dll</PackagePath>
+      <Modified>2023-02-26T17:55:56.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.exe">
+      <PackagePath>CBriscola For Programmers.exe</PackagePath>
+      <Modified>2023-02-26T17:55:56.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.pdb">
+      <PackagePath>CBriscola For Programmers.pdb</PackagePath>
+      <Modified>2023-02-26T17:55:56.526</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2022-06-10T21:23:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2023-02-26T17:55:38.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\0.png">
+      <PackagePath>Resources\0.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\1.png">
+      <PackagePath>Resources\1.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\10.png">
+      <PackagePath>Resources\10.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\11.png">
+      <PackagePath>Resources\11.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\12.png">
+      <PackagePath>Resources\12.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\13.png">
+      <PackagePath>Resources\13.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.828</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\14.png">
+      <PackagePath>Resources\14.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\15.png">
+      <PackagePath>Resources\15.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\16.png">
+      <PackagePath>Resources\16.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\17.png">
+      <PackagePath>Resources\17.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\18.png">
+      <PackagePath>Resources\18.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\19.png">
+      <PackagePath>Resources\19.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.852</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\2.png">
+      <PackagePath>Resources\2.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\20.png">
+      <PackagePath>Resources\20.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\21.png">
+      <PackagePath>Resources\21.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\22.png">
+      <PackagePath>Resources\22.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\23.png">
+      <PackagePath>Resources\23.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\24.png">
+      <PackagePath>Resources\24.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\25.png">
+      <PackagePath>Resources\25.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\26.png">
+      <PackagePath>Resources\26.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.882</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\27.png">
+      <PackagePath>Resources\27.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\28.png">
+      <PackagePath>Resources\28.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\29.png">
+      <PackagePath>Resources\29.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\3.png">
+      <PackagePath>Resources\3.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\30.png">
+      <PackagePath>Resources\30.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\31.png">
+      <PackagePath>Resources\31.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\32.png">
+      <PackagePath>Resources\32.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\33.png">
+      <PackagePath>Resources\33.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\34.png">
+      <PackagePath>Resources\34.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\35.png">
+      <PackagePath>Resources\35.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\36.png">
+      <PackagePath>Resources\36.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\37.png">
+      <PackagePath>Resources\37.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\38.png">
+      <PackagePath>Resources\38.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\39.png">
+      <PackagePath>Resources\39.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.936</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\4.png">
+      <PackagePath>Resources\4.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\5.png">
+      <PackagePath>Resources\5.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\6.png">
+      <PackagePath>Resources\6.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\7.png">
+      <PackagePath>Resources\7.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\8.png">
+      <PackagePath>Resources\8.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\9.png">
+      <PackagePath>Resources\9.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro carte mazzo.png">
+      <PackagePath>Resources\retro carte mazzo.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.942</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro_carte_pc.png">
+      <PackagePath>Resources\retro_carte_pc.png</PackagePath>
+      <Modified>2023-02-26T16:24:48.947</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

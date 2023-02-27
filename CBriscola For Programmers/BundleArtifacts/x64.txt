@@ -1,0 +1,2 @@
+MainPackage=C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\CBriscola For Programmers_1.0.11.0_x64.msix
+SymbolPackage=C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\Symbols\CBriscola For Programmers_1.0.11.0_x64.appxsym
