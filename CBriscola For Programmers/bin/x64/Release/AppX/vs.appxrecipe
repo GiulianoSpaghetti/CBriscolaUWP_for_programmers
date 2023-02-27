@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-26T17:55:56.539</Modified>
+      <Modified>2023-02-27T19:32:51.449</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -74,15 +74,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.dll">
       <PackagePath>CBriscola For Programmers.dll</PackagePath>
-      <Modified>2023-02-26T17:55:56.267</Modified>
+      <Modified>2023-02-27T19:32:51.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.exe">
       <PackagePath>CBriscola For Programmers.exe</PackagePath>
-      <Modified>2023-02-26T17:55:56.529</Modified>
+      <Modified>2023-02-27T19:32:51.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.pdb">
       <PackagePath>CBriscola For Programmers.pdb</PackagePath>
-      <Modified>2023-02-26T17:55:56.526</Modified>
+      <Modified>2023-02-27T19:32:51.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -90,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-02-26T17:55:38.290</Modified>
+      <Modified>2023-02-27T19:32:32.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\0.png">
       <PackagePath>Resources\0.png</PackagePath>
