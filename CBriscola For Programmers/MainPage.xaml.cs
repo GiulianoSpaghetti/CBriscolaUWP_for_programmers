@@ -240,12 +240,9 @@ namespace CBriscola_For_Programmers
                         {
                             i1 = GiocaCpu();
                             if (cpu.GetCartaGiocata().StessoSeme(briscola))
-                            {
                                 new ToastContentBuilder().AddArgument("Giocata Briscola").AddText($"La cpu ha giocato il {cpu.GetCartaGiocata().GetValore()+1} di briscola").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                            } else if (cpu.GetCartaGiocata().GetPunteggio()>0)
-                            {
+                            else if (cpu.GetCartaGiocata().GetPunteggio()>0)
                                 new ToastContentBuilder().AddArgument("Giocata Carta di valore").AddText($"La cpu ha giocato il {cpu.GetCartaGiocata().GetValore() + 1} di {cpu.GetCartaGiocata().GetSemeStr()}").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                            }
                         };
 
                     }
@@ -391,6 +388,11 @@ namespace CBriscola_For_Programmers
         public void Close(object sender, SystemNavigationCloseRequestedPreviewEventArgs e)
         {
             container.Dispose();
+        }
+
+        private async void OnSito_Click(object sender, TappedRoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("https://github.com/numerunix/cbriscolauwp.new"));
         }
 
     }

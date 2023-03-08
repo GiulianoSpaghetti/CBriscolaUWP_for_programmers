@@ -1,8 +1,8 @@
-﻿"C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\CBriscola For Programmers.exe"
-"C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\Microsoft.Toolkit.Uwp.Notifications.dll"
-/Lib:"C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\ilc\in"
+﻿"C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\CBriscola For Programmers.exe"
+"C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\Microsoft.Toolkit.Uwp.Notifications.dll"
+/Lib:"C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\ilc\in"
 /Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\tools\x64\ilc\lib\Private"
-/WinMD:"C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"CollectorApiKey\":\"f3e86b4023cc43f0be495508d51f588a-f70d0e59-0fb0-4473-9f19-b4024cc340be-7296\",\"AppId\":1001,\"UserId\":\"7d774359-70c1-446e-9ec5-8fe804f82cd5\",\"Id\":\"982f8f25-2fc5-4baf-8c24-158b848b9e0d\",\"ProcessStartTime\":638131227996388168,\"SkuName\":\"VS_Pro\",\"VSExeVersion\":\"17.5.33414.496\",\"BucketFiltersToEnableWatsonForFaults\":[],\"BucketFiltersToAddDumpsToFaults\":[]}"
+/WinMD:"C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"CollectorApiKey\":\"f3e86b4023cc43f0be495508d51f588a-f70d0e59-0fb0-4473-9f19-b4024cc340be-7296\",\"AppId\":1001,\"UserId\":\"7d774359-70c1-446e-9ec5-8fe804f82cd5\",\"Id\":\"e2a520b0-5052-4e9f-b1ce-77516c61901d\",\"ProcessStartTime\":638138478124528920,\"SkuName\":\"VS_Pro\",\"VSExeVersion\":\"17.5.33424.131\",\"BucketFiltersToEnableWatsonForFaults\":[],\"BucketFiltersToAddDumpsToFaults\":[]}"
 /RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.12-rel-31116-00\tools\LibraryXML"
 /RunOnlyPreDR

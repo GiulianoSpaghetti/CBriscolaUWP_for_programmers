@@ -28,7 +28,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock x:Name="NomeUtente" Text="{Binding NomeUtente}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
                 <Image x:Name="Utente0" Grid.Row="1" Tapped="Image_Tapped" Grid.Column="0" />
@@ -55,12 +55,16 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <TextBlock Text="Project Carmela, ovvero come trovarsi un lavoro" Grid.Row="0" />
                 <TextBlock Text="ⓒ 2023 Giulio Sorrentino, some right reserved" Grid.Row="1" />
-                <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="2"/>
-                <TextBlock Text="Dedicato alle mie tre dame. Si ringrazia il Centro Informatico Campano." Grid.Row="3"/>
-                <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="4"/>
+                <TextBlock Text="Simulatore del gioco della briscola a 2 giocatori, senza multiplayer" Grid.Row="2" />
+                <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="3"/>
+                <TextBlock Text="Dedicato alle mie tre dame. Si ringrazia il Centro Informatico Campano." Grid.Row="4"/>
+                <Button Content="Maggiori Informazioni" Tapped="OnSito_Click" Grid.Row="5" />
+                <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="6"/>
             </Grid>
             <Grid x:Name="GOpzioni" Visibility="Collapsed">
                 <Grid.RowDefinitions>
