@@ -5,6 +5,14 @@
     <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
     <AppxBuildConfigurationSelection>x86|x64|arm|arm64</AppxBuildConfigurationSelection>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <Source>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</Source>
+    <SmallTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</SmallTileSource>
+    <MediumTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</MediumTileSource>
+    <WideTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</WideTileSource>
+    <LargeTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</LargeTileSource>
+    <AppIconSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</AppIconSource>
+    <SplashScreenSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</SplashScreenSource>
+    <PackageLogoSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</PackageLogoSource>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
     <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
@@ -13,6 +21,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
     <AuthenticationMode>Universal</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
 </Project>

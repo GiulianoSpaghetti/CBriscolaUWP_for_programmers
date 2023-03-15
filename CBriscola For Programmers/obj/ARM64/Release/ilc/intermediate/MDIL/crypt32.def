@@ -4,14 +4,14 @@ EXPORTS
    CertDuplicateCertificateContext
    CertFreeCertificateContext
    CertFindCertificateInStore
-   CertGetNameStringW
-
    CertGetCertificateContextProperty
-   CertEnumCertificatesInStore
-   PFXImportCertStore
-
    CertCloseStore
+   CertEnumCertificatesInStore
+
    CryptFindOIDInfo
+
+
+   PFXImportCertStore
    CryptQueryObject
    CryptMsgClose
-
+   CertGetNameStringW

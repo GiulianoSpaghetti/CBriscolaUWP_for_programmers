@@ -1,127 +1,125 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="it-IT" OVERALL_RESULT="FAIL" VERSION="10.0.22621.755" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.22621.0" OS="Microsoft Windows 11 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="26/02/2023 19:04:42" ID="ae7c2573badd8240b7597a883ad6e779">
+<REPORT xml:lang="it-IT" OVERALL_RESULT="FAIL" VERSION="10.0.22621.755" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.22621.0" OS="Microsoft Windows 11 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="09/03/2023 15:39:09" ID="538bc3c63247d84421957f310022b235">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="Distribuzione e avvio - Test" RATIONALE="Errori quali interruzioni o arresti anomali di un'applicazione rappresentano una notevole fonte di frustrazione per gli utenti. L'eliminazione di questi errori migliora la stabilità e l'affidabilità dell'applicazione e garantisce agli utenti una maggiore soddisfazione.">
-      <TEST INDEX="50" NAME="Creazione bytecode" DESCRIPTION="La creazione bytecode dovrebbe riuscire senza problemi nel caso di pacchetti contenenti un'app di Windows Store HTML5." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="50" NAME="Creazione bytecode" DESCRIPTION="La creazione bytecode dovrebbe riuscire senza problemi nel caso di pacchetti contenenti un'app di Windows Store HTML5." EXECUTIONTIME="00h:00m:01s.18ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="Avvio versione piattaforma" DESCRIPTION="L'app non dovrebbe utilizzare in modo improprio l'API OSVersionInfo per offrire agli utenti funzionalità specifiche del sistema operativo." EXECUTIONTIME="00h:00m:23s.42ms" OPTIONAL="FALSE">
+      <TEST INDEX="81" NAME="Avvio versione piattaforma" DESCRIPTION="L'app non dovrebbe utilizzare in modo improprio l'API OSVersionInfo per offrire agli utenti funzionalità specifiche del sistema operativo." EXECUTIONTIME="00h:00m:24s.52ms" OPTIONAL="FALSE">
         <MESSAGES>
           <MESSAGE TEXT="Impossibile avviare App" />
           <MESSAGE TEXT="Impossibile avviare App" />
-          <MESSAGE TEXT="L'app 21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm non ha superato il test di avvio della versione della piattaforma." />
+          <MESSAGE TEXT="L'app 21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm non ha superato il test di avvio della versione della piattaforma." />
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="Avvio dell'app" DESCRIPTION="Test all'avvio dell'app." EXECUTIONTIME="00h:00m:18s.39ms" OPTIONAL="FALSE">
+      <TEST INDEX="47" NAME="Avvio dell'app" DESCRIPTION="Test all'avvio dell'app." EXECUTIONTIME="00h:00m:18s.33ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="Arresti anomali e blocchi" DESCRIPTION="Non arrestare o bloccare il sistema in modo anomalo durante il test." EXECUTIONTIME="00h:00m:03s.02ms" OPTIONAL="FALSE">
+      <TEST INDEX="21" NAME="Arresti anomali e blocchi" DESCRIPTION="Non arrestare o bloccare il sistema in modo anomalo durante il test." EXECUTIONTIME="00h:00m:03s.06ms" OPTIONAL="FALSE">
         <MESSAGES>
-          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'eseguibile C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm\CBriscola For Programmers.exe." />
-          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'applicazione 21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm." />
-          <MESSAGE TEXT="Segnalazione errori Windows: creato file con i dettagli dell'arresto anomalo del sistema C:\Users\numer\AppData\Local\Microsoft\AppCertKit\CBriscola For Programmers.exe.18940.dmp che include informazioni aggiuntive." />
+          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'eseguibile C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm\CBriscola For Programmers.exe." />
+          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'applicazione 21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm." />
+          <MESSAGE TEXT="Segnalazione errori Windows: creato file con i dettagli dell'arresto anomalo del sistema C:\Users\numer\AppData\Local\Microsoft\AppCertKit\CBriscola For Programmers.exe.26068.dmp che include informazioni aggiuntive." />
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Test conformità pacchetto" RATIONALE="Il pacchetto non soddisfa le regole di conformità dello Store.">
-      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.20ms" OPTIONAL="FALSE">
+      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.16ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:01s.74ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:01s.81ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali." EXECUTIONTIME="00h:00m:01s.15ms" OPTIONAL="FALSE">
+      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali." EXECUTIONTIME="00h:00m:01s.17ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.18ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="Spazio dei nomi con restrizioni" DESCRIPTION="Controlla se nel manifesto del pacchetto dell'app viene fatto riferimento a uno spazio dei nomi limitato." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
+      <TEST INDEX="83" NAME="Spazio dei nomi con restrizioni" DESCRIPTION="Controlla se nel manifesto del pacchetto dell'app viene fatto riferimento a uno spazio dei nomi limitato." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Funzionalità di sicurezza di Windows - Test" RATIONALE="Le applicazioni devono acconsentire esplicitamente alle funzionalità di Sicurezza di Windows.">
-      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="FALSE">
+      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:01s.51ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.26ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.36ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.36ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="API Supportate - Test" RATIONALE="L'applicazione deve fare riferimento esclusivamente alle API consentite da Windows SDK per le app di Windows Store.">
-      <TEST INDEX="38" NAME="API supportate" DESCRIPTION="L'app di Windows Store deve utilizzare esclusivamente le API della piattaforma supportata." EXECUTIONTIME="00h:00m:02s.62ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="API supportate" DESCRIPTION="L'app di Windows Store deve utilizzare esclusivamente le API della piattaforma supportata." EXECUTIONTIME="00h:00m:02s.74ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="Risorse del manifesto dell'app - Test" RATIONALE="È necessario definire risorse valide nel file resources.pri per il manifesto di pacchetto app , così come per le specifiche di pacchetto app e lo schema manifesto app.">
-      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.74ms" OPTIONAL="FALSE">
+      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:01s.75ms" OPTIONAL="FALSE">
-        <MESSAGES>
-          <MESSAGE TEXT="Il file immagine StoreLogo.png è un'immagine predefinita." />
-        </MESSAGES>
-        <RESULT><![CDATA[FAIL]]></RESULT>
+      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:02s.08ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Configurazione debug - Test" RATIONALE="L'app non deve installare alcun file binario di debug.">
-      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:01s.47ms" OPTIONAL="FALSE">
+      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:01s.50ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="Test codifica file" RATIONALE="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente.">
-      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:01s.11ms" OPTIONAL="FALSE">
+      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="Test delle funzionalità dell'app" RATIONALE="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento.">
-      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.19ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Convalida dei metadati per Windows Runtime" RATIONALE="I metadati devono essere conformi e coerenti indipendentemente dalla loro origine.">
-      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:11s.34ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:09s.61ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:00s.91ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:01s.01ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.87ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.90ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.87ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.89ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:10s.99ms" OPTIONAL="FALSE">
+      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:09s.55ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.83ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.84ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -131,13 +129,13 @@
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="Verifica struttura di directory supportata" DESCRIPTION="Verificare che la lunghezza del nome di ciascun file nel pacchetto non superi il valore MAX_PATH." EXECUTIONTIME="00h:00m:01s.07ms" OPTIONAL="FALSE">
+      <TEST INDEX="66" NAME="Verifica struttura di directory supportata" DESCRIPTION="Verificare che la lunghezza del nome di ciascun file nel pacchetto non superi il valore MAX_PATH." EXECUTIONTIME="00h:00m:01s.08ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="Test utilizzo risorse" RATIONALE="Le attività in background WinJS devono chiamare close() per liberare le risorse.">
-      <TEST INDEX="68" NAME="Attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="FALSE">
+      <TEST INDEX="68" NAME="Attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:01s.53ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -145,12 +143,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="21961GiulioSorrentino.6245445F14426" Type="Application" Source="AppxPackage" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.11.0" Language="1040" InstallDate="" RootDirPath="C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm" Id="000088031a9eed8a3205384a0b08eac8f22400001004" HiddenArp="false">
+      <Program Name="21961GiulioSorrentino.6245445F14426" Type="Application" Source="AppxPackage" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0" Language="1040" InstallDate="" RootDirPath="C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm" Id="0000c6831ea1c82d6790d71f3014babca2f100001004" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm">
+            <PackageManifest PackageFullName="21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm">
               <Package>
-                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.11.0" ProcessorArchitecture="x64"></Identity>
+                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0" ProcessorArchitecture="x64"></Identity>
                 <PhoneIdentity PhoneProductId="21ae072b-1360-448e-a256-b93094e6c791" PhonePublisherId="00000000-0000-0000-0000-000000000000"></PhoneIdentity>
                 <Properties>
                   <DisplayName>CBriscola for Programmers</DisplayName>
@@ -170,7 +168,7 @@
                 <Applications>
                   <Application Id="App" Executable="CBriscola For Programmers.exe" EntryPoint="CBriscola_For_Programmers.App">
                     <VisualElements DisplayName="CBriscola for Programmers" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="CBriscola For Programmers" BackgroundColor="transparent" ForegroundText="light">
-                      <DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></DefaultTile>
+                      <DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"></DefaultTile>
                       <SplashScreen Image="Assets\SplashScreen.png"></SplashScreen>
                     </VisualElements>
                   </Application>
@@ -182,9 +180,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="21961GiulioSorrentino.6245445F14426_gzdzm2aja2gcm">
               <Bundle SchemaVersion="5.0" IgnorableNamespaces="b4 b5">
-                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.11.0"></Identity>
+                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.0.11.0" Architecture="x86" FileName="CBriscola For Programmers_1.0.11.0_x86.msix" Offset="13988605" Size="4591946">
+                  <Package Type="application" Version="1.0.14.0" Architecture="x86" FileName="CBriscola For Programmers_1.0.14.0_x86.msix" Offset="17006040" Size="5187630">
                     <Resources>
                       <Resource Language="IT-IT"></Resource>
                       <Resource Scale="200"></Resource>
@@ -193,7 +191,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.0.11.0" Architecture="x64" FileName="CBriscola For Programmers_1.0.11.0_x64.msix" Offset="9311947" Size="4676557">
+                  <Package Type="application" Version="1.0.14.0" Architecture="x64" FileName="CBriscola For Programmers_1.0.14.0_x64.msix" Offset="11732473" Size="5273466">
                     <Resources>
                       <Resource Language="IT-IT"></Resource>
                       <Resource Scale="200"></Resource>
@@ -202,7 +200,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.0.11.0" Architecture="arm" FileName="CBriscola For Programmers_1.0.11.0_ARM.msix" Offset="77" Size="4633592">
+                  <Package Type="application" Version="1.0.14.0" Architecture="arm" FileName="CBriscola For Programmers_1.0.14.0_ARM.msix" Offset="77" Size="5229828">
                     <Resources>
                       <Resource Language="IT-IT"></Resource>
                       <Resource Scale="200"></Resource>
@@ -211,10 +209,42 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.0.11.0" Architecture="arm64" FileName="CBriscola For Programmers_1.0.11.0_ARM64.msix" Offset="4633772" Size="4678074">
+                  <Package Type="application" Version="1.0.14.0" Architecture="arm64" FileName="CBriscola For Programmers_1.0.14.0_ARM64.msix" Offset="5230008" Size="5274921">
                     <Resources>
                       <Resource Language="IT-IT"></Resource>
                       <Resource Scale="200"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-100" FileName="CBriscola For Programmers_1.0.14.0_scale-100.msix" Offset="10505036" Size="85794">
+                    <Resources>
+                      <Resource Scale="100"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-125" FileName="CBriscola For Programmers_1.0.14.0_scale-125.msix" Offset="10590937" Size="126200">
+                    <Resources>
+                      <Resource Scale="125"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-150" FileName="CBriscola For Programmers_1.0.14.0_scale-150.msix" Offset="10717244" Size="174821">
+                    <Resources>
+                      <Resource Scale="150"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-400" FileName="CBriscola For Programmers_1.0.14.0_scale-400.msix" Offset="10892172" Size="840200">
+                    <Resources>
+                      <Resource Scale="400"></Resource>
                     </Resources>
                     <Dependencies>
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
@@ -227,17 +257,19 @@
         </Indicators>
         <StaticProperties>
           <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
-            <File Id="0000c5909caabbdf240ee40cf039f92241185c62a486" Name="CBriscola For Programmers.dll" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="2790400" SizeOfImage="2801664" PeHeaderHash="0101cb89aaeface219a77c4eb7ca08706e294b5daba3" PeChecksum="0" CrcChecksum="1551230047" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="02/26/2023 18:01:28" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.11.0_x64__gzdzm2aja2gcm\cbriscola for programmers.dll" SigPublisherName="" PeSubsystem="2" PeCharacteristics="8226" Sha256="011d569e169ab564b956b129958813b6a2179489bbc0bbcd5e2c73b934e00d4b" />
-            <File Id="0000460216d97dc30239cd26a7e33b5082fba57fbc85" Name="CBriscola For Programmers.exe" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="18944" SizeOfImage="32768" PeHeaderHash="0101ca9ff2f485f783c14e1fe940dabf833677964ad6" PeChecksum="0" CrcChecksum="4038675804" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="02/26/2023 18:01:28" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.11.0_x64__gzdzm2aja2gcm\cbriscola for programmers.exe" SigPublisherName="" PeSubsystem="2" PeCharacteristics="34" Sha256="303577b09190cc3fdab047e68fdcf71e3174b20c890a3f1c9afb7ec69c37c1c9" />
-            <File Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" OriginalFileName="t@@productname" InternalName="@.@legalcopyright" Size="66960" SizeOfImage="77824" PeHeaderHash="0101b2eee8ae2562043b5fad7e585f27b7c130e2db83" PeChecksum="70610" CrcChecksum="1729293948" BinProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" BinFileVersion="4.6.31327.1" FileDescription="Ũ¤@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="05/27/2022 16:06:39" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.11.0_x64__gzdzm2aja2gcm\clrcompression.dll" SigPublisherName="microsoft corporation" PeSubsystem="3" PeCharacteristics="8226" Sha256="b16a75adce8c335ee16b85b9a98307221466710457bf9e60865da91a2798e0fe" />
-            <File Id="00008e79312a47bbd848f6281620d6946d97b8d63d99" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="9672" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="3721528536" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.11.0_x64__gzdzm2aja2gcm\resources.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="be39d3e5f5c0a213eba92f393012b1d6a526aab6715e8d0f080c3af5ee3f9979" />
+            <File Id="00002e2187f4b0177850a47d14a807f4540eb783d617" Name="CBriscola For Programmers.dll" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="2792960" SizeOfImage="2801664" PeHeaderHash="010143fb3a7e2ee07ad4b1ba35e2de3da43f728285bf" PeChecksum="0" CrcChecksum="3132912539" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="03/09/2023 14:35:46" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\cbriscola for programmers.dll" SigPublisherName="" PeSubsystem="2" PeCharacteristics="8226" Sha256="ccf7d75222ab19a466ada526192b073387c1df7ef15a49688984d7fcd61d2a4e" />
+            <File Id="0000d4c6ecd6b3c1039e01e46cdf91ff0fdb054dbf14" Name="CBriscola For Programmers.exe" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="18944" SizeOfImage="32768" PeHeaderHash="0101727358616bc006d56e59aae32e44b23ffb26647a" PeChecksum="0" CrcChecksum="2196321395" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="03/09/2023 14:35:46" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\cbriscola for programmers.exe" SigPublisherName="" PeSubsystem="2" PeCharacteristics="34" Sha256="ec81765a8355297246e57d03ed8e182a8ad7cae0fe46b6edb7167ebce475e47c" />
+            <File Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" OriginalFileName="t@@productname" InternalName="@.@legalcopyright" Size="66960" SizeOfImage="77824" PeHeaderHash="0101b2eee8ae2562043b5fad7e585f27b7c130e2db83" PeChecksum="70610" CrcChecksum="1729293948" BinProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" BinFileVersion="4.6.31327.1" FileDescription="Ũ¤@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="05/27/2022 16:06:39" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\clrcompression.dll" SigPublisherName="microsoft corporation" PeSubsystem="3" PeCharacteristics="8226" Sha256="b16a75adce8c335ee16b85b9a98307221466710457bf9e60865da91a2798e0fe" />
+            <File Id="0000716f7c2e6147dd0a57a8c5a5e4a5ae88c0f2ce1d" Name="resources.cc0d9266.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="4051851505" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\resources.cc0d9266.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="4dea82ff21173fde1fb84ab8f81d42d2baf0c9a5d90c4948e290a4b08823c85e" />
+            <File Id="0000063b224406a7d3aa97959058e34ddb81d98930db" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="12552" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="358923780" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\resources.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="43b0fb1d9d24093f41033388b7f74dc8e799005fbc88fdbaf8d5758989cb77f6" />
+            <File Id="0000716f7c2e6147dd0a57a8c5a5e4a5ae88c0f2ce1d" Name="S-1-5-21-616099234-1829424360-2890813037-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="4051851505" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\s-1-5-21-616099234-1829424360-2890813037-1001-mergedresources-0.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="4dea82ff21173fde1fb84ab8f81d42d2baf0c9a5d90c4948e290a4b08823c85e" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="000088031a9eed8a3205384a0b08eac8f22400000904" AnalysisVersion="1.80" DictionaryVersion="3.7" Type="Package" Id="21961GiulioSorrentino.6245445F14426_1.0.11.0_x64__gzdzm2aja2gcm">
+    <AitStaticAnalysis ProgramId="0000c6831ea1c82d6790d71f3014babca2f100000904" AnalysisVersion="1.80" DictionaryVersion="3.7" Type="Package" Id="21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm">
       <AitFile ErrorCode="0" Name="clrcompression.dll" Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a">
         <AitCategory Id="Com">
           <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
@@ -252,13 +284,11 @@
           <AitFeature Name="kernel32.dll!QueryPerformanceCounter" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="CBriscola For Programmers.exe" Id="0000460216d97dc30239cd26a7e33b5082fba57fbc85" />
-      <AitFile ErrorCode="0" Name="CBriscola For Programmers.dll" Id="0000c5909caabbdf240ee40cf039f92241185c62a486">
+      <AitFile ErrorCode="0" Name="CBriscola For Programmers.dll" Id="00002e2187f4b0177850a47d14a807f4540eb783d617">
         <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000002}" />
           <AitFeature Name="{00000000-0000-0000-0000-000000000008}" />
           <AitFeature Name="{00000000-0000-0000-0000-000000000013}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000030}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000028}" />
           <AitFeature Name="{00000001-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
@@ -410,6 +440,7 @@
           <AitFeature Name="{52c9428b-d37a-554d-bf55-b8685d5f552d}" />
           <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
+          <AitFeature Name="{54dfd981-1968-4ca3-b958-e595d16505eb}" />
           <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{5871821a-2491-5cec-a457-21996ca4efaf}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
@@ -805,6 +836,7 @@
           <AitFeature Name="{50ac103f-d235-4598-bbef-98fe4d1a3ad4}" />
           <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
+          <AitFeature Name="{54dfd981-1968-4ca3-b958-e595d16505eb}" />
           <AitFeature Name="{55ee2e81-1c18-59ed-bd3d-c4ca8fa7d190}" />
           <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
@@ -1098,6 +1130,7 @@
           <AitFeature Name="Windows.UI.Notifications.ToastNotification" />
           <AitFeature Name="Windows.UI.Notifications.ScheduledToastNotification" />
           <AitFeature Name="Windows.UI.Xaml.Application" />
+          <AitFeature Name="Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation" />
           <AitFeature Name="Windows.Globalization.Calendar" />
           <AitFeature Name="Windows.Foundation.Diagnostics.AsyncCausalityTracer" />
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
@@ -1112,6 +1145,7 @@
           <AitFeature Name="Windows.UI.Core.CoreWindow" />
         </AitCategory>
       </AitFile>
+      <AitFile ErrorCode="0" Name="CBriscola For Programmers.exe" Id="0000d4c6ecd6b3c1039e01e46cdf91ff0fdb054dbf14" />
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>

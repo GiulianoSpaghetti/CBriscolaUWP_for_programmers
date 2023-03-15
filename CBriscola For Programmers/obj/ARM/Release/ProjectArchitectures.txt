@@ -1,1 +1,1 @@
-C:\Users\numer\source\repos\CBriscola For Programmers\CBriscola For Programmers\CBriscola For Programmers.csproj;arm
+C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\CBriscola For Programmers.csproj;arm
