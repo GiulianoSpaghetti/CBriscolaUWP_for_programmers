@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\numer\\source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj": {}
+    "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\numer\\source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj": {
+    "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\numer\\source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
+        "projectUniqueName": "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
         "projectName": "CBriscola For Programmers",
-        "projectPath": "C:\\Users\\numer\\source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
+        "projectPath": "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
         "packagesPath": "C:\\Users\\numer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\numer\\source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\obj\\",
+        "outputPath": "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

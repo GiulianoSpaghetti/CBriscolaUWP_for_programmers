@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>21ae072b-1360-448e-a256-b93094e6c791</PackageIdentityName>
     <PackageIdentityPublisher>CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DAFC21DD7C9A3EA78EBB553022369F4F6857E8D7E4989ABCDCD9185153C322B7</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>AFEFB254FD27022D94CE1066DCE6E90248F24C968153424EF23337FDC605BFC8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>21961GiulioSorrentino.6245445F14426_gzdzm2aja2gcm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>21961GiulioSorrentino.6245445F14426</RegisteredPackageID>
@@ -27,458 +27,458 @@
     <RegisteredVersion>1.0.14.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-10T19:02:41.722</Modified>
+      <Modified>2023-03-20T10:18:55.161</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.801</Modified>
+      <Modified>2023-03-20T09:52:54.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.874</Modified>
+      <Modified>2023-03-20T09:52:54.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.956</Modified>
+      <Modified>2023-03-20T09:52:54.798</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.061</Modified>
+      <Modified>2023-03-20T09:52:54.799</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:34:34.631</Modified>
+      <Modified>2023-03-20T09:52:54.800</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.536</Modified>
+      <Modified>2023-03-20T09:52:54.801</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:17.722</Modified>
+      <Modified>2023-03-20T09:52:54.802</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:17.775</Modified>
+      <Modified>2023-03-20T09:52:54.802</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:17.830</Modified>
+      <Modified>2023-03-20T09:52:54.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:17.886</Modified>
+      <Modified>2023-03-20T09:52:54.804</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:17.984</Modified>
+      <Modified>2023-03-20T09:52:54.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.623</Modified>
+      <Modified>2023-03-20T09:52:54.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.706</Modified>
+      <Modified>2023-03-20T09:52:54.806</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.804</Modified>
+      <Modified>2023-03-20T09:52:54.807</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.937</Modified>
+      <Modified>2023-03-20T09:52:54.809</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.309</Modified>
+      <Modified>2023-03-20T09:52:54.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.062</Modified>
+      <Modified>2023-03-20T09:52:54.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.122</Modified>
+      <Modified>2023-03-20T09:52:54.813</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.180</Modified>
+      <Modified>2023-03-20T09:52:54.814</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.244</Modified>
+      <Modified>2023-03-20T09:52:54.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.346</Modified>
+      <Modified>2023-03-20T09:52:54.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.255</Modified>
+      <Modified>2023-03-20T09:52:54.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.307</Modified>
+      <Modified>2023-03-20T09:52:54.818</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.548</Modified>
+      <Modified>2023-03-20T09:52:54.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.359</Modified>
+      <Modified>2023-03-20T09:52:54.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.413</Modified>
+      <Modified>2023-03-20T09:52:54.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.957</Modified>
+      <Modified>2023-03-20T09:52:54.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.204</Modified>
+      <Modified>2023-03-20T09:52:54.822</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.059</Modified>
+      <Modified>2023-03-20T09:52:54.823</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.110</Modified>
+      <Modified>2023-03-20T09:52:54.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.389</Modified>
+      <Modified>2023-03-20T09:52:54.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.440</Modified>
+      <Modified>2023-03-20T09:52:54.825</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.491</Modified>
+      <Modified>2023-03-20T09:52:54.826</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.555</Modified>
+      <Modified>2023-03-20T09:52:54.826</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.618</Modified>
+      <Modified>2023-03-20T09:52:54.827</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.670</Modified>
+      <Modified>2023-03-20T09:52:54.828</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.721</Modified>
+      <Modified>2023-03-20T09:52:54.829</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:20.009</Modified>
+      <Modified>2023-03-20T09:52:54.829</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.904</Modified>
+      <Modified>2023-03-20T09:52:54.830</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.773</Modified>
+      <Modified>2023-03-20T09:52:54.831</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:19.824</Modified>
+      <Modified>2023-03-20T09:52:54.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.362</Modified>
+      <Modified>2023-03-20T09:52:54.834</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.417</Modified>
+      <Modified>2023-03-20T09:52:54.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.477</Modified>
+      <Modified>2023-03-20T09:52:54.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.539</Modified>
+      <Modified>2023-03-20T09:52:54.836</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:21.618</Modified>
+      <Modified>2023-03-20T09:52:54.837</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.406</Modified>
+      <Modified>2023-03-20T09:52:54.838</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.464</Modified>
+      <Modified>2023-03-20T09:52:54.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.526</Modified>
+      <Modified>2023-03-20T09:52:54.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.597</Modified>
+      <Modified>2023-03-20T09:52:54.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-09T14:30:18.733</Modified>
+      <Modified>2023-03-20T09:52:54.841</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\background.jpg">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\background.jpg">
       <PackagePath>background.jpg</PackagePath>
-      <Modified>2023-03-08T04:40:47.633</Modified>
+      <Modified>2023-03-20T09:52:54.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.dll">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.dll">
       <PackagePath>CBriscola For Programmers.dll</PackagePath>
-      <Modified>2023-03-10T19:02:41.432</Modified>
+      <Modified>2023-03-20T10:18:54.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.exe">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.exe">
       <PackagePath>CBriscola For Programmers.exe</PackagePath>
-      <Modified>2023-03-10T19:02:41.710</Modified>
+      <Modified>2023-03-20T10:18:55.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.pdb">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\CBriscola For Programmers.pdb">
       <PackagePath>CBriscola For Programmers.pdb</PackagePath>
-      <Modified>2023-03-10T19:02:41.707</Modified>
+      <Modified>2023-03-20T10:18:55.150</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
       <Modified>2022-06-10T21:23:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-10T19:02:23.676</Modified>
+      <Modified>2023-03-20T10:18:37.427</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\0.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\0.png">
       <PackagePath>Resources\0.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.588</Modified>
+      <Modified>2023-03-20T09:52:54.856</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\1.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\1.png">
       <PackagePath>Resources\1.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.589</Modified>
+      <Modified>2023-03-20T09:52:54.857</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\10.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\10.png">
       <PackagePath>Resources\10.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.590</Modified>
+      <Modified>2023-03-20T09:52:54.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\11.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\11.png">
       <PackagePath>Resources\11.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.591</Modified>
+      <Modified>2023-03-20T09:52:54.859</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\12.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\12.png">
       <PackagePath>Resources\12.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.592</Modified>
+      <Modified>2023-03-20T09:52:54.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\13.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\13.png">
       <PackagePath>Resources\13.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.593</Modified>
+      <Modified>2023-03-20T09:52:54.862</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\14.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\14.png">
       <PackagePath>Resources\14.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.593</Modified>
+      <Modified>2023-03-20T09:52:54.862</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\15.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\15.png">
       <PackagePath>Resources\15.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.594</Modified>
+      <Modified>2023-03-20T09:52:54.863</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\16.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\16.png">
       <PackagePath>Resources\16.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.595</Modified>
+      <Modified>2023-03-20T09:52:54.864</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\17.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\17.png">
       <PackagePath>Resources\17.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.596</Modified>
+      <Modified>2023-03-20T09:52:54.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\18.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\18.png">
       <PackagePath>Resources\18.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.597</Modified>
+      <Modified>2023-03-20T09:52:54.866</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\19.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\19.png">
       <PackagePath>Resources\19.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.598</Modified>
+      <Modified>2023-03-20T09:52:54.867</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\2.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\2.png">
       <PackagePath>Resources\2.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.598</Modified>
+      <Modified>2023-03-20T09:52:54.868</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\20.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\20.png">
       <PackagePath>Resources\20.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.600</Modified>
+      <Modified>2023-03-20T09:52:54.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\21.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\21.png">
       <PackagePath>Resources\21.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.601</Modified>
+      <Modified>2023-03-20T09:52:54.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\22.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\22.png">
       <PackagePath>Resources\22.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.602</Modified>
+      <Modified>2023-03-20T09:52:54.872</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\23.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\23.png">
       <PackagePath>Resources\23.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.603</Modified>
+      <Modified>2023-03-20T09:52:54.873</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\24.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\24.png">
       <PackagePath>Resources\24.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.604</Modified>
+      <Modified>2023-03-20T09:52:54.874</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\25.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\25.png">
       <PackagePath>Resources\25.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.605</Modified>
+      <Modified>2023-03-20T09:52:54.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\26.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\26.png">
       <PackagePath>Resources\26.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.606</Modified>
+      <Modified>2023-03-20T09:52:54.876</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\27.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\27.png">
       <PackagePath>Resources\27.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.606</Modified>
+      <Modified>2023-03-20T09:52:54.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\28.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\28.png">
       <PackagePath>Resources\28.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.607</Modified>
+      <Modified>2023-03-20T09:52:54.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\29.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\29.png">
       <PackagePath>Resources\29.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.608</Modified>
+      <Modified>2023-03-20T09:52:54.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\3.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\3.png">
       <PackagePath>Resources\3.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.609</Modified>
+      <Modified>2023-03-20T09:52:54.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\30.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\30.png">
       <PackagePath>Resources\30.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.610</Modified>
+      <Modified>2023-03-20T09:52:54.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\31.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\31.png">
       <PackagePath>Resources\31.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.611</Modified>
+      <Modified>2023-03-20T09:52:54.882</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\32.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\32.png">
       <PackagePath>Resources\32.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.611</Modified>
+      <Modified>2023-03-20T09:52:54.882</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\33.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\33.png">
       <PackagePath>Resources\33.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.612</Modified>
+      <Modified>2023-03-20T09:52:54.883</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\34.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\34.png">
       <PackagePath>Resources\34.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.613</Modified>
+      <Modified>2023-03-20T09:52:54.884</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\35.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\35.png">
       <PackagePath>Resources\35.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.614</Modified>
+      <Modified>2023-03-20T09:52:54.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\36.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\36.png">
       <PackagePath>Resources\36.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.615</Modified>
+      <Modified>2023-03-20T09:52:54.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\37.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\37.png">
       <PackagePath>Resources\37.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.616</Modified>
+      <Modified>2023-03-20T09:52:54.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\38.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\38.png">
       <PackagePath>Resources\38.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.616</Modified>
+      <Modified>2023-03-20T09:52:54.888</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\39.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\39.png">
       <PackagePath>Resources\39.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.617</Modified>
+      <Modified>2023-03-20T09:52:54.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\4.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\4.png">
       <PackagePath>Resources\4.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.618</Modified>
+      <Modified>2023-03-20T09:52:54.890</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\5.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\5.png">
       <PackagePath>Resources\5.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.619</Modified>
+      <Modified>2023-03-20T09:52:54.891</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\6.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\6.png">
       <PackagePath>Resources\6.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.620</Modified>
+      <Modified>2023-03-20T09:52:54.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\7.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\7.png">
       <PackagePath>Resources\7.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.620</Modified>
+      <Modified>2023-03-20T09:52:54.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\8.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\8.png">
       <PackagePath>Resources\8.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.621</Modified>
+      <Modified>2023-03-20T09:52:54.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\9.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\9.png">
       <PackagePath>Resources\9.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.622</Modified>
+      <Modified>2023-03-20T09:52:54.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro carte mazzo.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro carte mazzo.png">
       <PackagePath>Resources\retro carte mazzo.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.623</Modified>
+      <Modified>2023-03-20T09:52:54.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro_carte_pc.png">
+    <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\ilc\Resources\retro_carte_pc.png">
       <PackagePath>Resources\retro_carte_pc.png</PackagePath>
-      <Modified>2023-03-08T04:40:47.624</Modified>
+      <Modified>2023-03-20T09:52:54.897</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
