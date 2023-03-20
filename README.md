@@ -14,3 +14,7 @@ Apri l'app Hype, fai il login, seleziona PAGAMENTI, INVIA DENARO, seleziona il m
 
 # Bibliografia
 https://social.msdn.microsoft.com/Forums/vstudio/en-US/2d8a7dab-1bad-4405-b70d-768e4cb2af96/uwp-get-os-version-in-an-uwp-app?forum=wpdevelop
+
+https://stackoverflow.com/questions/60950009/checkbox-content-color-cant-be-set-in-uwp
+
+https://stackoverflow.com/questions/35456324/uwp-how-to-tile-a-background-image
