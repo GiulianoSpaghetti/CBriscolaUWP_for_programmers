@@ -34,6 +34,7 @@ namespace CBriscola_For_Programmers
         public MainPage()
         {
             string s;
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "it-IT";
             this.InitializeComponent();
             SystemNavigationManagerPreview.GetForCurrentView().CloseRequested += Close;
             e = new ElaboratoreCarteBriscola(briscolaPunti);
