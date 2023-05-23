@@ -40,7 +40,7 @@ namespace CBriscola_For_Programmers
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             m = new Mazzo(e);
             Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
-            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Existing);
             s = localSettings.Containers["CBriscola"].Values["numeUtente"] as string;
             if (s == null)
                 s = "numerone";
