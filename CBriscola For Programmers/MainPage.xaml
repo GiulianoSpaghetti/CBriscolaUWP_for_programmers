@@ -77,6 +77,7 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
@@ -95,10 +96,16 @@
                 <CheckBox x:Name="cbAvvisaTallone" Grid.Row="4" Grid.Column="0" IsThreeState="False" Grid.ColumnSpan="3">
                     <TextBlock Style="{ThemeResource CustomTextBlockStyle}">Avvisa quano il tallone finisce</TextBlock>
                 </CheckBox>
-                <Button Content="Accetta" Grid.Row="5" Grid.Column="1" Tapped="OnOpOk_Click" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="6" Grid.Column="0" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button Content="Informazioni" Tapped="OnInfo_Click" Grid.Row="6" Grid.Column="1" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button Content="Elimina Opzioni" Tapped="OnEliminaOpzioni_Click" Grid.Row="6" Grid.Column="2"  Style="{ThemeResource CustomButtonStyle}"/>
+                <TextBlock x:Name="tblivello" Text="Livello" Grid.Row="5" Grid.Column="0" Style="{ThemeResource CustomTextBlockStyle}" />
+                <ListBox x:Name="lblivello" Grid.Row="5" Grid.Column="1">
+                    <ListBoxItem>1</ListBoxItem>
+                    <ListBoxItem>2</ListBoxItem>
+                    <ListBoxItem>3</ListBoxItem>
+                </ListBox>
+                <Button Content="Accetta" Grid.Row="6" Grid.Column="1" Tapped="OnOpOk_Click" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="7" Grid.Column="0" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="Informazioni" Tapped="OnInfo_Click" Grid.Row="7" Grid.Column="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="Elimina Opzioni" Tapped="OnEliminaOpzioni_Click" Grid.Row="7" Grid.Column="2"  Style="{ThemeResource CustomButtonStyle}"/>
             </Grid>
             <Grid x:Name="Greetings" Visibility="Collapsed">
                 <Grid.RowDefinitions>
@@ -114,7 +121,7 @@
                 <TextBlock x:Name="risultato" Text="Hai vinto per 900 punti. Vuoi effettuare una seconda partita?" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{ThemeResource CustomTextBlockStyle}" />
                 <Button Content="Accetta" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
                 <Button Content="Annulla" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button Content="Condividi" Tapped="OnFPShare_Click" Grid.Column="2" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="Condividi" x:Name="btnshare" Tapped="OnFPShare_Click" Grid.Column="2" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
             </Grid>
         </Grid>
     </Page.Content>

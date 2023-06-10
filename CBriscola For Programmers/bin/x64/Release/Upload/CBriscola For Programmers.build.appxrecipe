@@ -876,7 +876,7 @@
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\CBriscola For Programmers.xr.xml">
       <PackagePath>CBriscola For Programmers.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\numer\source\repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\x64\Release\resources.pri">

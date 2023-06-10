@@ -14,6 +14,7 @@ namespace org.altervista.numerone.framework
     public class GiocatoreHelperCpu : GiocatoreHelper
     {
         private readonly Carta briscola;
+        private readonly UInt16 livello;
         private UInt16 GetBriscola(Carta[] mano)
         {
             UInt16 i;
@@ -22,9 +23,10 @@ namespace org.altervista.numerone.framework
                     break;
             return i;
         }
-        public GiocatoreHelperCpu(UInt16 b)
+        public GiocatoreHelperCpu(UInt16 b, UInt16 l)
         {
             briscola = Carta.GetCarta(b);
+            livello = l;
         }
         private UInt16 getSoprataglio(Carta[] mano, Carta c, bool maggiore)
         {
@@ -66,6 +68,15 @@ namespace org.altervista.numerone.framework
         }
         public UInt16 Gioca(UInt16 x, Carta[] mano, UInt16 numeroCarte, Carta c)
         {
+            switch (livello)
+            {
+                case 1: return GiocaLevel0(x, mano, numeroCarte, c); break;
+                case 2: return GiocaLevel1(x, mano, numeroCarte, c); break;
+                default: return GiocaLevel2(x, mano, numeroCarte, c); break;
+            }
+        }
+        public UInt16 GiocaLevel2(UInt16 x, Carta[] mano, UInt16 numeroCarte, Carta c)
+        {
             UInt16 i = (UInt16)ElaboratoreCarteBriscola.r.Next(0, UInt16.MaxValue);
             if (!briscola.StessoSeme(c))
             {
@@ -88,6 +99,31 @@ namespace org.altervista.numerone.framework
             i = 0;
             return i;
         }
+
+        public UInt16 GiocaLevel0(UInt16 x, Carta[] mano, UInt16 numeroCarte, Carta c)
+        {
+            for (UInt16 i = 0; i < mano.Length - 1; i++)
+                if (briscola.StessoSeme(mano[i]))
+                    return i;
+            return 0;
+        }
+
+        public UInt16 GiocaLevel1(UInt16 x, Carta[] mano, UInt16 numeroCarte, Carta c)
+        {
+            UInt16 i = (UInt16)ElaboratoreCarteBriscola.r.Next(0, UInt16.MaxValue);
+            if (!briscola.StessoSeme(c))
+            {
+                if ((i = getSoprataglio(mano, c, true)) < numeroCarte)
+                    return i;
+                else
+                    for (i = 0; i < mano.Length - 1; i++)
+                        if (briscola.StessoSeme(mano[i]))
+                            return i;
+            }
+            i = 0;
+            return i;
+        }
         public void AggiornaPunteggio(ref UInt16 punteggioAttuale, Carta c, Carta c1) { punteggioAttuale = (UInt16)(punteggioAttuale + c.GetPunteggio() + c1.GetPunteggio()); }
+        public UInt16 GetLivello() { return livello; }
     }
 }

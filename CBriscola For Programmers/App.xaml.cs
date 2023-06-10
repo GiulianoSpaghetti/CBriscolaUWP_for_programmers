@@ -33,18 +33,6 @@ namespace CBriscola_For_Programmers
 
         public App()
         {
-            EasClientDeviceInformation eas = new EasClientDeviceInformation();
-            piattaforma = eas.SystemProductName;
-            if (piattaforma == "System Product Name")
-            {
-                ulong version = ulong.Parse(AnalyticsInfo.VersionInfo.DeviceFamilyVersion);
-                ulong major = (version & 0xFFFF000000000000L) >> 48;
-                ulong minor = (version & 0x0000FFFF00000000L) >> 32;
-                ulong build = (version & 0x00000000FFFF0000L) >> 16;
-                ulong revision = (version & 0x000000000000FFFFL);
-                piattaforma = $"Windows {major}.{minor}.{build}.{revision}";
-            }
-
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
