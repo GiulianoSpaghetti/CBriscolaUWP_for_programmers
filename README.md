@@ -5,7 +5,7 @@ La cbriscola con GUI in UWP, per xbox
 
 [![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9NGV8ZD2HN70)
 
-# Come installare l'ulotima versione
+# Come installare l'ultima versione
 
 https://youtu.be/mtWmls265BE
 
