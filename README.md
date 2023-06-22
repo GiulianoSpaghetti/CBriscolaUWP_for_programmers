@@ -5,6 +5,10 @@ La cbriscola con GUI in UWP, per xbox
 
 [![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9NGV8ZD2HN70)
 
+# Come installare l'ulotima versione
+
+https://youtu.be/mtWmls265BE
+
 # Donazioni
 
 [![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
