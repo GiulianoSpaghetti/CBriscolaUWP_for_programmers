@@ -1,1 +1,1 @@
-C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\AppPackages\CBriscola For Programmers_1.0.14.0_Test\CBriscola For Programmers_1.0.14.0_x86_x64_arm_arm64.msixbundle
+C:\Users\numer\Source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\AppPackages\CBriscola For Programmers_1.0.18.0_x64_Test\CBriscola For Programmers_1.0.18.0_x64.msix

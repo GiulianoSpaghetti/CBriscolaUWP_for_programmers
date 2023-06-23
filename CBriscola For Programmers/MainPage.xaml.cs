@@ -396,11 +396,7 @@ namespace CBriscola_For_Programmers
             PuntiUtente.Text = $"Punti di {g.GetNome()}: {g.GetPunteggio()}";
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
-            PuntiCpu.Text = $"Punti di {cpu.GetNome()}: ${cpu.GetPunteggio()}";
-            PuntiUtente.Text = $"Punti di {g.GetNome()}: {g.GetPunteggio()}";
-            NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             NelMazzoRimangono.Visibility = Visibility.Visible;
-            CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             CartaBriscola.Visibility = Visibility.Visible;
             Briscola.Source = briscola.GetImmagine();
             Briscola.Visibility = Visibility.Visible;

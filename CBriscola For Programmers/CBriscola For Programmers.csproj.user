@@ -3,8 +3,8 @@
   <PropertyGroup>
     <AppxShowAllApps>True</AppxShowAllApps>
     <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
-    <AppxBuildConfigurationSelection>x86|x64|arm|arm64</AppxBuildConfigurationSelection>
-    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
     <Source>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</Source>
     <SmallTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</SmallTileSource>
     <MediumTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</MediumTileSource>
@@ -24,8 +24,8 @@
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
+    <RemoteDebugMachine>XBOX</RemoteDebugMachine>
     <AuthenticationMode>Universal</AuthenticationMode>
-    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
   </PropertyGroup>
 </Project>

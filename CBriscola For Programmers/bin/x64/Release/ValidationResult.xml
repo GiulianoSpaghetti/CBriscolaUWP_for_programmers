@@ -1,65 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="it-IT" OVERALL_RESULT="FAIL" VERSION="10.0.22621.755" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.22621.0" OS="Microsoft Windows 11 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="09/03/2023 15:39:09" ID="538bc3c63247d84421957f310022b235">
+<REPORT xml:lang="it-IT" OVERALL_RESULT="FAIL" VERSION="10.0.22000.832" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.22621.0" OS="Microsoft Windows 11 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="16/06/2023 05:55:10" ID="199cf585da451febf596a83f98f0f3ce">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="Distribuzione e avvio - Test" RATIONALE="Errori quali interruzioni o arresti anomali di un'applicazione rappresentano una notevole fonte di frustrazione per gli utenti. L'eliminazione di questi errori migliora la stabilità e l'affidabilità dell'applicazione e garantisce agli utenti una maggiore soddisfazione.">
-      <TEST INDEX="50" NAME="Creazione bytecode" DESCRIPTION="La creazione bytecode dovrebbe riuscire senza problemi nel caso di pacchetti contenenti un'app di Windows Store HTML5." EXECUTIONTIME="00h:00m:01s.18ms" OPTIONAL="FALSE">
+      <TEST INDEX="50" NAME="Creazione bytecode" DESCRIPTION="La creazione bytecode dovrebbe riuscire senza problemi nel caso di pacchetti contenenti un'app di Windows Store HTML5." EXECUTIONTIME="00h:00m:01s.14ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="Avvio versione piattaforma" DESCRIPTION="L'app non dovrebbe utilizzare in modo improprio l'API OSVersionInfo per offrire agli utenti funzionalità specifiche del sistema operativo." EXECUTIONTIME="00h:00m:24s.52ms" OPTIONAL="FALSE">
+      <TEST INDEX="81" NAME="Avvio versione piattaforma" DESCRIPTION="L'app non dovrebbe utilizzare in modo improprio l'API OSVersionInfo per offrire agli utenti funzionalità specifiche del sistema operativo." EXECUTIONTIME="00h:00m:24s.46ms" OPTIONAL="FALSE">
         <MESSAGES>
           <MESSAGE TEXT="Impossibile avviare App" />
           <MESSAGE TEXT="Impossibile avviare App" />
-          <MESSAGE TEXT="L'app 21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm non ha superato il test di avvio della versione della piattaforma." />
+          <MESSAGE TEXT="L'app 21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm non ha superato il test di avvio della versione della piattaforma." />
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="Avvio dell'app" DESCRIPTION="Test all'avvio dell'app." EXECUTIONTIME="00h:00m:18s.33ms" OPTIONAL="FALSE">
+      <TEST INDEX="47" NAME="Avvio dell'app" DESCRIPTION="Test all'avvio dell'app." EXECUTIONTIME="00h:00m:18s.50ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="Arresti anomali e blocchi" DESCRIPTION="Non arrestare o bloccare il sistema in modo anomalo durante il test." EXECUTIONTIME="00h:00m:03s.06ms" OPTIONAL="FALSE">
+      <TEST INDEX="21" NAME="Arresti anomali e blocchi" DESCRIPTION="Non arrestare o bloccare il sistema in modo anomalo durante il test." EXECUTIONTIME="00h:00m:02s.93ms" OPTIONAL="FALSE">
         <MESSAGES>
-          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'eseguibile C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm\CBriscola For Programmers.exe." />
-          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'applicazione 21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm." />
-          <MESSAGE TEXT="Segnalazione errori Windows: creato file con i dettagli dell'arresto anomalo del sistema C:\Users\numer\AppData\Local\Microsoft\AppCertKit\CBriscola For Programmers.exe.26068.dmp che include informazioni aggiuntive." />
+          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'eseguibile C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm\CBriscola For Programmers.exe." />
+          <MESSAGE TEXT="Segnalazione errori Windows ha rilevato un arresto anomalo o un blocco dell'applicazione 21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm." />
+          <MESSAGE TEXT="Segnalazione errori Windows: creato file con i dettagli dell'arresto anomalo del sistema C:\Users\numer\AppData\Local\Microsoft\AppCertKit\CBriscola For Programmers.exe.24144.dmp che include informazioni aggiuntive." />
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Test conformità pacchetto" RATIONALE="Il pacchetto non soddisfa le regole di conformità dello Store.">
-      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.16ms" OPTIONAL="FALSE">
+      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:01s.81ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:01s.77ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali." EXECUTIONTIME="00h:00m:01s.17ms" OPTIONAL="FALSE">
+      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali." EXECUTIONTIME="00h:00m:01s.15ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.18ms" OPTIONAL="FALSE">
+      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.11ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="Spazio dei nomi con restrizioni" DESCRIPTION="Controlla se nel manifesto del pacchetto dell'app viene fatto riferimento a uno spazio dei nomi limitato." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="83" NAME="Spazio dei nomi con restrizioni" DESCRIPTION="Controlla se nel manifesto del pacchetto dell'app viene fatto riferimento a uno spazio dei nomi limitato." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Funzionalità di sicurezza di Windows - Test" RATIONALE="Le applicazioni devono acconsentire esplicitamente alle funzionalità di Sicurezza di Windows.">
-      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:01s.51ms" OPTIONAL="FALSE">
+      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:01s.43ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.36ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.27ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.35ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -71,71 +71,71 @@
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="Risorse del manifesto dell'app - Test" RATIONALE="È necessario definire risorse valide nel file resources.pri per il manifesto di pacchetto app , così come per le specifiche di pacchetto app e lo schema manifesto app.">
-      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
+      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:02s.08ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:02s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Configurazione debug - Test" RATIONALE="L'app non deve installare alcun file binario di debug.">
-      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:01s.50ms" OPTIONAL="FALSE">
+      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:01s.51ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="Test codifica file" RATIONALE="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente.">
-      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:01s.08ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="Test delle funzionalità dell'app" RATIONALE="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento.">
-      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.19ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Convalida dei metadati per Windows Runtime" RATIONALE="I metadati devono essere conformi e coerenti indipendentemente dalla loro origine.">
-      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:09s.61ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:09s.98ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:01s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:00s.84ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.90ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.80ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.89ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.80ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:09s.55ms" OPTIONAL="FALSE">
+      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:09s.94ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.84ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.81ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Test integrità pacchetto" RATIONALE="Convalida dei contenuti del pacchetto dell'app per accertarne la correttezza.">
-      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="FALSE">
+      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:01s.38ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="Verifica struttura di directory supportata" DESCRIPTION="Verificare che la lunghezza del nome di ciascun file nel pacchetto non superi il valore MAX_PATH." EXECUTIONTIME="00h:00m:01s.08ms" OPTIONAL="FALSE">
+      <TEST INDEX="66" NAME="Verifica struttura di directory supportata" DESCRIPTION="Verificare che la lunghezza del nome di ciascun file nel pacchetto non superi il valore MAX_PATH." EXECUTIONTIME="00h:00m:01s.02ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="Test utilizzo risorse" RATIONALE="Le attività in background WinJS devono chiamare close() per liberare le risorse.">
-      <TEST INDEX="68" NAME="Attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:01s.53ms" OPTIONAL="FALSE">
+      <TEST INDEX="68" NAME="Attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -143,12 +143,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="21961GiulioSorrentino.6245445F14426" Type="Application" Source="AppxPackage" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0" Language="1040" InstallDate="" RootDirPath="C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm" Id="0000c6831ea1c82d6790d71f3014babca2f100001004" HiddenArp="false">
+      <Program Name="21961GiulioSorrentino.6245445F14426" Type="Application" Source="AppxPackage" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.16.0" Language="1040" InstallDate="06/16/2023 03:53:30" RootDirPath="C:\Program Files\WindowsApps\21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm" Id="0000c3bb13892948b10d02a38feabcafb1f500001004" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm">
+            <PackageManifest PackageFullName="21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm">
               <Package>
-                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0" ProcessorArchitecture="x64"></Identity>
+                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.16.0" ProcessorArchitecture="x64"></Identity>
                 <PhoneIdentity PhoneProductId="21ae072b-1360-448e-a256-b93094e6c791" PhonePublisherId="00000000-0000-0000-0000-000000000000"></PhoneIdentity>
                 <Properties>
                   <DisplayName>CBriscola for Programmers</DisplayName>
@@ -156,7 +156,7 @@
                   <Logo>Assets\StoreLogo.png</Logo>
                 </Properties>
                 <Dependencies>
-                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                   <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
                   <PackageDependency Name="Microsoft.NET.Native.Framework.2.2" MinVersion="2.2.29512.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
                   <PackageDependency Name="Microsoft.NET.Native.Runtime.2.2" MinVersion="2.2.28604.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
@@ -179,75 +179,48 @@
               </Package>
             </PackageManifest>
             <BundleManifest PackageFamilyName="21961GiulioSorrentino.6245445F14426_gzdzm2aja2gcm">
-              <Bundle SchemaVersion="5.0" IgnorableNamespaces="b4 b5">
-                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.14.0"></Identity>
+              <Bundle SchemaVersion="5.0">
+                <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="1.0.16.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.0.14.0" Architecture="x86" FileName="CBriscola For Programmers_1.0.14.0_x86.msix" Offset="17006040" Size="5187630">
+                  <Package Type="application" Version="1.0.16.0" Architecture="x64" FileName="CBriscola For Programmers_1.0.16.0_x64.msix" Offset="1227533" Size="5290939">
                     <Resources>
                       <Resource Language="IT-IT"></Resource>
                       <Resource Scale="200"></Resource>
                     </Resources>
                     <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.0.14.0" Architecture="x64" FileName="CBriscola For Programmers_1.0.14.0_x64.msix" Offset="11732473" Size="5273466">
-                    <Resources>
-                      <Resource Language="IT-IT"></Resource>
-                      <Resource Scale="200"></Resource>
-                    </Resources>
-                    <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
-                    </Dependencies>
-                  </Package>
-                  <Package Type="application" Version="1.0.14.0" Architecture="arm" FileName="CBriscola For Programmers_1.0.14.0_ARM.msix" Offset="77" Size="5229828">
-                    <Resources>
-                      <Resource Language="IT-IT"></Resource>
-                      <Resource Scale="200"></Resource>
-                    </Resources>
-                    <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
-                    </Dependencies>
-                  </Package>
-                  <Package Type="application" Version="1.0.14.0" Architecture="arm64" FileName="CBriscola For Programmers_1.0.14.0_ARM64.msix" Offset="5230008" Size="5274921">
-                    <Resources>
-                      <Resource Language="IT-IT"></Resource>
-                      <Resource Scale="200"></Resource>
-                    </Resources>
-                    <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
-                    </Dependencies>
-                  </Package>
-                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-100" FileName="CBriscola For Programmers_1.0.14.0_scale-100.msix" Offset="10505036" Size="85794">
+                  <Package Type="resource" Version="1.0.16.0" ResourceId="split.scale-100" FileName="CBriscola For Programmers_1.0.16.0_scale-100.msix" Offset="83" Size="85800" Architecture="neutral">
                     <Resources>
                       <Resource Scale="100"></Resource>
                     </Resources>
                     <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-125" FileName="CBriscola For Programmers_1.0.14.0_scale-125.msix" Offset="10590937" Size="126200">
+                  <Package Type="resource" Version="1.0.16.0" ResourceId="split.scale-125" FileName="CBriscola For Programmers_1.0.16.0_scale-125.msix" Offset="85990" Size="126207" Architecture="neutral">
                     <Resources>
                       <Resource Scale="125"></Resource>
                     </Resources>
                     <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-150" FileName="CBriscola For Programmers_1.0.14.0_scale-150.msix" Offset="10717244" Size="174821">
+                  <Package Type="resource" Version="1.0.16.0" ResourceId="split.scale-150" FileName="CBriscola For Programmers_1.0.16.0_scale-150.msix" Offset="212304" Size="174821" Architecture="neutral">
                     <Resources>
                       <Resource Scale="150"></Resource>
                     </Resources>
                     <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.14.0" ResourceId="split.scale-400" FileName="CBriscola For Programmers_1.0.14.0_scale-400.msix" Offset="10892172" Size="840200">
+                  <Package Type="resource" Version="1.0.16.0" ResourceId="split.scale-400" FileName="CBriscola For Programmers_1.0.16.0_scale-400.msix" Offset="387232" Size="840200" Architecture="neutral">
                     <Resources>
                       <Resource Scale="400"></Resource>
                     </Resources>
                     <Dependencies>
-                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
                 </Packages>
@@ -257,19 +230,19 @@
         </Indicators>
         <StaticProperties>
           <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
-            <File Id="00002e2187f4b0177850a47d14a807f4540eb783d617" Name="CBriscola For Programmers.dll" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="2792960" SizeOfImage="2801664" PeHeaderHash="010143fb3a7e2ee07ad4b1ba35e2de3da43f728285bf" PeChecksum="0" CrcChecksum="3132912539" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="03/09/2023 14:35:46" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\cbriscola for programmers.dll" SigPublisherName="" PeSubsystem="2" PeCharacteristics="8226" Sha256="ccf7d75222ab19a466ada526192b073387c1df7ef15a49688984d7fcd61d2a4e" />
-            <File Id="0000d4c6ecd6b3c1039e01e46cdf91ff0fdb054dbf14" Name="CBriscola For Programmers.exe" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="18944" SizeOfImage="32768" PeHeaderHash="0101727358616bc006d56e59aae32e44b23ffb26647a" PeChecksum="0" CrcChecksum="2196321395" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="03/09/2023 14:35:46" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\cbriscola for programmers.exe" SigPublisherName="" PeSubsystem="2" PeCharacteristics="34" Sha256="ec81765a8355297246e57d03ed8e182a8ad7cae0fe46b6edb7167ebce475e47c" />
-            <File Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" OriginalFileName="t@@productname" InternalName="@.@legalcopyright" Size="66960" SizeOfImage="77824" PeHeaderHash="0101b2eee8ae2562043b5fad7e585f27b7c130e2db83" PeChecksum="70610" CrcChecksum="1729293948" BinProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" BinFileVersion="4.6.31327.1" FileDescription="Ũ¤@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="05/27/2022 16:06:39" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\clrcompression.dll" SigPublisherName="microsoft corporation" PeSubsystem="3" PeCharacteristics="8226" Sha256="b16a75adce8c335ee16b85b9a98307221466710457bf9e60865da91a2798e0fe" />
-            <File Id="0000716f7c2e6147dd0a57a8c5a5e4a5ae88c0f2ce1d" Name="resources.cc0d9266.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="4051851505" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\resources.cc0d9266.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="4dea82ff21173fde1fb84ab8f81d42d2baf0c9a5d90c4948e290a4b08823c85e" />
-            <File Id="0000063b224406a7d3aa97959058e34ddb81d98930db" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="12552" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="358923780" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\resources.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="43b0fb1d9d24093f41033388b7f74dc8e799005fbc88fdbaf8d5758989cb77f6" />
-            <File Id="0000716f7c2e6147dd0a57a8c5a5e4a5ae88c0f2ce1d" Name="S-1-5-21-616099234-1829424360-2890813037-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="4051851505" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.14.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\s-1-5-21-616099234-1829424360-2890813037-1001-mergedresources-0.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="4dea82ff21173fde1fb84ab8f81d42d2baf0c9a5d90c4948e290a4b08823c85e" />
+            <File Id="0000a1430bda340e28b0dba34913394cc89735a47b4a" Name="CBriscola For Programmers.dll" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="2866688" SizeOfImage="2883584" PeHeaderHash="010158fcecd048cc866d4e73f2cdf8032af84e321584" PeChecksum="0" CrcChecksum="3069395597" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="06/16/2023 03:53:02" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\cbriscola for programmers.dll" SigPublisherName="" PeSubsystem="2" PeCharacteristics="8226" Sha256="4eb6b6bb59bcf68082b5486fad5e77202333713dd330fa815e4c30018e336423" />
+            <File Id="00008563d9f40a11e57656af1142637f5f952b843893" Name="CBriscola For Programmers.exe" ProductName="cbriscola for programmers" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" OriginalFileName="cbriscola for programmers.exe" InternalName="cbriscola for programmers.exe" Size="18944" SizeOfImage="32768" PeHeaderHash="0101775b9fdd49888cf274f2b2787cc07000a8e6a619" PeChecksum="0" CrcChecksum="92277368" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="cbriscola for programmers" LegalCopyright="copyright ©  2023" LinkDate="06/16/2023 03:53:02" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\cbriscola for programmers.exe" SigPublisherName="" PeSubsystem="2" PeCharacteristics="34" Sha256="207f428178b945e4e9dfcfa586bc1c08a7eadcc0320038f456d9474cfdbc270d" />
+            <File Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" OriginalFileName="t@@productname" InternalName="@.@legalcopyright" Size="66960" SizeOfImage="77824" PeHeaderHash="0101b2eee8ae2562043b5fad7e585f27b7c130e2db83" PeChecksum="70610" CrcChecksum="1729293948" BinProductVersion="4.6.31327.01 @builtby: dlab14-fd304bc8c000001 @branch: release/uwp6.2-msrc @srccode: https://github.com/dotnet/corefx/tree/53eb6703edaf54d3b3f8eb2911325824b010049b" BinFileVersion="4.6.31327.1" FileDescription="Ũ¤@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="05/27/2022 16:06:39" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\clrcompression.dll" SigPublisherName="microsoft corporation" PeSubsystem="3" PeCharacteristics="8226" Sha256="b16a75adce8c335ee16b85b9a98307221466710457bf9e60865da91a2798e0fe" />
+            <File Id="00001a2a02ad027911b928f32ed08bfe51853acffcd2" Name="resources.76fd5365.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1286159567" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\resources.76fd5365.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="78d03b86401405dce1076a0046e5cc906d854366a527d482b51988871a6e507b" />
+            <File Id="0000bfb734a63f590f15cffcd7a9aa9e086f9c0f5b75" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="13008" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1908911284" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\resources.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="c2ac1023521f37deaa83a94d5baebb00e933b1c9c10d542d377ba68a20014d43" />
+            <File Id="00001a2a02ad027911b928f32ed08bfe51853acffcd2" Name="S-1-5-21-677074330-2698342896-3363528075-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" OriginalFileName="" InternalName="" Size="5144" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1286159567" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\21961giuliosorrentino.6245445f14426_1.0.16.0_x64__gzdzm2aja2gcm\microsoft.system.package.metadata\s-1-5-21-677074330-2698342896-3363528075-1001-mergedresources-0.pri" SigPublisherName="" PeSubsystem="0" PeCharacteristics="0" Sha256="78d03b86401405dce1076a0046e5cc906d854366a527d482b51988871a6e507b" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000c6831ea1c82d6790d71f3014babca2f100000904" AnalysisVersion="1.80" DictionaryVersion="3.7" Type="Package" Id="21961GiulioSorrentino.6245445F14426_1.0.14.0_x64__gzdzm2aja2gcm">
+    <AitStaticAnalysis ProgramId="0000c3bb13892948b10d02a38feabcafb1f500000904" AnalysisVersion="1.80" DictionaryVersion="3.7" Type="Package" Id="21961GiulioSorrentino.6245445F14426_1.0.16.0_x64__gzdzm2aja2gcm">
       <AitFile ErrorCode="0" Name="clrcompression.dll" Id="000013040480ffdf1fa744af0880d6bd6e4bb473dc0a">
         <AitCategory Id="Com">
           <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
@@ -284,10 +257,12 @@
           <AitFeature Name="kernel32.dll!QueryPerformanceCounter" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="CBriscola For Programmers.dll" Id="00002e2187f4b0177850a47d14a807f4540eb783d617">
+      <AitFile ErrorCode="0" Name="CBriscola For Programmers.exe" Id="00008563d9f40a11e57656af1142637f5f952b843893" />
+      <AitFile ErrorCode="0" Name="CBriscola For Programmers.dll" Id="0000a1430bda340e28b0dba34913394cc89735a47b4a">
         <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000008}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000013}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000002}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000024}" />
           <AitFeature Name="{00000000-0000-0000-0000-000000000028}" />
           <AitFeature Name="{00000001-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
@@ -304,12 +279,15 @@
           <AitFeature Name="{05b487c2-3830-5d3c-98da-25fa11542dbd}" />
           <AitFeature Name="{06386a7a-e009-5b0b-ab68-a8e48b516647}" />
           <AitFeature Name="{06499997-f7b4-45fe-b763-7577d1d3cb4a}" />
+          <AitFeature Name="{08add66d-0e2e-43a0-aeca-8faa94b9d017}" />
           <AitFeature Name="{09223e5a-75be-4499-8180-1ddc005421c0}" />
           <AitFeature Name="{0c079e55-13fe-4d03-a61d-e12f06567286}" />
           <AitFeature Name="{0c3f6433-66b6-5544-8b9b-8904f4055e92}" />
           <AitFeature Name="{0c44717b-19f7-48d6-b046-cf22826eaa74}" />
           <AitFeature Name="{0c456061-52cf-43fa-82f8-07f137351e5a}" />
           <AitFeature Name="{0c5a605f-a7f1-5030-a179-9fd363caf3b5}" />
+          <AitFeature Name="{0c92712d-1bc9-4931-8cb1-1aeadf1cc685}" />
+          <AitFeature Name="{0ce21ee7-4f76-4dd9-bf91-163beccf84bc}" />
           <AitFeature Name="{0d81405a-9bd3-5e87-82f4-9b4128a887eb}" />
           <AitFeature Name="{0d82bd8d-fe62-5d67-a7b9-7886dd75bc4e}" />
           <AitFeature Name="{0db89161-20d7-45df-9122-ba89576703ba}" />
@@ -318,10 +296,12 @@
           <AitFeature Name="{0e629ec4-2206-4c8b-94ae-bdb66a4ebfd1}" />
           <AitFeature Name="{0e971360-df74-4bce-84cb-bd1181ac0a71}" />
           <AitFeature Name="{10406ad6-b090-4a4a-b2ad-d682df27130f}" />
+          <AitFeature Name="{105139a1-dcb8-5f65-97ef-cb1bf0b75f9d}" />
           <AitFeature Name="{10d0b04e-bfe4-42cb-823c-3fecd8770ef8}" />
           <AitFeature Name="{1115b13c-25d2-480b-89dc-eb3dcbd6b7fa}" />
           <AitFeature Name="{11c1dff7-36c2-4102-b2ef-0217a97289b3}" />
           <AitFeature Name="{13624f8d-85cc-5780-a78d-64dba58f2c3c}" />
+          <AitFeature Name="{14ead768-34b2-4b97-bf3c-e8d73230a2aa}" />
           <AitFeature Name="{15154935-28ea-4727-88e9-c58680e2d118}" />
           <AitFeature Name="{1589a2ab-3d15-49bc-a447-8a5448e58870}" />
           <AitFeature Name="{159782ba-798d-5ae6-85c7-c7bb551aae61}" />
@@ -371,6 +351,7 @@
           <AitFeature Name="{2ab1a205-1e73-4bcf-aabc-57b97e21961d}" />
           <AitFeature Name="{2bf27008-2eb4-5675-b1cd-e9906cc5ce64}" />
           <AitFeature Name="{2c847c85-781e-49f7-9fef-b9e14d014707}" />
+          <AitFeature Name="{2d161777-a66f-4ea5-bb87-793ffa4941f2}" />
           <AitFeature Name="{2d162925-5966-4bfa-8638-4d345689f6cf}" />
           <AitFeature Name="{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2}" />
           <AitFeature Name="{304238b6-888a-5dd2-96cd-bfca8927483b}" />
@@ -382,6 +363,7 @@
           <AitFeature Name="{31e8aed8-8141-4f99-bc0a-c4ed21297d77}" />
           <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
           <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
+          <AitFeature Name="{33f59b01-5325-43ab-9ab3-bdae440e4121}" />
           <AitFeature Name="{34f34b77-ec52-5eb6-affc-220cb52ca093}" />
           <AitFeature Name="{354389c6-7c01-4bd5-9c20-604340cd2b74}" />
           <AitFeature Name="{35aac87a-62ee-4d3e-a24c-2bc8432d68b7}" />
@@ -390,6 +372,7 @@
           <AitFeature Name="{38b4535c-2785-5122-96fe-d44f795b9cb2}" />
           <AitFeature Name="{38ef4b0f-14f8-42df-9a1e-a4bcc4af77f4}" />
           <AitFeature Name="{398c4183-793d-5b00-819b-4aef92485e94}" />
+          <AitFeature Name="{39ad7708-254e-560a-9e2e-73b1db31f935}" />
           <AitFeature Name="{39c6ec9a-ae6e-46f9-a07a-cfc23f88733e}" />
           <AitFeature Name="{3ab70e85-d508-4477-b6f8-0e435701c836}" />
           <AitFeature Name="{3b415733-48f2-58b0-9884-6f0d0e35dc1a}" />
@@ -409,6 +392,8 @@
           <AitFeature Name="{42e26ae1-d357-57e8-bb48-f75c9ff69d91}" />
           <AitFeature Name="{430ecece-1418-5d19-81b2-5ddb381603cc}" />
           <AitFeature Name="{43929d18-5ec9-4b5a-919c-4205b0c804b6}" />
+          <AitFeature Name="{4398b8d4-a3de-402c-b23d-190384b27ca8}" />
+          <AitFeature Name="{43c13323-6edf-4e4b-b6b2-3a93eec41d95}" />
           <AitFeature Name="{43e29f53-0298-55aa-a6c8-4edd323d9598}" />
           <AitFeature Name="{44a9796f-723e-4fdf-a218-033e75b0c084}" />
           <AitFeature Name="{4669befc-ae5c-52b1-8a97-5466ce61e94e}" />
@@ -433,6 +418,7 @@
           <AitFeature Name="{4f33a9a0-5cf4-47a4-b16f-d7faaf17457e}" />
           <AitFeature Name="{4f8ad0d6-06e6-5c3d-b253-8e23991f4e80}" />
           <AitFeature Name="{4fa6aabb-3f4b-4301-be07-1172ea61eefb}" />
+          <AitFeature Name="{4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f}" />
           <AitFeature Name="{50850b26-267e-451b-a890-ab6a370245ee}" />
           <AitFeature Name="{50ac103f-d235-4598-bbef-98fe4d1a3ad4}" />
           <AitFeature Name="{50c332f2-58d1-5228-a3a9-1ccbded70537}" />
@@ -440,7 +426,7 @@
           <AitFeature Name="{52c9428b-d37a-554d-bf55-b8685d5f552d}" />
           <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
-          <AitFeature Name="{54dfd981-1968-4ca3-b958-e595d16505eb}" />
+          <AitFeature Name="{541c8d6c-0283-4581-b945-2a64c28a0646}" />
           <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{5871821a-2491-5cec-a457-21996ca4efaf}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
@@ -464,6 +450,7 @@
           <AitFeature Name="{60141efb-f2f9-5377-96fd-f8c60d9558b5}" />
           <AitFeature Name="{603e88e4-a338-4ffe-a457-a5cfb9ceb899}" />
           <AitFeature Name="{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3}" />
+          <AitFeature Name="{60cdfda2-2f44-444b-9c94-b8c9fda46f59}" />
           <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
           <AitFeature Name="{61107067-2cfb-5de1-92b6-d332c17f756e}" />
           <AitFeature Name="{62225981-7a0d-5d38-8088-7c6bb6d959be}" />
@@ -479,16 +466,19 @@
           <AitFeature Name="{68e0e810-f6ea-42bc-855b-5d9b67e6a262}" />
           <AitFeature Name="{68ea500b-3fe9-4735-b6a0-e7601933b089}" />
           <AitFeature Name="{69145cd4-199a-4657-9e57-e99e8f136712}" />
+          <AitFeature Name="{69f90679-3a11-4fe7-b4df-2a0139d4018b}" />
           <AitFeature Name="{6a8c9209-6392-5b08-aee9-f2add7decc49}" />
           <AitFeature Name="{6be9e7d7-e83a-5cbc-802c-1768960b52c3}" />
           <AitFeature Name="{6c3fb5fc-8e84-4c91-ac15-04a1d885500f}" />
           <AitFeature Name="{6c4fc188-95bc-4261-9ec5-21cab677b734}" />
           <AitFeature Name="{6cd0e74e-ee65-4489-9ebf-ca43e87ba637}" />
           <AitFeature Name="{6dcc9c03-e0c7-4eee-8ea9-37e3406eeb1c}" />
+          <AitFeature Name="{6dda119e-9a74-478f-a339-5bb52de6c51e}" />
           <AitFeature Name="{6e137874-dd39-5b4f-a7ec-2ea69e4c2229}" />
           <AitFeature Name="{704b4ec9-0373-506c-8af3-57e9245f1c4e}" />
           <AitFeature Name="{710e4278-8529-47d3-8d8e-307e34cff081}" />
           <AitFeature Name="{712e1447-a302-58ca-8cf7-c3b9b4ba67ec}" />
+          <AitFeature Name="{71ca300b-b89e-4184-b0df-a9e95447de8d}" />
           <AitFeature Name="{72284824-db8c-42f8-b08c-53ff357dad82}" />
           <AitFeature Name="{7230269c-054e-4cf3-86c5-be90eb6863d5}" />
           <AitFeature Name="{72827082-5525-4bf2-bc09-1f5095d4964d}" />
@@ -499,6 +489,7 @@
           <AitFeature Name="{74b861a1-7487-46a9-9a6e-c78b512726c5}" />
           <AitFeature Name="{751b792e-5772-4488-8b87-f547faa64474}" />
           <AitFeature Name="{75927b93-03f3-41ec-91d3-6e5bac1b38e7}" />
+          <AitFeature Name="{75b40847-0a4c-4a92-9565-fd63c95f7aed}" />
           <AitFeature Name="{75d6a78f-a302-4489-9898-24ea49182910}" />
           <AitFeature Name="{761ce752-73c1-4f44-be75-43c49ec0d4d5}" />
           <AitFeature Name="{76358cfd-2cbd-525b-a49e-90ee18247b71}" />
@@ -511,6 +502,7 @@
           <AitFeature Name="{79f577f8-0de7-48cd-9740-9b370490c838}" />
           <AitFeature Name="{7a7b2a51-c182-5846-a861-4f9c036f24ad}" />
           <AitFeature Name="{7ab93c52-0e48-4750-ba9d-1a4113981847}" />
+          <AitFeature Name="{7b81c56a-0985-518d-baa9-0da9ae009f65}" />
           <AitFeature Name="{7bd1cf54-23cf-4cce-b2f5-4ce78d96896e}" />
           <AitFeature Name="{7c63d2e5-7a0e-4e12-b96a-7715aa6ff1c8}" />
           <AitFeature Name="{7da68e21-0b8f-4f9f-a143-f8e7780136a2}" />
@@ -542,6 +534,7 @@
           <AitFeature Name="{905a0fe6-bc53-11df-8c49-001e4fc686da}" />
           <AitFeature Name="{9274e6bd-49a1-4958-beee-d0e19587b6e3}" />
           <AitFeature Name="{92c3102f-a327-5318-a6c1-76f6b2a0abfb}" />
+          <AitFeature Name="{92ec9252-8ee3-55d6-84b4-30b635077778}" />
           <AitFeature Name="{93328409-4ea1-4afa-83dc-0c4e73e88bb1}" />
           <AitFeature Name="{93a956ae-1d7f-438b-b7b8-227d96b609c0}" />
           <AitFeature Name="{93bbe361-be5a-4ee3-b4a3-95118dc97a89}" />
@@ -568,6 +561,7 @@
           <AitFeature Name="{a0f49f5f-c366-569a-895a-3a82d8801fe4}" />
           <AitFeature Name="{a19f7ba8-d8cd-5df2-ab44-fefd26644484}" />
           <AitFeature Name="{a1e254d8-a446-4a27-9a9d-a0f59e1258a5}" />
+          <AitFeature Name="{a21a8189-26b0-4676-ae94-54041bc125e8}" />
           <AitFeature Name="{a26dd1dc-cd44-435c-be94-01d6241c231c}" />
           <AitFeature Name="{a391d09b-4a99-4b7c-9d8d-6fa5d01f6fbf}" />
           <AitFeature Name="{a50a4bbd-8361-469c-90da-e9a40c7474df}" />
@@ -577,12 +571,15 @@
           <AitFeature Name="{a6612fb6-7688-4ace-95fb-359538e7aa01}" />
           <AitFeature Name="{a66ea09c-31b4-43b0-b5dd-7a40e85363b1}" />
           <AitFeature Name="{a69fc352-da66-404c-823f-5358594e70bb}" />
+          <AitFeature Name="{a72c6b01-2e3c-57b5-9ec4-948f6c6d930a}" />
           <AitFeature Name="{a73ded29-b4ae-4a81-be85-e690ba0d3b6e}" />
           <AitFeature Name="{a785be1d-159e-53ad-9553-598b03dca048}" />
           <AitFeature Name="{a7a69ec9-ea35-4679-bf29-f4f09286d314}" />
+          <AitFeature Name="{a8076aa8-f892-49f6-8cd2-89addaf06d2d}" />
           <AitFeature Name="{a819f3de-60aa-5159-8407-f0a7fb1f6832}" />
           <AitFeature Name="{a856e674-b0b6-4bc3-bba8-1ba06e40d4b5}" />
           <AitFeature Name="{a8912263-2951-4f58-a9c5-5a134eaa7f07}" />
+          <AitFeature Name="{a8c9544b-7078-5316-beb6-d9ec916ab88a}" />
           <AitFeature Name="{a8d8a409-9130-5e14-8426-0782aaf01608}" />
           <AitFeature Name="{a907d496-46a0-4cd7-8dbe-f9a581df60b1}" />
           <AitFeature Name="{a96d83d7-9371-4517-9245-d0824ac12c74}" />
@@ -605,9 +602,11 @@
           <AitFeature Name="{b0d63b78-78ad-5e31-b6d8-e32a0e16c447}" />
           <AitFeature Name="{b12b1d5a-6419-4e16-b212-a45336b75778}" />
           <AitFeature Name="{b186cda2-5d46-4bcd-a811-269ad15b3aee}" />
+          <AitFeature Name="{b196e222-ca0e-48a9-83bc-36ce50566ac7}" />
           <AitFeature Name="{b27004bb-c014-5dce-9a21-799c5a3c1461}" />
           <AitFeature Name="{b30c3e3a-df8d-44a5-9a38-7ac0d08ce63d}" />
           <AitFeature Name="{b3765d69-68a5-4b32-8861-fdb90c1f5836}" />
+          <AitFeature Name="{b423a801-d35e-56b9-813b-00889536cb98}" />
           <AitFeature Name="{b440c7c3-02b4-4980-9342-25dae1c0f188}" />
           <AitFeature Name="{b4c1e3ac-8768-5b9d-a661-f63330b8507b}" />
           <AitFeature Name="{b56a6076-19e2-50c1-930f-825bfc39635c}" />
@@ -618,6 +617,7 @@
           <AitFeature Name="{b6aa9834-6691-44d1-bdf7-58820c27b0d0}" />
           <AitFeature Name="{b6b53bf8-1ac8-51c4-bafc-95f8e01637b0}" />
           <AitFeature Name="{b6f0c4ad-4d39-49e6-bb91-d924eefd8538}" />
+          <AitFeature Name="{b8770535-6a4b-52b1-b578-f3cdc5007a1f}" />
           <AitFeature Name="{b97f7f68-c29b-4c99-a1c3-952619d6e720}" />
           <AitFeature Name="{b9ac0e9e-5b32-52b7-a8f9-b85e4be14b16}" />
           <AitFeature Name="{b9c7e0f2-50b7-441d-990c-68553e2e056b}" />
@@ -641,14 +641,17 @@
           <AitFeature Name="{c211026e-9e63-5452-ba54-3a07d6a96874}" />
           <AitFeature Name="{c229f252-dede-5d42-a01a-8479d56a7d2f}" />
           <AitFeature Name="{c246ff23-d80d-44de-8db9-0d815e269ac0}" />
+          <AitFeature Name="{c2dd082f-8cb4-51d6-b91b-7e2377780cee}" />
           <AitFeature Name="{c3da6fb7-b744-4b45-b0b8-223a0938d0dc}" />
           <AitFeature Name="{c4a9f225-9db7-4a7d-b6d1-f74edb9293c2}" />
           <AitFeature Name="{c4b27075-e641-453e-824d-012fc7cf95cf}" />
           <AitFeature Name="{c541f58c-43a9-4216-b718-e0b11b14e93e}" />
           <AitFeature Name="{c5aefd1e-f467-40ba-8566-ab640a441e1d}" />
           <AitFeature Name="{c602b59e-0a8e-5e99-b478-2b564585278d}" />
+          <AitFeature Name="{c79bb41b-a084-4301-a496-72971f364ed1}" />
           <AitFeature Name="{c81c2720-5c52-4bbe-a199-2b1e34f00f70}" />
           <AitFeature Name="{c9132978-4810-4e5e-8087-03671ee60d85}" />
+          <AitFeature Name="{c972d2dc-b609-4758-851e-a799c21de97d}" />
           <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
           <AitFeature Name="{ca40b21b-aeb1-5a61-9e08-3bd5d9594023}" />
           <AitFeature Name="{caf8608f-13ff-42fb-866d-22206434cc6b}" />
@@ -661,7 +664,9 @@
           <AitFeature Name="{cfe9cd97-c718-4091-b7dd-adf1c072b1e1}" />
           <AitFeature Name="{d06eb1c7-3805-4ecb-b757-6cf15e26fef3}" />
           <AitFeature Name="{d09b688f-402a-5b3f-b552-1ffa23116952}" />
+          <AitFeature Name="{d1113f67-d8c1-4ae4-98f0-d8504502f08b}" />
           <AitFeature Name="{d11739e6-2995-5d33-bfff-51b6041f68c1}" />
+          <AitFeature Name="{d1db340f-1bc4-4ca8-bcf7-770bff9b27ab}" />
           <AitFeature Name="{d1f276c4-98d8-4636-bf49-eb79507548e9}" />
           <AitFeature Name="{d20e4c28-f18b-491a-9a45-f1a04a9369a4}" />
           <AitFeature Name="{d211d7c6-b231-5857-8ebe-5dcc576e3c94}" />
@@ -679,28 +684,36 @@
           <AitFeature Name="{da007e54-b3c2-4b9a-aa8e-d3f071262b97}" />
           <AitFeature Name="{da628f0a-9752-49e2-bde2-49eccab9194d}" />
           <AitFeature Name="{dacbffdc-68ef-5fd0-b657-782d0ac9807e}" />
+          <AitFeature Name="{daf77a4f-c27a-4298-9ac6-2922c45e7da6}" />
           <AitFeature Name="{db5cd2b9-d3b4-558c-c64e-0434fd1bd889}" />
           <AitFeature Name="{dc8f368b-eccc-498e-b139-91142254d7ae}" />
           <AitFeature Name="{dd28ff94-d11e-5ae7-b819-6177c1599313}" />
+          <AitFeature Name="{dd33fd5b-a24d-5a44-91fe-dd6441770103}" />
           <AitFeature Name="{dd9ff16a-4b62-4a6c-a49d-0671ef6136be}" />
           <AitFeature Name="{df22abb2-10cf-491e-91e8-d3cd72d8a0d3}" />
           <AitFeature Name="{df945151-745c-4446-b2fc-216d765847a0}" />
           <AitFeature Name="{dfa149ac-1849-445e-937c-40a9590cc076}" />
           <AitFeature Name="{dfa2dc9c-1a2d-4917-98f2-939af1d6e0c8}" />
           <AitFeature Name="{e194c96a-d8cc-4339-a0e1-2e9c420879ec}" />
+          <AitFeature Name="{e1a05352-5aa0-42ca-9cd9-068a14db6e68}" />
+          <AitFeature Name="{e1d2b910-18c2-5906-8f8a-d62a63f93f18}" />
           <AitFeature Name="{e20debc6-dc4e-542e-a2e7-a24d19c8dd62}" />
           <AitFeature Name="{e2663f37-2e1b-500c-ad68-c3ed7a8f74c8}" />
+          <AitFeature Name="{e30eb3a5-b36b-42dc-8527-cd25136c083c}" />
           <AitFeature Name="{e405ef19-d0df-43da-ace6-16f9113868c3}" />
           <AitFeature Name="{e4385929-c004-4bcf-8970-359486e39f88}" />
           <AitFeature Name="{e48f5a8b-1dff-4352-a1f4-e516514ec882}" />
           <AitFeature Name="{e521c894-2c26-5946-9e61-2b5e188d01ed}" />
           <AitFeature Name="{e609698d-6aab-5adc-8b3f-a852f9e56fd0}" />
+          <AitFeature Name="{e63de42b-53c3-5e07-90d3-98172d545412}" />
           <AitFeature Name="{e6f2fef0-0712-487f-b313-f300b8d79aa1}" />
           <AitFeature Name="{e7141e0a-04b8-4fc5-a4dc-195392e57807}" />
           <AitFeature Name="{e7bed191-0bb9-4189-8394-31761b476fd7}" />
           <AitFeature Name="{e80d3d9d-96c9-579e-8e42-d550700de925}" />
           <AitFeature Name="{e827e8b9-08d9-4a8e-a0ac-fe5ed3cbbbd3}" />
+          <AitFeature Name="{e83b0062-d776-4f92-baea-40e77d4791d5}" />
           <AitFeature Name="{e98babe7-f6ff-444c-9c0d-277eaf0ad9c0}" />
+          <AitFeature Name="{e9f3b9ff-8e91-4ecf-a707-c927f694f881}" />
           <AitFeature Name="{ea0fe405-d432-5ac7-9ef8-5a65e1f97d7e}" />
           <AitFeature Name="{ea1f89c7-ebf5-4ab8-88f7-680d821dac61}" />
           <AitFeature Name="{ea79a752-f7c2-4265-b1bd-c4dec4e4f080}" />
@@ -710,21 +723,26 @@
           <AitFeature Name="{ecae8ccd-8e5e-4fbe-9846-30a6370afcdf}" />
           <AitFeature Name="{ecc4b13b-146c-5963-b8b3-024c5b9b95e4}" />
           <AitFeature Name="{eccb574a-c684-5572-a679-6b0842cfb57f}" />
+          <AitFeature Name="{ed1165e6-f377-5b00-8172-93c1bd04deb4}" />
           <AitFeature Name="{ed2d1d9b-26ec-5be7-a8a3-56458933d25f}" />
           <AitFeature Name="{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}" />
           <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
           <AitFeature Name="{f3864c10-14a4-5516-b1d9-63b6579429b1}" />
+          <AitFeature Name="{f45db3d3-7299-57ce-a73e-297cf0af3083}" />
+          <AitFeature Name="{f4a91dd8-d979-4381-8652-bda0342a765e}" />
           <AitFeature Name="{f4b40e52-642f-4629-a54a-ea5d2349c448}" />
           <AitFeature Name="{f632e1c6-0a3f-4574-9fef-cdc151765674}" />
           <AitFeature Name="{f66c6bd3-55b4-5bbb-b82a-6d9ce383091a}" />
           <AitFeature Name="{f6790987-e6e5-47f2-92c6-eccce4ba159a}" />
           <AitFeature Name="{f67cf363-a53d-4d94-ae2c-67232d93acdd}" />
+          <AitFeature Name="{f691cab2-77ad-4d3d-a51c-8ef9c3836456}" />
           <AitFeature Name="{f6d1f700-49c2-52ae-8154-826f9908773c}" />
           <AitFeature Name="{f7168c00-1432-462a-9405-38f385bfc37c}" />
           <AitFeature Name="{f722dcc2-9827-403d-aaed-ecca9ac17398}" />
           <AitFeature Name="{f744d97b-9988-44fb-abd6-5378844cfa8b}" />
           <AitFeature Name="{f7f1b229-f024-467f-970a-7e705615db7b}" />
           <AitFeature Name="{f7f3a506-1e87-42d6-bcfb-b8c809fa5494}" />
+          <AitFeature Name="{f80dc964-2542-5c6a-ba65-b04824b5ed75}" />
           <AitFeature Name="{f88345f8-e0a3-4be2-b90c-dc20e6d8beb0}" />
           <AitFeature Name="{f9f683c7-d789-472b-aa93-6d4105e6dabe}" />
           <AitFeature Name="{fa002c1a-494e-46cf-91d4-e14a8d798674}" />
@@ -746,11 +764,15 @@
           <AitFeature Name="{01e9a621-4a64-4ed9-954f-9edeb07bd903}" />
           <AitFeature Name="{02ee93d4-448e-469e-9799-0a8a1f70f171}" />
           <AitFeature Name="{04124b20-82c6-4229-b109-fd9ed4662b53}" />
+          <AitFeature Name="{05880b99-8247-441b-a996-a1784bab79a8}" />
           <AitFeature Name="{06499997-f7b4-45fe-b763-7577d1d3cb4a}" />
+          <AitFeature Name="{08add66d-0e2e-43a0-aeca-8faa94b9d017}" />
           <AitFeature Name="{09223e5a-75be-4499-8180-1ddc005421c0}" />
           <AitFeature Name="{0c079e55-13fe-4d03-a61d-e12f06567286}" />
           <AitFeature Name="{0c44717b-19f7-48d6-b046-cf22826eaa74}" />
           <AitFeature Name="{0c456061-52cf-43fa-82f8-07f137351e5a}" />
+          <AitFeature Name="{0c92712d-1bc9-4931-8cb1-1aeadf1cc685}" />
+          <AitFeature Name="{0ce21ee7-4f76-4dd9-bf91-163beccf84bc}" />
           <AitFeature Name="{0db89161-20d7-45df-9122-ba89576703ba}" />
           <AitFeature Name="{0e18aeee-5f2e-44ea-8513-d3875c0a7513}" />
           <AitFeature Name="{0e1ebbd4-a003-4936-8175-f5457c07f0c6}" />
@@ -760,6 +782,7 @@
           <AitFeature Name="{10d0b04e-bfe4-42cb-823c-3fecd8770ef8}" />
           <AitFeature Name="{1115b13c-25d2-480b-89dc-eb3dcbd6b7fa}" />
           <AitFeature Name="{11c1dff7-36c2-4102-b2ef-0217a97289b3}" />
+          <AitFeature Name="{14ead768-34b2-4b97-bf3c-e8d73230a2aa}" />
           <AitFeature Name="{15154935-28ea-4727-88e9-c58680e2d118}" />
           <AitFeature Name="{1589a2ab-3d15-49bc-a447-8a5448e58870}" />
           <AitFeature Name="{163c792f-bd75-413c-bf23-b1fe7b95d825}" />
@@ -791,6 +814,7 @@
           <AitFeature Name="{29fed85d-3d22-43a1-add0-17027c08b212}" />
           <AitFeature Name="{2ab1a205-1e73-4bcf-aabc-57b97e21961d}" />
           <AitFeature Name="{2c847c85-781e-49f7-9fef-b9e14d014707}" />
+          <AitFeature Name="{2d161777-a66f-4ea5-bb87-793ffa4941f2}" />
           <AitFeature Name="{2d162925-5966-4bfa-8638-4d345689f6cf}" />
           <AitFeature Name="{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2}" />
           <AitFeature Name="{3124d025-04a7-4d45-825e-8204a624dbf4}" />
@@ -800,6 +824,8 @@
           <AitFeature Name="{31e8aed8-8141-4f99-bc0a-c4ed21297d77}" />
           <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
           <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
+          <AitFeature Name="{33f349a4-3fa1-4986-aa4b-057420455e6d}" />
+          <AitFeature Name="{33f59b01-5325-43ab-9ab3-bdae440e4121}" />
           <AitFeature Name="{354389c6-7c01-4bd5-9c20-604340cd2b74}" />
           <AitFeature Name="{35aac87a-62ee-4d3e-a24c-2bc8432d68b7}" />
           <AitFeature Name="{38b1ed92-a28a-4972-93df-f4f759b8afd2}" />
@@ -816,6 +842,8 @@
           <AitFeature Name="{4207a996-ca2f-42f7-bde8-8b10457a7f30}" />
           <AitFeature Name="{42618e0a-1cb6-46fb-8374-0aec68aa5e51}" />
           <AitFeature Name="{43929d18-5ec9-4b5a-919c-4205b0c804b6}" />
+          <AitFeature Name="{4398b8d4-a3de-402c-b23d-190384b27ca8}" />
+          <AitFeature Name="{43c13323-6edf-4e4b-b6b2-3a93eec41d95}" />
           <AitFeature Name="{43ebfe53-89ae-5c1e-a279-3aecfe9b6f54}" />
           <AitFeature Name="{44a9796f-723e-4fdf-a218-033e75b0c084}" />
           <AitFeature Name="{46e34db2-77c0-4015-8eb4-92eefdfc5914}" />
@@ -832,11 +860,12 @@
           <AitFeature Name="{4e6a4b75-43dd-4e33-acbe-2d8796a17927}" />
           <AitFeature Name="{4f33a9a0-5cf4-47a4-b16f-d7faaf17457e}" />
           <AitFeature Name="{4fa6aabb-3f4b-4301-be07-1172ea61eefb}" />
+          <AitFeature Name="{4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f}" />
           <AitFeature Name="{50850b26-267e-451b-a890-ab6a370245ee}" />
           <AitFeature Name="{50ac103f-d235-4598-bbef-98fe4d1a3ad4}" />
           <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
-          <AitFeature Name="{54dfd981-1968-4ca3-b958-e595d16505eb}" />
+          <AitFeature Name="{541c8d6c-0283-4581-b945-2a64c28a0646}" />
           <AitFeature Name="{55ee2e81-1c18-59ed-bd3d-c4ca8fa7d190}" />
           <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
@@ -854,6 +883,7 @@
           <AitFeature Name="{5f894995-a58d-4cf3-b589-b5e500e06475}" />
           <AitFeature Name="{603e88e4-a338-4ffe-a457-a5cfb9ceb899}" />
           <AitFeature Name="{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3}" />
+          <AitFeature Name="{60cdfda2-2f44-444b-9c94-b8c9fda46f59}" />
           <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
           <AitFeature Name="{64fe2e9f-f951-42b6-a9ce-bb179af11595}" />
           <AitFeature Name="{65aa0480-22e3-5103-ad2a-b626f88ca5ae}" />
@@ -865,11 +895,14 @@
           <AitFeature Name="{68e0e810-f6ea-42bc-855b-5d9b67e6a262}" />
           <AitFeature Name="{68ea500b-3fe9-4735-b6a0-e7601933b089}" />
           <AitFeature Name="{69145cd4-199a-4657-9e57-e99e8f136712}" />
+          <AitFeature Name="{69f90679-3a11-4fe7-b4df-2a0139d4018b}" />
           <AitFeature Name="{6c3fb5fc-8e84-4c91-ac15-04a1d885500f}" />
           <AitFeature Name="{6c4fc188-95bc-4261-9ec5-21cab677b734}" />
           <AitFeature Name="{6cd0e74e-ee65-4489-9ebf-ca43e87ba637}" />
           <AitFeature Name="{6dcc9c03-e0c7-4eee-8ea9-37e3406eeb1c}" />
+          <AitFeature Name="{6dda119e-9a74-478f-a339-5bb52de6c51e}" />
           <AitFeature Name="{710e4278-8529-47d3-8d8e-307e34cff081}" />
+          <AitFeature Name="{71ca300b-b89e-4184-b0df-a9e95447de8d}" />
           <AitFeature Name="{72284824-db8c-42f8-b08c-53ff357dad82}" />
           <AitFeature Name="{7230269c-054e-4cf3-86c5-be90eb6863d5}" />
           <AitFeature Name="{72827082-5525-4bf2-bc09-1f5095d4964d}" />
@@ -879,6 +912,7 @@
           <AitFeature Name="{74b861a1-7487-46a9-9a6e-c78b512726c5}" />
           <AitFeature Name="{751b792e-5772-4488-8b87-f547faa64474}" />
           <AitFeature Name="{75927b93-03f3-41ec-91d3-6e5bac1b38e7}" />
+          <AitFeature Name="{75b40847-0a4c-4a92-9565-fd63c95f7aed}" />
           <AitFeature Name="{75d6a78f-a302-4489-9898-24ea49182910}" />
           <AitFeature Name="{761ce752-73c1-4f44-be75-43c49ec0d4d5}" />
           <AitFeature Name="{7849fd82-48e4-444d-9419-93ab8892c107}" />
@@ -934,6 +968,7 @@
           <AitFeature Name="{a09691df-9824-41fe-b530-b0d8990e64c1}" />
           <AitFeature Name="{a099e6be-e624-459a-bb1d-e05c73e2cc66}" />
           <AitFeature Name="{a1e254d8-a446-4a27-9a9d-a0f59e1258a5}" />
+          <AitFeature Name="{a21a8189-26b0-4676-ae94-54041bc125e8}" />
           <AitFeature Name="{a26dd1dc-cd44-435c-be94-01d6241c231c}" />
           <AitFeature Name="{a391d09b-4a99-4b7c-9d8d-6fa5d01f6fbf}" />
           <AitFeature Name="{a50a4bbd-8361-469c-90da-e9a40c7474df}" />
@@ -943,6 +978,7 @@
           <AitFeature Name="{a69fc352-da66-404c-823f-5358594e70bb}" />
           <AitFeature Name="{a73ded29-b4ae-4a81-be85-e690ba0d3b6e}" />
           <AitFeature Name="{a7a69ec9-ea35-4679-bf29-f4f09286d314}" />
+          <AitFeature Name="{a8076aa8-f892-49f6-8cd2-89addaf06d2d}" />
           <AitFeature Name="{a856e674-b0b6-4bc3-bba8-1ba06e40d4b5}" />
           <AitFeature Name="{a8912263-2951-4f58-a9c5-5a134eaa7f07}" />
           <AitFeature Name="{a907d496-46a0-4cd7-8dbe-f9a581df60b1}" />
@@ -957,6 +993,7 @@
           <AitFeature Name="{afcbbe9b-582b-4133-9648-e44ca46ee491}" />
           <AitFeature Name="{b12b1d5a-6419-4e16-b212-a45336b75778}" />
           <AitFeature Name="{b186cda2-5d46-4bcd-a811-269ad15b3aee}" />
+          <AitFeature Name="{b196e222-ca0e-48a9-83bc-36ce50566ac7}" />
           <AitFeature Name="{b30c3e3a-df8d-44a5-9a38-7ac0d08ce63d}" />
           <AitFeature Name="{b3765d69-68a5-4b32-8861-fdb90c1f5836}" />
           <AitFeature Name="{b440c7c3-02b4-4980-9342-25dae1c0f188}" />
@@ -971,6 +1008,7 @@
           <AitFeature Name="{bb2afc33-93b1-42ed-8b26-236dd9c78496}" />
           <AitFeature Name="{bc2b28f1-26f2-4aab-b256-3b5350881e37}" />
           <AitFeature Name="{bcb4ad45-7609-4550-934f-16002a68fded}" />
+          <AitFeature Name="{bd9552f3-540d-58bf-b6a8-07556aeda2ea}" />
           <AitFeature Name="{bea93e67-dbee-4f7b-af0d-a79aae5333bf}" />
           <AitFeature Name="{bf9918ea-d801-4564-a495-b1e84f8ad085}" />
           <AitFeature Name="{c00b03f2-04e7-4415-b17d-d76b9490de2b}" />
@@ -981,8 +1019,10 @@
           <AitFeature Name="{c4b27075-e641-453e-824d-012fc7cf95cf}" />
           <AitFeature Name="{c541f58c-43a9-4216-b718-e0b11b14e93e}" />
           <AitFeature Name="{c5aefd1e-f467-40ba-8566-ab640a441e1d}" />
+          <AitFeature Name="{c79bb41b-a084-4301-a496-72971f364ed1}" />
           <AitFeature Name="{c81c2720-5c52-4bbe-a199-2b1e34f00f70}" />
           <AitFeature Name="{c9132978-4810-4e5e-8087-03671ee60d85}" />
+          <AitFeature Name="{c972d2dc-b609-4758-851e-a799c21de97d}" />
           <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
           <AitFeature Name="{caf8608f-13ff-42fb-866d-22206434cc6b}" />
           <AitFeature Name="{cafc4968-6369-4249-80f9-3d656319e811}" />
@@ -992,6 +1032,8 @@
           <AitFeature Name="{cfe9cd97-c718-4091-b7dd-adf1c072b1e1}" />
           <AitFeature Name="{d06eb1c7-3805-4ecb-b757-6cf15e26fef3}" />
           <AitFeature Name="{d092b151-d83b-5a81-a71e-a1c7f8ad6963}" />
+          <AitFeature Name="{d1113f67-d8c1-4ae4-98f0-d8504502f08b}" />
+          <AitFeature Name="{d1db340f-1bc4-4ca8-bcf7-770bff9b27ab}" />
           <AitFeature Name="{d1f276c4-98d8-4636-bf49-eb79507548e9}" />
           <AitFeature Name="{d20e4c28-f18b-491a-9a45-f1a04a9369a4}" />
           <AitFeature Name="{d39d6322-7c9c-481b-827b-c8b2d9bb6fc7}" />
@@ -1002,6 +1044,7 @@
           <AitFeature Name="{d56db359-6f77-4296-ab9c-794939444365}" />
           <AitFeature Name="{da007e54-b3c2-4b9a-aa8e-d3f071262b97}" />
           <AitFeature Name="{da628f0a-9752-49e2-bde2-49eccab9194d}" />
+          <AitFeature Name="{daf77a4f-c27a-4298-9ac6-2922c45e7da6}" />
           <AitFeature Name="{db5cd2b9-d3b4-558c-c64e-0434fd1bd889}" />
           <AitFeature Name="{dc8f368b-eccc-498e-b139-91142254d7ae}" />
           <AitFeature Name="{dd9ff16a-4b62-4a6c-a49d-0671ef6136be}" />
@@ -1011,6 +1054,8 @@
           <AitFeature Name="{dfa149ac-1849-445e-937c-40a9590cc076}" />
           <AitFeature Name="{dfa2dc9c-1a2d-4917-98f2-939af1d6e0c8}" />
           <AitFeature Name="{e194c96a-d8cc-4339-a0e1-2e9c420879ec}" />
+          <AitFeature Name="{e1a05352-5aa0-42ca-9cd9-068a14db6e68}" />
+          <AitFeature Name="{e30eb3a5-b36b-42dc-8527-cd25136c083c}" />
           <AitFeature Name="{e405ef19-d0df-43da-ace6-16f9113868c3}" />
           <AitFeature Name="{e4385929-c004-4bcf-8970-359486e39f88}" />
           <AitFeature Name="{e48f5a8b-1dff-4352-a1f4-e516514ec882}" />
@@ -1018,7 +1063,9 @@
           <AitFeature Name="{e7141e0a-04b8-4fc5-a4dc-195392e57807}" />
           <AitFeature Name="{e7bed191-0bb9-4189-8394-31761b476fd7}" />
           <AitFeature Name="{e827e8b9-08d9-4a8e-a0ac-fe5ed3cbbbd3}" />
+          <AitFeature Name="{e83b0062-d776-4f92-baea-40e77d4791d5}" />
           <AitFeature Name="{e98babe7-f6ff-444c-9c0d-277eaf0ad9c0}" />
+          <AitFeature Name="{e9f3b9ff-8e91-4ecf-a707-c927f694f881}" />
           <AitFeature Name="{ea1f89c7-ebf5-4ab8-88f7-680d821dac61}" />
           <AitFeature Name="{ea79a752-f7c2-4265-b1bd-c4dec4e4f080}" />
           <AitFeature Name="{ec3601a7-1007-48f9-b6b3-ed0bea53937d}" />
@@ -1029,10 +1076,12 @@
           <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
           <AitFeature Name="{f3709e8b-091a-5db5-b896-ff78f01990c9}" />
           <AitFeature Name="{f4716f05-ed77-4e3c-b328-5c3985b3738f}" />
+          <AitFeature Name="{f4a91dd8-d979-4381-8652-bda0342a765e}" />
           <AitFeature Name="{f4b40e52-642f-4629-a54a-ea5d2349c448}" />
           <AitFeature Name="{f632e1c6-0a3f-4574-9fef-cdc151765674}" />
           <AitFeature Name="{f6790987-e6e5-47f2-92c6-eccce4ba159a}" />
           <AitFeature Name="{f67cf363-a53d-4d94-ae2c-67232d93acdd}" />
+          <AitFeature Name="{f691cab2-77ad-4d3d-a51c-8ef9c3836456}" />
           <AitFeature Name="{f7168c00-1432-462a-9405-38f385bfc37c}" />
           <AitFeature Name="{f722dcc2-9827-403d-aaed-ecca9ac17398}" />
           <AitFeature Name="{f744d97b-9988-44fb-abd6-5378844cfa8b}" />
@@ -1117,12 +1166,14 @@
           <AitFeature Name="Windows.Foundation.IReference`1" />
           <AitFeature Name="Windows.UI.Notifications.NotificationData" />
           <AitFeature Name="Windows.Storage.ApplicationData" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
           <AitFeature Name="Windows.ApplicationModel.Package" />
           <AitFeature Name="Windows.UI.Xaml.Media.Imaging.BitmapImage" />
           <AitFeature Name="Windows.Globalization.Language" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Frame" />
           <AitFeature Name="Windows.System.DispatcherQueue" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
           <AitFeature Name="Windows.Foundation.Uri" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Control" />
           <AitFeature Name="Windows.UI.Xaml.Controls.UserControl" />
@@ -1130,13 +1181,14 @@
           <AitFeature Name="Windows.UI.Notifications.ToastNotification" />
           <AitFeature Name="Windows.UI.Notifications.ScheduledToastNotification" />
           <AitFeature Name="Windows.UI.Xaml.Application" />
-          <AitFeature Name="Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation" />
+          <AitFeature Name="Windows.System.Profile.SystemManufacturers.SystemSupportInfo" />
           <AitFeature Name="Windows.Globalization.Calendar" />
           <AitFeature Name="Windows.Foundation.Diagnostics.AsyncCausalityTracer" />
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
           <AitFeature Name="Windows.UI.Notifications.ToastNotificationManager" />
           <AitFeature Name="Windows.System.Launcher" />
           <AitFeature Name="Windows.System.Threading.ThreadPoolTimer" />
+          <AitFeature Name="Windows.Globalization.ApplicationLanguages" />
           <AitFeature Name="Windows.Globalization.CalendarIdentifiers" />
           <AitFeature Name="Windows.Data.Xml.Dom.XmlDocument" />
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceContext" />
@@ -1145,7 +1197,6 @@
           <AitFeature Name="Windows.UI.Core.CoreWindow" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="CBriscola For Programmers.exe" Id="0000d4c6ecd6b3c1039e01e46cdf91ff0fdb054dbf14" />
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>
