@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ATEMV0o89NppKKrJGAU1YPhsHvWaiHukgj7YM+zFr1hgsLERDhnmILPpn2tqAo0310wdK2+Cf9YC29+dT/57JA==",
+  "dgSpecHash": "9ZXr4xZ/aLra+3hmI8MvHXUtiBMSvoNe8mqoqbpySDXDJTJZ5OVBOrlb05IcAH55Y/KE8wlpUNqfDLxzAhOauw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\numer\\source\\repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
+  "projectFilePath": "C:\\Users\\numer\\Source\\Repos\\CBriscolaUWP_for_programmers\\CBriscola For Programmers\\CBriscola For Programmers.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
