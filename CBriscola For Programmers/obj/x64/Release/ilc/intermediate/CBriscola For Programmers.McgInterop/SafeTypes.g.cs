@@ -172,6 +172,29 @@ namespace Internal.Cryptography.Pal.Native
 		}
 	}
 
+	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandleWithKeyContainerDeletion,System.Security.Cryptography.X509" +
+		"Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
 	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertStoreHandle,System.Security.Cryptography.X509Certificates, Version=4.2." +
 		"1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 	public unsafe class SafeCertStoreHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
@@ -200,29 +223,6 @@ namespace Internal.Cryptography.Pal.Native
 	public unsafe class SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
 	{
 		public SafeCryptMsgHandle__System_Security_Cryptography_X509Certificates() : 
-				base(default(global::System.IntPtr), false)
-		{
-		}
-
-		public override bool IsInvalid
-		{
-			get
-			{
-				return false;
-			}
-		}
-
-		protected override bool ReleaseHandle()
-		{
-			return false;
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Internal.Cryptography.Pal.Native.SafeCertContextHandleWithKeyContainerDeletion,System.Security.Cryptography.X509" +
-		"Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-	public unsafe class SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates : global::System.Runtime.InteropServices.SafeHandle
-	{
-		public SafeCertContextHandleWithKeyContainerDeletion__System_Security_Cryptography_X509Certificates() : 
 				base(default(global::System.IntPtr), false)
 		{
 		}
@@ -2430,32 +2430,6 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DefaultOverloadAttribute : global::System.Attribute
-	{
-		public DefaultOverloadAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DefaultOverloadAttribute\'.  Windows Runtime attribute types a" +
-					"re not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class OverloadAttribute : global::System.Attribute
 	{
 		public OverloadAttribute(string method)
@@ -2482,75 +2456,12 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class GuidAttribute : global::System.Attribute
+	public unsafe sealed class DefaultOverloadAttribute : global::System.Attribute
 	{
-		public GuidAttribute(
-					uint a, 
-					ushort b, 
-					ushort c, 
-					byte d, 
-					byte e, 
-					byte f, 
-					byte g, 
-					byte h, 
-					byte i, 
-					byte j, 
-					byte k)
+		public DefaultOverloadAttribute()
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.GuidAttribute\'.  Windows Runtime attribute types are not cons" +
-					"tructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class WebHostHiddenAttribute : global::System.Attribute
-	{
-		public WebHostHiddenAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.WebHostHiddenAttribute\'.  Windows Runtime attribute types are" +
-					" not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ExclusiveToAttribute : global::System.Attribute
-	{
-		public ExclusiveToAttribute(global::System.Type typeName)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ExclusiveToAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DefaultOverloadAttribute\'.  Windows Runtime attribute types a" +
+					"re not constructable.");
 		}
 	}
 
@@ -2609,20 +2520,79 @@ namespace Windows.Foundation.Metadata
 				| global::System.AttributeTargets.Parameter 
 				| global::System.AttributeTargets.Delegate 
 				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ComposableAttribute : global::System.Attribute
+	public unsafe sealed class ExclusiveToAttribute : global::System.Attribute
 	{
-		public ComposableAttribute(
-					global::System.Type type, 
-					global::Windows.Foundation.Metadata.CompositionType compositionType, 
-					uint version, 
-					string contract)
+		public ExclusiveToAttribute(global::System.Type typeName)
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ComposableAttribute\'.  Windows Runtime attribute types are no" +
-					"t constructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ExclusiveToAttribute\'.  Windows Runtime attribute types are n" +
+					"ot constructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class WebHostHiddenAttribute : global::System.Attribute
+	{
+		public WebHostHiddenAttribute()
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.WebHostHiddenAttribute\'.  Windows Runtime attribute types are" +
+					" not constructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class GuidAttribute : global::System.Attribute
+	{
+		public GuidAttribute(
+					uint a, 
+					ushort b, 
+					ushort c, 
+					byte d, 
+					byte e, 
+					byte f, 
+					byte g, 
+					byte h, 
+					byte i, 
+					byte j, 
+					byte k)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.GuidAttribute\'.  Windows Runtime attribute types are not cons" +
+					"tructable.");
 		}
 	}
 
@@ -2665,19 +2635,16 @@ namespace Windows.Foundation.Metadata
 				| global::System.AttributeTargets.Parameter 
 				| global::System.AttributeTargets.Delegate 
 				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StaticAttribute : global::System.Attribute
+	public unsafe sealed class MarshalingBehaviorAttribute : global::System.Attribute
 	{
-		public StaticAttribute(
-					global::System.Type type, 
-					uint version, 
-					string contractName)
+		public MarshalingBehaviorAttribute(global::Windows.Foundation.Metadata.MarshalingType behavior)
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.StaticAttribute\'.  Windows Runtime attribute types are not co" +
-					"nstructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MarshalingBehaviorAttribute\'.  Windows Runtime attribute type" +
+					"s are not constructable.");
 		}
 	}
 
@@ -2694,16 +2661,49 @@ namespace Windows.Foundation.Metadata
 				| global::System.AttributeTargets.Parameter 
 				| global::System.AttributeTargets.Delegate 
 				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class MarshalingBehaviorAttribute : global::System.Attribute
+	public unsafe sealed class ComposableAttribute : global::System.Attribute
 	{
-		public MarshalingBehaviorAttribute(global::Windows.Foundation.Metadata.MarshalingType behavior)
+		public ComposableAttribute(
+					global::System.Type type, 
+					global::Windows.Foundation.Metadata.CompositionType compositionType, 
+					uint version, 
+					string contract)
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MarshalingBehaviorAttribute\'.  Windows Runtime attribute type" +
-					"s are not constructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ComposableAttribute\'.  Windows Runtime attribute types are no" +
+					"t constructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class StaticAttribute : global::System.Attribute
+	{
+		public StaticAttribute(
+					global::System.Type type, 
+					uint version, 
+					string contractName)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.StaticAttribute\'.  Windows Runtime attribute types are not co" +
+					"nstructable.");
 		}
 	}
 
@@ -2815,32 +2815,6 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class AttributeNameAttribute : global::System.Attribute
-	{
-		public AttributeNameAttribute(string A_0)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.AttributeNameAttribute\'.  Windows Runtime attribute types are" +
-					" not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class AllowMultipleAttribute : global::System.Attribute
 	{
 		public AllowMultipleAttribute()
@@ -2873,6 +2847,32 @@ namespace Windows.Foundation.Metadata
 		{
 			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ApiContractAttribute\'.  Windows Runtime attribute types are n" +
 					"ot constructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class AttributeNameAttribute : global::System.Attribute
+	{
+		public AttributeNameAttribute(string A_0)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.AttributeNameAttribute\'.  Windows Runtime attribute types are" +
+					" not constructable.");
 		}
 	}
 
@@ -2961,15 +2961,6 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum CompositionType
-	{
-		Protected = 1,
-		Public = 2,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public enum ThreadingModel
 	{
 		InvalidThreading = 0,
@@ -2987,6 +2978,15 @@ namespace Windows.Foundation.Metadata
 		None = 1,
 		Agile = 2,
 		Standard = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum CompositionType
+	{
+		Protected = 1,
+		Public = 2,
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -4160,6 +4160,81 @@ namespace Windows.System
 	}
 }
 
+namespace Windows.System.Profile.SystemManufacturers
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class SystemSupportDeviceInfo : global::System.__ComObject, global::Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SystemProductName")]
+		public string get_SystemProductName()
+		{
+			string __retVal = global::Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo__Impl.Stubs.get_SystemProductName(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public SystemSupportDeviceInfo(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(196608)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class SystemSupportInfo : global::System.__ComObject
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalDeviceInfo")]
+		public static global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo get_LocalDeviceInfo()
+		{
+			global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo retval;
+			retval = __Factory_Windows_System_Profile_SystemManufacturers__ISystemSupportInfoStatics2_get_LocalDeviceInfo("Windows.System.Profile.SystemManufacturers.SystemSupportInfo");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo __Factory_Windows_System_Profile_SystemManufacturers__ISystemSupportInfoStatics2_get_LocalDeviceInfo(string typeName)
+		{
+			global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo __pRetVal;
+			__pRetVal = global::Windows.System.Profile.SystemManufacturers.ISystemSupportInfoStatics2__Impl.Stubs.get_LocalDeviceInfo(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.System.Profile.SystemManufacturers.ISystemSupportInfoStatics2).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public SystemSupportInfo(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISystemSupportDeviceInfo
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SystemProductName")]
+		string get_SystemProductName();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISystemSupportInfoStatics2
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalDeviceInfo")]
+		global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo get_LocalDeviceInfo();
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe struct SystemManufacturersContract
+	{
+	}
+}
+
 namespace Windows.System.Threading
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.System.Threading.IThreadPoolTimer))]
@@ -5109,12 +5184,103 @@ namespace Windows.UI.Notifications
 namespace Windows.UI.Popups
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IMessageDialog))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class MessageDialog : global::System.__ComObject, global::Windows.UI.Popups.IMessageDialog
 	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public MessageDialog(string content)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Popups__IMessageDialogFactory_Create(
+								"Windows.UI.Popups.MessageDialog", 
+								content
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Popups__IMessageDialogFactory_Create(
+					string typeName, 
+					string content)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.UI.Popups.IMessageDialogFactory__Impl.Stubs.Create(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Popups.IMessageDialogFactory).TypeHandle
+												), 
+								content
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Commands")]
+		public global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand> get_Commands()
+		{
+			global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand> __retVal = global::Windows.UI.Popups.IMessageDialog__Impl.Stubs.get_Commands(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> __retVal = global::Windows.UI.Popups.IMessageDialog__Impl.Stubs.ShowAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		public MessageDialog(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommand))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class UICommand : global::System.__ComObject, global::Windows.UI.Popups.IUICommand
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public UICommand(
+					string label, 
+					global::Windows.UI.Popups.UICommandInvokedHandler action)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
+								"Windows.UI.Popups.UICommand", 
+								label, 
+								action
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
+					string typeName, 
+					string label, 
+					global::Windows.UI.Popups.UICommandInvokedHandler action)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.UI.Popups.IUICommandFactory__Impl.Stubs.CreateWithHandler(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle
+												), 
+								label, 
+								action
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		public UICommand(global::System.IntPtr dummy)
 		{
 		}
 	}
@@ -5127,8 +5293,32 @@ namespace Windows.UI.Popups
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IMessageDialogFactory
+	{
+		global::System.IntPtr Create(string content);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IMessageDialog
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Commands")]
+		global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand> get_Commands();
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void UICommandInvokedHandler(global::Windows.UI.Popups.IUICommand command);
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IUICommandFactory
+	{
+		global::System.IntPtr CreateWithHandler(
+					string label, 
+					global::Windows.UI.Popups.UICommandInvokedHandler action);
 	}
 }
 

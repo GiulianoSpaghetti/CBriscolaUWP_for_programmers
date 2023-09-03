@@ -119,8 +119,8 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <TextBlock x:Name="risultato" Text="Hai vinto per 900 punti. Vuoi effettuare una seconda partita?" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{ThemeResource CustomTextBlockStyle}" />
-                <Button Content="Accetta" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button Content="Annulla" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="Si" Tapped="OnFpOk_Click" Grid.Column="0" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button Content="No" Tapped="OnFpCancel_Click" Grid.Column="1" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
                 <Button Content="Condividi" x:Name="btnshare" Tapped="OnFPShare_Click" Grid.Column="2" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
             </Grid>
         </Grid>

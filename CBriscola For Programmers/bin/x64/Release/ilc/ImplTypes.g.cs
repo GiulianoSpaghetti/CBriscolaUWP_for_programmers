@@ -4160,6 +4160,161 @@ namespace System.Collections.Generic
 		}
 	}
 
+	// System.Collections.Generic.IList<Windows.UI.Popups.IUICommand>
+	public unsafe static class IList_A__w_UI_Popups_IUICommand_V___Impl
+	{
+		// DispatchClass for 'System.Collections.Generic.IList<Windows.UI.Popups.IUICommand>'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>))]
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>))]
+		internal abstract partial class Dispatcher : global::System.__ComObject, global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>, global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>
+		{
+			global::System.Collections.Generic.IEnumerator<global::Windows.UI.Popups.IUICommand> global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>.GetEnumerator()
+			{
+				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.UI.Popups.IUICommand>).TypeHandle;
+				return (global::System.Collections.Generic.IEnumerator<global::Windows.UI.Popups.IUICommand>)global::__Interop.McgHelpers.GetGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>).TypeHandle
+								);
+			}
+
+			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+			{
+				return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>).TypeHandle
+								);
+			}
+
+			int global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.Count
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Count(((global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>)this));
+				}
+			}
+
+			bool global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.IsReadOnly
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.IsReadOnly(((global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>)this));
+				}
+			}
+
+			void global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.Add(global::Windows.UI.Popups.IUICommand item)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Add(
+									this, 
+									item
+								);
+			}
+
+			void global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.Clear()
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Clear(((global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>)this));
+			}
+
+			bool global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.Contains(global::Windows.UI.Popups.IUICommand item)
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Contains(
+									this, 
+									item
+								);
+			}
+
+			void global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.CopyTo(
+						global::Windows.UI.Popups.IUICommand[] array, 
+						int arrayindex)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.CopyTo(
+									this, 
+									array, 
+									arrayindex
+								);
+			}
+
+			bool global::System.Collections.Generic.ICollection<global::Windows.UI.Popups.IUICommand>.Remove(global::Windows.UI.Popups.IUICommand item)
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Remove(
+									this, 
+									item
+								);
+			}
+
+			global::Windows.UI.Popups.IUICommand global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>.this[int index]
+			{
+				get
+				{
+					return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Indexer_Get(
+										((global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>)this), 
+										index
+									);
+				}
+				set
+				{
+					global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Indexer_Set(
+										this, 
+										index, 
+										value
+									);
+				}
+			}
+
+			int global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>.IndexOf(global::Windows.UI.Popups.IUICommand item)
+			{
+				return global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.IndexOf(
+									this, 
+									item
+								);
+			}
+
+			void global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>.Insert(
+						int index, 
+						global::Windows.UI.Popups.IUICommand item)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.Insert(
+									this, 
+									index, 
+									item
+								);
+			}
+
+			void global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>.RemoveAt(int index)
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.IVectorSharedReferenceTypesRCWAdapter.RemoveAt(
+									((global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>)this), 
+									index
+								);
+			}
+		}
+	}
+
+	// System.Collections.Generic.IEnumerable<Windows.UI.Popups.IUICommand>
+	public unsafe static class IEnumerable_A__w_UI_Popups_IUICommand_V___Impl
+	{
+		// DispatchClass for 'System.Collections.Generic.IEnumerable<Windows.UI.Popups.IUICommand>'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>))]
+		internal abstract partial class Dispatcher : global::System.__ComObject, global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>
+		{
+			global::System.Collections.Generic.IEnumerator<global::Windows.UI.Popups.IUICommand> global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>.GetEnumerator()
+			{
+				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.UI.Popups.IUICommand>).TypeHandle;
+				return (global::System.Collections.Generic.IEnumerator<global::Windows.UI.Popups.IUICommand>)global::__Interop.McgHelpers.GetGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>).TypeHandle
+								);
+			}
+
+			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+			{
+				return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+									this, 
+									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Popups.IUICommand>).TypeHandle
+								);
+			}
+		}
+	}
+
 	// System.Collections.Generic.IReadOnlyList<Windows.Storage.StorageFile>
 	public unsafe static class IReadOnlyList_A__w_Storage_StorageFile_V___Impl
 	{
@@ -15183,6 +15338,24 @@ namespace Windows.Foundation
 		}
 	}
 
+	// Windows.Foundation.AsyncOperationCompletedHandler<Windows.UI.Popups.IUICommand>
+	public unsafe static class AsyncOperationCompletedHandler_A__w_UI_Popups_IUICommand_V___Impl
+	{
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> asyncInfo, 
+					global::Windows.Foundation.AsyncStatus asyncStatus)
+		{
+			global::__Interop.ForwardComStubs.Stub_43<global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Popups.IUICommand>, global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand>>(
+								__this, 
+								asyncInfo, 
+								((int)asyncStatus), 
+								3
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+	}
+
 	// Windows.Foundation.AsyncOperationCompletedHandler<bool>
 	public unsafe static class AsyncOperationCompletedHandler_A_bool_V___Impl
 	{
@@ -23779,6 +23952,136 @@ namespace Windows.Foundation.Collections
 			uint global::Windows.Foundation.Collections.IIterator<global::System.Uri>.GetMany(global::System.Uri[] items)
 			{
 				uint __retVal = global::Windows.Foundation.Collections.IIterator_A__s_Uri_V___Impl.Stubs.GetMany(
+									this, 
+									items
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __retVal;
+			}
+		}
+	}
+
+	// Windows.Foundation.Collections.IIterator<Windows.UI.Popups.IUICommand>
+	public unsafe static class IIterator_A__w_UI_Popups_IUICommand_V___Impl
+	{
+		// StubClass for 'Windows.Foundation.Collections.IIterator<Windows.UI.Popups.IUICommand>'
+		public static partial class Stubs
+		{
+			public static global::Windows.UI.Popups.IUICommand get_Current(global::System.__ComObject __this)
+			{
+				global::Windows.UI.Popups.IUICommand __ret = global::__Interop.ForwardComStubs.Stub_2<global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>, global::Windows.UI.Popups.IUICommand>(
+									__this, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static bool get_HasCurrent(global::System.__ComObject __this)
+			{
+				bool __ret = global::__Interop.ForwardComStubs.Stub_5<global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>>(
+									__this, 
+									7
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static bool MoveNext(global::System.__ComObject __this)
+			{
+				bool __ret = global::__Interop.ForwardComStubs.Stub_5<global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>>(
+									__this, 
+									8
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			// Signature, Windows.Foundation.Collections.IIterator<Windows.UI.Popups.IUICommand>.GetMany, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [out] [EETypeRva:0x000424E8] rg_Windows_UI_Popups_IUICommand__Windows_UI_Popups__IUICommand * *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x000419B0] uint__unsigned int, 
+			public static uint GetMany(
+						global::System.__ComObject __this, 
+						global::Windows.UI.Popups.IUICommand[] items)
+			{
+				// Setup
+				uint unsafe_items_mcgLength = 0;
+				void** unsafe_items = default(void**);
+				uint unsafe___value__retval;
+				uint __value__retval;
+				int unsafe___hr;
+				try
+				{
+					// Marshalling
+					if (items != null)
+						unsafe_items_mcgLength = (uint)items.Length;
+					if (items != null)
+						unsafe_items = (void**)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(unsafe_items_mcgLength * sizeof(void*))));
+					// Call to native method
+					unsafe___hr = global::__Interop.ComCallHelpers.Call(
+										__this, 
+										typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>).TypeHandle, 
+										9, 
+										unsafe_items_mcgLength, 
+										unsafe_items, 
+										&(unsafe___value__retval)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					__value__retval = unsafe___value__retval;
+					if (items != null)
+						for (uint mcgIdx = 0; (mcgIdx < unsafe_items_mcgLength); mcgIdx++)
+						{
+							// [fwd] [out] [optional] [EETypeRva:0x00043660] Windows_UI_Popups_IUICommand__Windows_UI_Popups__IUICommand * items
+							items[mcgIdx] = (global::Windows.UI.Popups.IUICommand)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+												((global::System.IntPtr)unsafe_items[mcgIdx]), 
+												typeof(global::Windows.UI.Popups.IUICommand).TypeHandle
+											);
+						}
+					// Return
+					return __value__retval;
+				}
+				finally
+				{
+					// Cleanup
+					if (unsafe_items != null)
+						for (uint mcgIdx_1 = 0; (mcgIdx_1 < unsafe_items_mcgLength); mcgIdx_1++)
+						{
+							// [fwd] [in] [out] [optional] [EETypeRva:0x00043660] Windows_UI_Popups_IUICommand__Windows_UI_Popups__IUICommand * items
+							global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_items[mcgIdx_1])));
+						}
+					global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_items);
+				}
+			}
+		}
+
+		// DispatchClass for 'Windows.Foundation.Collections.IIterator<Windows.UI.Popups.IUICommand>'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>))]
+		internal abstract partial class Dispatcher : global::System.__ComObject, global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>
+		{
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.Current")]
+			global::Windows.UI.Popups.IUICommand global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>.get_Current()
+			{
+				global::Windows.UI.Popups.IUICommand __retVal = global::Windows.Foundation.Collections.IIterator_A__w_UI_Popups_IUICommand_V___Impl.Stubs.get_Current(this);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __retVal;
+			}
+
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.HasCurrent")]
+			bool global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>.get_HasCurrent()
+			{
+				bool __retVal = global::Windows.Foundation.Collections.IIterator_A__w_UI_Popups_IUICommand_V___Impl.Stubs.get_HasCurrent(this);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __retVal;
+			}
+
+			bool global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>.MoveNext()
+			{
+				bool __retVal = global::Windows.Foundation.Collections.IIterator_A__w_UI_Popups_IUICommand_V___Impl.Stubs.MoveNext(this);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __retVal;
+			}
+
+			uint global::Windows.Foundation.Collections.IIterator<global::Windows.UI.Popups.IUICommand>.GetMany(global::Windows.UI.Popups.IUICommand[] items)
+			{
+				uint __retVal = global::Windows.Foundation.Collections.IIterator_A__w_UI_Popups_IUICommand_V___Impl.Stubs.GetMany(
 									this, 
 									items
 								);
@@ -34048,6 +34351,45 @@ namespace Windows.System
 	}
 }
 
+namespace Windows.System.Profile.SystemManufacturers
+{
+	// Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo
+	public unsafe static class ISystemSupportDeviceInfo__Impl
+	{
+		// StubClass for 'Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo'
+		public static partial class Stubs
+		{
+			public static string get_SystemProductName(global::System.__ComObject __this)
+			{
+				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.System.Profile.SystemManufacturers.ISystemSupportDeviceInfo>(
+									__this, 
+									9
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.System.Profile.SystemManufacturers.ISystemSupportInfoStatics2
+	public unsafe static class ISystemSupportInfoStatics2__Impl
+	{
+		// StubClass for 'Windows.System.Profile.SystemManufacturers.ISystemSupportInfoStatics2'
+		public static partial class Stubs
+		{
+			public static global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo get_LocalDeviceInfo(global::System.__ComObject __this)
+			{
+				global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo __ret = global::__Interop.ForwardComStubs.Stub_2<global::Windows.System.Profile.SystemManufacturers.ISystemSupportInfoStatics2, global::Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo>(
+									__this, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+}
+
 namespace Windows.System.Threading
 {
 	// Windows.System.Threading.IThreadPoolTimerStatics
@@ -34940,6 +35282,189 @@ namespace Windows.UI.Notifications
 								);
 				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 				return __ret;
+			}
+		}
+	}
+}
+
+namespace Windows.UI.Popups
+{
+	// Windows.UI.Popups.IMessageDialogFactory
+	public unsafe static class IMessageDialogFactory__Impl
+	{
+		// StubClass for 'Windows.UI.Popups.IMessageDialogFactory'
+		public static partial class Stubs
+		{
+			public static global::System.IntPtr Create(
+						global::System.__ComObject __this, 
+						string content)
+			{
+				global::System.IntPtr __ret = global::__Interop.ForwardComStubs.Stub_42<global::Windows.UI.Popups.IMessageDialogFactory>(
+									__this, 
+									content, 
+									6
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.UI.Popups.IMessageDialog
+	public unsafe static class IMessageDialog__Impl
+	{
+		// StubClass for 'Windows.UI.Popups.IMessageDialog'
+		public static partial class Stubs
+		{
+			public static global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand> get_Commands(global::System.__ComObject __this)
+			{
+				global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand> __ret = global::__Interop.ForwardComStubs.Stub_2<global::Windows.UI.Popups.IMessageDialog, global::System.Collections.Generic.IList<global::Windows.UI.Popups.IUICommand>>(
+									__this, 
+									8
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			public static global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync(global::System.__ComObject __this)
+			{
+				global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> __ret = global::__Interop.ForwardComStubs.Stub_2<global::Windows.UI.Popups.IMessageDialog, global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand>>(
+									__this, 
+									15
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+
+	// Windows.UI.Popups.UICommandInvokedHandler
+	public unsafe static class UICommandInvokedHandler__Impl
+	{
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					global::Windows.UI.Popups.IUICommand command)
+		{
+			global::__Interop.ForwardComStubs.Stub_20<global::Windows.UI.Popups.UICommandInvokedHandler, global::Windows.UI.Popups.IUICommand>(
+								__this, 
+								command, 
+								3
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		// v-table for 'Windows.UI.Popups.UICommandInvokedHandler'
+		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.UI.Popups.UICommandInvokedHandler))]
+		internal unsafe partial struct Vtbl
+		{
+			global::System.IntPtr pfnQueryInterface;
+			global::System.IntPtr pfnAddRef;
+			global::System.IntPtr pfnRelease;
+			// Windows_UI_Popups__UICommandInvokedHandler
+			global::System.IntPtr pfnInvoke_;
+			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.Vtbl__McgRvaContainer), "RVA_Windows_UI_Popups_UICommandInvokedHandler__Impl_Vtbl_s_staticVtable")]
+			static global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl s_staticVtable
+			#if false
+			 = new global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl() {
+				pfnQueryInterface = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
+				pfnAddRef = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
+				pfnRelease = global::__Interop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
+				pfnInvoke_ = global::__Interop.Intrinsics.AddrOf<global::__Interop.AddrOfIntrinsics.AddrOfTarget6>(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.Invoke__n),
+			}
+			#endif
+			;
+			static global::System.IntPtr s_cachedVtable;
+			internal static global::System.IntPtr GetVtbl()
+			{
+				fixed (void* pVtbl = &(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.s_staticVtable))
+					return global::System.Runtime.InteropServices.McgMarshal.GetCCWVTableCopy(
+										pVtbl, 
+										ref global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.s_cachedVtable, 
+										sizeof(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl)
+									);
+			}
+
+			[global::System.Runtime.InteropServices.NativeCallable]
+			static int Invoke__n(
+						global::System.IntPtr pComThis, 
+						void* unsafe_command)
+			{
+				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
+				global::System.IntPtr __methodPtr = global::__Interop.Intrinsics.VirtualAddrOf<global::Windows.UI.Popups.UICommandInvokedHandler>(
+									__this, 
+									0
+								);
+				int __ret = ((int)global::__Interop.ReverseComStubs.Stub_6<global::Windows.UI.Popups.IUICommand>(
+									__this, 
+									unsafe_command, 
+									__methodPtr
+								));
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+
+			private static class Vtbl__McgRvaContainer
+			{
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(16, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
+				[global::System.Runtime.CompilerServices.MethodAddrFixup(24, typeof(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl), "Invoke__n")]
+				[global::System.Runtime.CompilerServices.NonArray]
+				static readonly byte[] RVA_Windows_UI_Popups_UICommandInvokedHandler__Impl_Vtbl_s_staticVtable = new byte[] {
+						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+			}
+		}
+	}
+
+	// Windows.UI.Popups.IUICommandFactory
+	public unsafe static class IUICommandFactory__Impl
+	{
+		// StubClass for 'Windows.UI.Popups.IUICommandFactory'
+		public static partial class Stubs
+		{
+			// Signature, Windows.UI.Popups.IUICommandFactory.CreateWithHandler, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00040A94] string__System.Runtime.InteropServices.HSTRING, [fwd] [in] [EETypeRva:0x00040CE0] Windows_UI_Popups_UICommandInvokedHandler__Windows_UI_Popups__UICommandInvokedHandler *, [fwd] [out] [retval] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+			public static global::System.IntPtr CreateWithHandler(
+						global::System.__ComObject __this, 
+						string label, 
+						global::Windows.UI.Popups.UICommandInvokedHandler action)
+			{
+				// Setup
+				global::System.Runtime.InteropServices.HSTRING unsafe_label = default(global::System.Runtime.InteropServices.HSTRING);
+				void* unsafe_action = default(void*);
+				global::System.IntPtr unsafe_instance__retval;
+				global::System.IntPtr instance__retval;
+				int unsafe___hr;
+				try
+				{
+					// Marshalling
+					fixed (char* pBuffer_label = label)
+					{
+						global::System.Runtime.InteropServices.HSTRING_HEADER hstring_header_label;
+						global::System.Runtime.InteropServices.McgMarshal.StringToHStringReference(pBuffer_label, label, &(hstring_header_label), &(unsafe_label));
+						unsafe_action = (void*)global::System.Runtime.InteropServices.McgMarshal.DelegateToComInterface(
+											action, 
+											typeof(global::Windows.UI.Popups.UICommandInvokedHandler).TypeHandle
+										);
+						// Call to native method
+						unsafe___hr = global::__Interop.ComCallHelpers.Call(
+											__this, 
+											typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle, 
+											7, 
+											unsafe_label, 
+											unsafe_action, 
+											&(unsafe_instance__retval)
+										);
+						global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+						instance__retval = unsafe_instance__retval;
+					}
+					// Return
+					return instance__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_action)));
+				}
 			}
 		}
 	}

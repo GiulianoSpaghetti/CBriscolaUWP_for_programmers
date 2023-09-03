@@ -1,6 +1,6 @@
 LIBRARY ncrypt.dll
 EXPORTS
-   NCryptOpenStorageProvider
-   NCryptOpenKey
    NCryptDeleteKey
+   NCryptOpenStorageProvider
    NCryptFreeObject
+   NCryptOpenKey

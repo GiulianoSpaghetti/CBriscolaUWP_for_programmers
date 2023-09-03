@@ -33,6 +33,10 @@ namespace CBriscola_For_Programmers
 
         public App()
         {
+            EasClientDeviceInformation eas = new EasClientDeviceInformation();
+            piattaforma = eas.SystemProductName;
+            if (piattaforma == "System Product Name")
+                piattaforma = "PC";
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

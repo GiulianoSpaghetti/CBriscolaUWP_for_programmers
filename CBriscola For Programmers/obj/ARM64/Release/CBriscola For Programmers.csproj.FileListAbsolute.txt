@@ -770,7 +770,6 @@ C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programme
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\ilc\SafeTypes.g.cs
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\ilc\SharedStubs.g.cs
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\CBriscola For Programmers.build.appxrecipe
-C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\Upload\CBriscola For Programmers.build.appxrecipe
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\Microsoft.Toolkit.Uwp.Notifications.dll
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\Microsoft.Toolkit.Uwp.Notifications.pdb
 C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\bin\ARM64\Release\clrcompression.dll

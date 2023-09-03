@@ -1,17 +1,17 @@
 LIBRARY crypt32.dll
 EXPORTS
+   CertFindCertificateInStore
    CryptMsgGetParam
    CertDuplicateCertificateContext
-   CertFreeCertificateContext
-   CertFindCertificateInStore
-   CertGetCertificateContextProperty
-   CertCloseStore
+
    CertEnumCertificatesInStore
+   CertGetCertificateContextProperty
+   CertFreeCertificateContext
 
-   CryptFindOIDInfo
-
+   CryptQueryObject
+   CertCloseStore
 
    PFXImportCertStore
-   CryptQueryObject
    CryptMsgClose
+   CryptFindOIDInfo
    CertGetNameStringW
