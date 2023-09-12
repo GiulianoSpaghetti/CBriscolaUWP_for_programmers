@@ -32210,6 +32210,27 @@ namespace Windows.Globalization
 	}
 }
 
+namespace Windows.Security.ExchangeActiveSyncProvisioning
+{
+	// Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation
+	public unsafe static class IEasClientDeviceInformation__Impl
+	{
+		// StubClass for 'Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation'
+		public static partial class Stubs
+		{
+			public static string get_SystemProductName(global::System.__ComObject __this)
+			{
+				string __ret = global::__Interop.ForwardComStubs.Stub_1<global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation>(
+									__this, 
+									10
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				return __ret;
+			}
+		}
+	}
+}
+
 namespace Windows.Storage
 {
 	// Windows.Storage.IStorageItem

@@ -119,8 +119,8 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <TextBlock x:ConnectionId='6' x:Name="risultato" Text="Hai vinto per 900 punti. Vuoi effettuare una seconda partita?" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{ThemeResource CustomTextBlockStyle}" />
-                <Button x:ConnectionId='7' Content="Accetta"                       Grid.Column="0" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
-                <Button x:ConnectionId='8' Content="Annulla"                           Grid.Column="1" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button x:ConnectionId='7' Content="Si"                       Grid.Column="0" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
+                <Button x:ConnectionId='8' Content="No"                           Grid.Column="1" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
                 <Button x:ConnectionId='9' Content="Condividi" x:Name="btnshare"                          Grid.Column="2" Grid.Row="1" Style="{ThemeResource CustomButtonStyle}"/>
             </Grid>
         </Grid>

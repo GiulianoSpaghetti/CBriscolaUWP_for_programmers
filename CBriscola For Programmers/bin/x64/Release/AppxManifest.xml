@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=Giulio Sorrentino" Version="1.0.15.0" ProcessorArchitecture="x64" />
+  <Identity Name="21961GiulioSorrentino.6245445F14426" Publisher="CN=Giulio Sorrentino" Version="1.0.16.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="21ae072b-1360-448e-a256-b93094e6c791" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>CBriscola for Programmers</DisplayName>

@@ -25,13 +25,12 @@ namespace CBriscola_For_Programmers
         private static Carta c, c1, briscola;
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
-        private static bool briscolaPunti = false;
-        private static bool avvisaTalloneFinito = true;
+        private static bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
+
         private static UInt16 secondi = 1;
         private static TimeSpan delay;
         private static ElaboratoreCarteBriscola e;
-        private Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-        private Windows.Storage.ApplicationDataContainer container;
+        private static Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
         private ThreadPoolTimer t;
         private GiocatoreHelperCpu helper;
         private MessageDialog d;
@@ -103,7 +102,7 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-           if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface"))
+           if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
@@ -376,7 +375,6 @@ namespace CBriscola_For_Programmers
         private void NuovaPartita()
         {
             UInt16 livello = GetLivello();
-            bool primoutente = primo==g;
             if (livello != helper.GetLivello())
                 new ToastContentBuilder().AddArgument("La partita verrà riavviata").AddText($"Il livello è cambiato. La partita verrà riavviata.").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
             e = new ElaboratoreCarteBriscola(briscolaPunti);

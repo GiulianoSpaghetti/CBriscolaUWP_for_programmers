@@ -370,6 +370,8 @@
     <MainPackageIdentityName>21961GiulioSorrentino.315940154655C</MainPackageIdentityName>
     <MainPackageIdentityName>21961GiulioSorrentino.numeronesfortune</MainPackageIdentityName>
     <MainPackageIdentityName>21961GiulioSorrentino.numeronesfortuneinmaui</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronesoeminformations</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronessecurity</MainPackageIdentityName>
     <MainPackageIdentityName>21961GiulioSorrentino.Thetrumpsuitgame</MainPackageIdentityName>
     <MainPackageIdentityName>21961GiulioSorrentino.WinDateCalc</MainPackageIdentityName>
     <MainPackageIdentityName>21961GiulioSorrentino.31974FA39EC07</MainPackageIdentityName>
@@ -380,42 +382,22 @@
       <PackageInfo>
         <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>X86</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>X64</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>Arm</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>Arm64</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>0.0.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>0.0.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>0.0.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>0.0.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.0.10.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
       </PackageInfo>
     </BundleInfo>
   </PackageInfoList>
