@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Media.Imaging;
 using org.altervista.numerone.framework;
 using Windows.System.Profile.SystemManufacturers;
 using Windows.UI.Popups;
+using System.Threading;
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
 
 namespace CBriscola_For_Programmers
@@ -291,7 +292,16 @@ namespace CBriscola_For_Programmers
                     {
                         string s, s1;
                         Applicazione.Visibility = Visibility.Collapsed;
-                        partite++;
+                        if (partite == UInt64.MaxValue)
+                        {
+                            d = new MessageDialog("Piattaforma non supportata");
+                            d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
+                            IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
+                        }
+                        else
+                        {
+
+                            partite++;
                         if (g.GetPunteggio() == cpu.GetPunteggio())
                             s = "La partita è patta";
                         else
