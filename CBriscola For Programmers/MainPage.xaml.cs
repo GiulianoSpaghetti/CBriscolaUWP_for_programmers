@@ -324,8 +324,6 @@ namespace CBriscola_For_Programmers
                             else
                             {
                                 s1 = "Vuoi effertuare una nuova partita?";
-                                vecchiPuntiUtente = 0;
-                                vecchiPuntiCPU = 0;
                                 btnshare.Visibility = Visibility.Visible;
                             }
                             risultato.Text = $"La partita numero {partite} è finita. {s}. {s1}";
@@ -372,6 +370,8 @@ namespace CBriscola_For_Programmers
             cpu.SetNome(txtNomeCpu.Text);
             NomeUtente.Text = g.GetNome();
             NomeCpu.Text = cpu.GetNome();
+            if (partite % 2 == 0)
+                vecchiPuntiUtente = vecchiPuntiCPU = 0;
             try
             {
                 secondi = UInt16.Parse(txtSecondi.Text); 
@@ -475,7 +475,7 @@ namespace CBriscola_For_Programmers
 
         private async void OnFPShare_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20for%20Programmers%20la%20partita%20{g.GetNome()}%20contro%20{cpu.GetNome()}%20%C3%A8%20finita%20{g.GetPunteggio()+vecchiPuntiUtente}%20a%20{cpu.GetPunteggio()+vecchiPuntiCPU}%20su%20piattaforma%20{App.piattaforma}%20col%20mazzo%20Napoletano&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp_for_programmers"));
+            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20for%20Programmers%20la%20partita%20{partite+1}%20{g.GetNome()}%20contro%20{cpu.GetNome()}%20%C3%A8%20finita%20{g.GetPunteggio()+vecchiPuntiUtente}%20a%20{cpu.GetPunteggio()+vecchiPuntiCPU}%20su%20piattaforma%20{App.piattaforma}%20col%20mazzo%20Napoletano&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp_for_programmers"));
         }
 
         public void Close(object sender, SystemNavigationCloseRequestedPreviewEventArgs e)
