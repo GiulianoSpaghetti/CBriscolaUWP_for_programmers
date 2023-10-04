@@ -300,7 +300,7 @@ namespace CBriscola_For_Programmers
                                 s = "Hai vinto per";
                             else
                                 s = "Hai perso per";
-                            s = $"{s} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio())-vecchiPuntiCPU} punti";
+                            s = $"{s} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio()-vecchiPuntiCPU)} punti";
                         }
                         if (partite % 2 == 1)
                         {
@@ -308,16 +308,18 @@ namespace CBriscola_For_Programmers
                             vecchiPuntiUtente = g.GetPunteggio();
                             vecchiPuntiCPU = cpu.GetPunteggio();
                             s1 = "Vuoi effettuare la seconda partita?";
+                            btnshare.Visibility = Visibility.Collapsed;
+
                         }
                         else
                         {
                             s1 = "Vuoi effertuare una nuova partita?";
                             vecchiPuntiUtente = 0;
                             vecchiPuntiCPU = 0;
+                            btnshare.Visibility = Visibility.Visible;
                         }
-                        risultato.Text = $"La partita numero {partite+1} è finita. {s}. {s1}";
+                        risultato.Text = $"La partita numero {partite} è finita. {s}. {s1}";
                         Greetings.Visibility = Visibility.Visible;
-                        btnshare.Visibility = (partite%2==1)?Visibility.Visible : Visibility.Collapsed;
                         btnshare.IsEnabled = helper.GetLivello() == 3;
                     }
                     t = null;
