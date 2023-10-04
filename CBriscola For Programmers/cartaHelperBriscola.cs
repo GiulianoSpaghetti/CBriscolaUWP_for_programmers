@@ -45,10 +45,10 @@ namespace org.altervista.numerone.framework
 			string s="";
 			switch (carta / 10)
 			{
-				case 0: s = "Bastoni"; break;
-				case 1: s = "Coppe"; break;
-				case 2: s = "Denari"; break;
-				case 3: s = "Spade"; break;
+				case 0: s = "Fiori"; break;
+				case 1: s = "Quadri"; break;
+				case 2: s = "Cuori"; break;
+				case 3: s = "Picche"; break;
 			}
             return s;
         }
