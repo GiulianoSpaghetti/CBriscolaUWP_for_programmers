@@ -391,7 +391,12 @@ namespace CBriscola_For_Programmers
         {
             UInt16 livello = GetLivello();
             if (livello != helper.GetLivello())
+            {
                 new ToastContentBuilder().AddArgument("La partita verrà riavviata").AddText($"Il livello è cambiato. La partita verrà riavviata.").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                vecchiPuntiCPU = 0;
+                vecchiPuntiUtente = 0;
+                partite = 0;
+            }
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
             m = new Mazzo(e);
