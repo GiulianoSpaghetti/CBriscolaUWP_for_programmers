@@ -282,8 +282,8 @@ namespace CBriscola_For_Programmers
                         {
                             i1 = GiocaCpu();
                             if (cpu.GetCartaGiocata().StessoSeme(briscola))
-                                new ToastContentBuilder().AddArgument("Giocata Briscola").AddText($"La cpu ha giocato il {cpu.GetCartaGiocata().GetValore()+1} di briscola").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                            else if (cpu.GetCartaGiocata().GetPunteggio()>0)
+                                new ToastContentBuilder().AddArgument("Giocata Briscola").AddText($"La cpu ha giocato il {cpu.GetCartaGiocata().GetValore() + 1} di briscola").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                            else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
                                 new ToastContentBuilder().AddArgument("Giocata Carta di valore").AddText($"La cpu ha giocato il {cpu.GetCartaGiocata().GetValore() + 1} di {cpu.GetCartaGiocata().GetSemeStr()}").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                         };
 
@@ -294,7 +294,7 @@ namespace CBriscola_For_Programmers
                         Applicazione.Visibility = Visibility.Collapsed;
                         if (partite == UInt64.MaxValue)
                         {
-                            d = new MessageDialog("Piattaforma non supportata");
+                            d = new MessageDialog("Non starai giocando troppo?");
                             d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
                             IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
                         }
@@ -302,35 +302,36 @@ namespace CBriscola_For_Programmers
                         {
 
                             partite++;
-                        if (g.GetPunteggio() == cpu.GetPunteggio())
-                            s = "La partita è patta";
-                        else
-                        {
-                            if (g.GetPunteggio() > cpu.GetPunteggio())
-                                s = "Hai vinto per";
+                            if (g.GetPunteggio() == cpu.GetPunteggio())
+                                s = "La partita è patta";
                             else
-                                s = "Hai perso per";
-                            s = $"{s} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio()-vecchiPuntiCPU)} punti";
-                        }
-                        if (partite % 2 == 1)
-                        {
+                            {
+                                if (g.GetPunteggio() > cpu.GetPunteggio())
+                                    s = "Hai vinto per";
+                                else
+                                    s = "Hai perso per";
+                                s = $"{s} {Math.Abs(g.GetPunteggio() + vecchiPuntiUtente - cpu.GetPunteggio() - vecchiPuntiCPU)} punti";
+                            }
+                            if (partite % 2 == 1)
+                            {
 
-                            vecchiPuntiUtente = g.GetPunteggio();
-                            vecchiPuntiCPU = cpu.GetPunteggio();
-                            s1 = "Vuoi effettuare la seconda partita?";
-                            btnshare.Visibility = Visibility.Collapsed;
+                                vecchiPuntiUtente = g.GetPunteggio();
+                                vecchiPuntiCPU = cpu.GetPunteggio();
+                                s1 = "Vuoi effettuare la seconda partita?";
+                                btnshare.Visibility = Visibility.Collapsed;
 
+                            }
+                            else
+                            {
+                                s1 = "Vuoi effertuare una nuova partita?";
+                                vecchiPuntiUtente = 0;
+                                vecchiPuntiCPU = 0;
+                                btnshare.Visibility = Visibility.Visible;
+                            }
+                            risultato.Text = $"La partita numero {partite} è finita. {s}. {s1}";
+                            Greetings.Visibility = Visibility.Visible;
+                            btnshare.IsEnabled = helper.GetLivello() == 3;
                         }
-                        else
-                        {
-                            s1 = "Vuoi effertuare una nuova partita?";
-                            vecchiPuntiUtente = 0;
-                            vecchiPuntiCPU = 0;
-                            btnshare.Visibility = Visibility.Visible;
-                        }
-                        risultato.Text = $"La partita numero {partite} è finita. {s}. {s1}";
-                        Greetings.Visibility = Visibility.Visible;
-                        btnshare.IsEnabled = helper.GetLivello() == 3;
                     }
                     t = null;
                 });
