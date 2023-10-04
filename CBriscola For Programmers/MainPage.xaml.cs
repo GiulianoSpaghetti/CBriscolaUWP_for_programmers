@@ -26,8 +26,8 @@ namespace CBriscola_For_Programmers
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
         private static bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
-
-        private static UInt16 secondi = 1;
+        private static UInt64 partite = 0;
+        private static UInt16 secondi = 1, vecchiPuntiUtente=0, vecchiPuntiCPU=0;
         private static TimeSpan delay;
         private static ElaboratoreCarteBriscola e;
         private static Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
@@ -289,8 +289,9 @@ namespace CBriscola_For_Programmers
                     }
                     else
                     {
-                        string s;
+                        string s, s1;
                         Applicazione.Visibility = Visibility.Collapsed;
+                        partite++;
                         if (g.GetPunteggio() == cpu.GetPunteggio())
                             s = "La partita è patta";
                         else
@@ -299,10 +300,24 @@ namespace CBriscola_For_Programmers
                                 s = "Hai vinto per";
                             else
                                 s = "Hai perso per";
-                            s = $"{s} {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} punti. Vuoi effertuare una nuova partita?";
+                            s = $"{s} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio())-vecchiPuntiCPU} punti";
                         }
-                        risultato.Text = $"La partita è finita. {s}";
+                        if (partite % 2 == 1)
+                        {
+
+                            vecchiPuntiUtente = g.GetPunteggio();
+                            vecchiPuntiCPU = cpu.GetPunteggio();
+                            s1 = "Vuoi effettuare la seconda partita?";
+                        }
+                        else
+                        {
+                            s1 = "Vuoi effertuare una nuova partita?";
+                            vecchiPuntiUtente = 0;
+                            vecchiPuntiCPU = 0;
+                        }
+                        risultato.Text = $"La partita numero {partite+1} è finita. {s}. {s1}";
                         Greetings.Visibility = Visibility.Visible;
+                        btnshare.Visibility = (partite%2==1)?Visibility.Visible : Visibility.Collapsed;
                         btnshare.IsEnabled = helper.GetLivello() == 3;
                     }
                     t = null;
