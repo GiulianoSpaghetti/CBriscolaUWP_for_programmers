@@ -291,6 +291,8 @@ namespace CBriscola_For_Programmers
                     else
                     {
                         string s, s1;
+                        vecchiPuntiCPU += cpu.GetPunteggio();
+                        vecchiPuntiUtente += g.GetPunteggio();
                         Applicazione.Visibility = Visibility.Collapsed;
                         if (partite == UInt64.MaxValue)
                         {
@@ -302,21 +304,19 @@ namespace CBriscola_For_Programmers
                         {
 
                             partite++;
-                            if (g.GetPunteggio() == cpu.GetPunteggio())
+                            if (vecchiPuntiUtente == vecchiPuntiCPU)
                                 s = "La partita è patta";
                             else
                             {
-                                if (g.GetPunteggio() > cpu.GetPunteggio())
+                                if (vecchiPuntiUtente > vecchiPuntiCPU)
                                     s = "Hai vinto per";
                                 else
                                     s = "Hai perso per";
-                                s = $"{s} {Math.Abs(g.GetPunteggio() + vecchiPuntiUtente - cpu.GetPunteggio() - vecchiPuntiCPU)} punti";
+                                s = $"{s} {Math.Abs(vecchiPuntiUtente - vecchiPuntiCPU)} punti";
                             }
                             if (partite % 2 == 1)
                             {
 
-                                vecchiPuntiUtente = g.GetPunteggio();
-                                vecchiPuntiCPU = cpu.GetPunteggio();
                                 s1 = "Vuoi effettuare la seconda partita?";
                                 btnshare.Visibility = Visibility.Collapsed;
 
@@ -409,6 +409,11 @@ namespace CBriscola_For_Programmers
                 vecchiPuntiCPU = 0;
                 vecchiPuntiUtente = 0;
                 partite = 0;
+            }
+            if (partite%2==0)
+            {
+                vecchiPuntiCPU = 0;
+                vecchiPuntiUtente = 0;
             }
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
