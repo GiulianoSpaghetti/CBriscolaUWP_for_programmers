@@ -102,12 +102,12 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+          /*  if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
                 IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
-            }
+            }*/
         }
 
         private UInt16 GetLivello()
@@ -472,7 +472,7 @@ namespace CBriscola_For_Programmers
 
         private async void OnSito_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://github.com/numerunix/cbriscolauwp.new"));
+            await Launcher.LaunchUriAsync(new Uri("https://github.com/numerunix/cbriscolauwp_for_programmers"));
         }
 
     }
