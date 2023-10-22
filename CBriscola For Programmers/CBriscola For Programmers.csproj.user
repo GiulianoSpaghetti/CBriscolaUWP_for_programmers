@@ -4,7 +4,7 @@
     <AppxShowAllApps>True</AppxShowAllApps>
     <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
     <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
-    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
     <Source>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</Source>
     <SmallTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</SmallTileSource>
     <MediumTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</MediumTileSource>
