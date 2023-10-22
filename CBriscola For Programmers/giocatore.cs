@@ -8,6 +8,7 @@
  */
 
 using System;
+using System.Collections.Generic;
 using Windows.UI.Xaml.Media.Imaging;
 
 namespace org.altervista.numerone.framework
@@ -17,24 +18,25 @@ namespace org.altervista.numerone.framework
 		private string nome;
 		private Carta[] mano;
 		private bool ordinaMano;
-		private UInt16 numeroCarte;
-		private UInt16 iCarta;
-		private UInt16 iCartaGiocata;
-		private UInt16 punteggio;
-		private readonly GiocatoreHelper helper;
+		private UInt16 numeroCarte, iCarta, iCartaGiocata, punteggio;
+        private readonly UInt16 dimensioneMano;
+        private List<UInt16> punteggi;
+        private GiocatoreHelper helper;
 		public enum Carta_GIOCATA { NESSUNA_Carta_GIOCATA = UInt16.MaxValue };
 		public Giocatore(GiocatoreHelper h, string n, UInt16 carte, bool ordina = true)
 		{
-			ordinaMano = ordina;
-			numeroCarte = carte;
+            dimensioneMano = carte;
+            ordinaMano = ordina;
+			numeroCarte = dimensioneMano;
 			iCartaGiocata = (UInt16)(Carta_GIOCATA.NESSUNA_Carta_GIOCATA);
 			punteggio = 0;
 			helper = h;
 			nome = n;
-			mano = new Carta[3];
+			mano = new Carta[dimensioneMano];
 			iCarta = 0;
-		}
-		public string GetNome() { return nome; }
+            punteggi = new List<UInt16>();
+        }
+        public string GetNome() { return nome; }
 		public void SetNome(string n) { nome = n; }
 		public bool GetFlagOrdina() { return ordinaMano; }
 		public void SetFlagOrdina(bool ordina) { ordinaMano = ordina; }
@@ -125,6 +127,38 @@ namespace org.altervista.numerone.framework
 		{
 			return numeroCarte;
 		}
-	}
+
+
+        public void Resetta(GiocatoreHelper h)
+        {
+            if (numeroCarte > 1)
+                throw new Exception("Chiamato resetta con numeroCarte!=0");
+            else
+            {
+                numeroCarte = dimensioneMano;
+                helper = h;
+                iCartaGiocata = (UInt16)(Carta_GIOCATA.NESSUNA_Carta_GIOCATA);
+                iCarta = 0;
+                punteggi.Add(GetPunteggio());
+                punteggio = 0;
+                for (UInt16 i = 0; i < dimensioneMano; i++)
+                    mano[i] = null;
+
+            }
+        }
+
+        public void CancellaPunteggi()
+        {
+            punteggi.Clear();
+        }
+
+        public UInt64 GetPunteggi()
+        {
+            UInt64 p = 0;
+            foreach (UInt16 i in punteggi)
+                p += i;
+            return p;
+        }
+    }
 
 }

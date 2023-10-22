@@ -64,7 +64,7 @@
                 <TextBlock Text="ⓒ 2023 Giulio Sorrentino, some right reserved" Grid.Row="1" Style="{ThemeResource CustomTextBlockStyle}" />
                 <TextBlock Text="Simulatore del gioco della briscola a 2 giocatori, senza multiplayer" Grid.Row="2" Style="{ThemeResource CustomTextBlockStyle}" />
                 <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="3" Style="{ThemeResource CustomTextBlockStyle}" />
-                <TextBlock Text="Dedicato alle mie tre dame. Il cic e francesso si prendono la roba buona ed ora devono chiedere la rimozione della scritta." Grid.Row="4" Style="{ThemeResource CustomTextBlockStyle}" />
+                <TextBlock Text="Dedicato alle mie tre dame. Il CIC e francesso odiano la pubblicità gratuita e si prendono la roba buona ed ora devono chiedere la rimozione della scritta.." Grid.Row="4" Style="{ThemeResource CustomTextBlockStyle}" />
                 <Button Content="Maggiori Informazioni" Tapped="OnSito_Click" Grid.Row="5" Style="{ThemeResource CustomButtonStyle}"/>
                 <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="6" Style="{ThemeResource CustomButtonStyle}"/>
             </Grid>

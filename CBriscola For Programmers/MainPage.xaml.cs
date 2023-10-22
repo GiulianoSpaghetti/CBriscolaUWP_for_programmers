@@ -26,8 +26,8 @@ namespace CBriscola_For_Programmers
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
         private static Image i, i1;
         private static bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
-
-        private static UInt16 secondi = 1;
+        private static UInt64 partite = 0;
+        private static UInt16 secondi = 1, livello;
         private static TimeSpan delay;
         private static ElaboratoreCarteBriscola e;
         private static Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
@@ -51,7 +51,7 @@ namespace CBriscola_For_Programmers
             s = localSettings.Containers["CBriscola"].Values["nomeCpu"] as string;
             if (s == null)
                 s = "Cpu";
-            UInt16 livello = GetLivello();
+            livello = GetLivello();
             switch (livello)
             {
                 case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
@@ -102,7 +102,7 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-           if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
@@ -289,19 +289,43 @@ namespace CBriscola_For_Programmers
                     }
                     else
                     {
-                        string s;
+                        string s, s1;
                         Applicazione.Visibility = Visibility.Collapsed;
-                        if (g.GetPunteggio() == cpu.GetPunteggio())
+                        partite++;
+                        livello = GetLivello();
+                        e = new ElaboratoreCarteBriscola(briscolaPunti);
+                        briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
+                        g.Resetta(new GiocatoreHelperUtente());
+                        switch (livello)
+                        {
+                            case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                            case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                            default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                        }
+                        cpu.Resetta(helper);
+
+                        if (g.GetPunteggi() == cpu.GetPunteggi())
                             s = "La partita è patta";
                         else
                         {
-                            if (g.GetPunteggio() > cpu.GetPunteggio())
-                                s = "Hai vinto per";
+                            if (g.GetPunteggi() > cpu.GetPunteggi())
+                                s = $"Hai vinto per {g.GetPunteggi()-cpu.GetPunteggi()} punti";
                             else
-                                s = "Hai perso per";
-                            s = $"{s} {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} punti. Vuoi effertuare una nuova partita?";
+                                s = $"Hai perso per {cpu.GetPunteggi()-g.GetPunteggi()} punti";
                         }
-                        risultato.Text = $"La partita è finita. {s}";
+                        if (partite % 2 == 1)
+                        {
+
+                            s1 = "Vuoi effettuare la seconda partita?";
+                            btnshare.Visibility = Visibility.Collapsed;
+
+                        }
+                        else
+                        {
+                            s1 = "Vuoi effertuare una nuova partita?";
+                            btnshare.Visibility = Visibility.Visible;
+                        }
+                        risultato.Text = $"La partita numero {partite} è finita. {s}. {s1}";
                         Greetings.Visibility = Visibility.Visible;
                         btnshare.IsEnabled = helper.GetLivello() == 3;
                     }
@@ -374,21 +398,17 @@ namespace CBriscola_For_Programmers
 
         private void NuovaPartita()
         {
-            UInt16 livello = GetLivello();
             if (livello != helper.GetLivello())
-                new ToastContentBuilder().AddArgument("La partita verrà riavviata").AddText($"Il livello è cambiato. La partita verrà riavviata.").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-            e = new ElaboratoreCarteBriscola(briscolaPunti);
-            briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
-            m = new Mazzo(e);
-            g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
-            cpu = new Giocatore(helper, cpu.GetNome(), 3);
-            switch (livello)
             {
-                case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
-                case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
-                default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                new ToastContentBuilder().AddArgument("La partita verrà riavviata").AddText($"Il livello è cambiato. La partita verrà riavviata.").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                partite = 0;
             }
-
+            if (livello!=helper.GetLivello() || partite%2==0)
+            {
+                cpu.CancellaPunteggi();
+                g.CancellaPunteggi();
+            }
+            m = new Mazzo(e);
             for (UInt16 i = 0; i < 3; i++)
             {
                 g.AddCarta(m);
@@ -442,7 +462,7 @@ namespace CBriscola_For_Programmers
 
         private async void OnFPShare_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20for%20Programmers%20la%20partita%20{g.GetNome()}%20contro%20{cpu.GetNome()}%20%C3%A8%20finita%20{g.GetPunteggio()}%20a%20{cpu.GetPunteggio()}%20su%20piattaforma%20{App.piattaforma}%20col%20mazzo%20Napoletano&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp_for_programmers"));
+            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Con%20la%20CBriscola%20for%20Programmers%20la%20partita%20{g.GetNome()}%20contro%20{cpu.GetNome()}%20%C3%A8%20finita%20{g.GetPunteggi()}%20a%20{cpu.GetPunteggi()}%20su%20piattaforma%20{App.piattaforma}%20col%20mazzo%20Napoletano&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2Fcbriscolauwp_for_programmers"));
         }
 
         public void Close(object sender, SystemNavigationCloseRequestedPreviewEventArgs e)
