@@ -40,10 +40,15 @@ namespace CBriscola_For_Programmers
             Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "it-IT";
             this.InitializeComponent();
             SystemNavigationManagerPreview.GetForCurrentView().CloseRequested += Close;
+            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+            s = localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] as string;
+            if (s == null || s == "false")
+                briscolaPunti = false;
+            else
+                briscolaPunti = true;
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             m = new Mazzo(e);
             Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
-            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
             s = localSettings.Containers["CBriscola"].Values["numeUtente"] as string;
             if (s == null)
                 s = "numerone";
@@ -72,11 +77,6 @@ namespace CBriscola_For_Programmers
                 secondi = 5;
             }
             delay = TimeSpan.FromSeconds(secondi);
-            s = localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] as string;
-            if (s == null || s == "false")
-                briscolaPunti = false;
-            else
-                briscolaPunti = true;
             s = localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] as string;
             if (s == null || s == "false")
                 avvisaTalloneFinito = false;
@@ -408,7 +408,9 @@ namespace CBriscola_For_Programmers
                 cpu.CancellaPunteggi();
                 g.CancellaPunteggi();
             }
+            e = new ElaboratoreCarteBriscola(briscolaPunti);
             m = new Mazzo(e);
+            briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
             for (UInt16 i = 0; i < 3; i++)
             {
                 g.AddCarta(m);
