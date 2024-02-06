@@ -27,7 +27,7 @@ namespace CBriscola_For_Programmers
         private static Image i, i1;
         private static bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
         private static UInt64 partite = 0;
-        private static UInt16 secondi = 1, livello;
+        private static UInt16 secondi = 1;
         private static TimeSpan delay;
         private static ElaboratoreCarteBriscola e;
         private static Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
@@ -56,8 +56,7 @@ namespace CBriscola_For_Programmers
             s = localSettings.Containers["CBriscola"].Values["nomeCpu"] as string;
             if (s == null)
                 s = "Cpu";
-            livello = GetLivello();
-            switch (livello)
+            switch (GetLivello())
             {
                 case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
                 case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
@@ -292,18 +291,8 @@ namespace CBriscola_For_Programmers
                         string s, s1;
                         Applicazione.Visibility = Visibility.Collapsed;
                         partite++;
-                        livello = GetLivello();
-                        e = new ElaboratoreCarteBriscola(briscolaPunti);
-                        briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
-                        g.Resetta(new GiocatoreHelperUtente());
-                        switch (livello)
-                        {
-                            case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
-                            case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
-                            default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
-                        }
-                        cpu.Resetta(helper);
-
+                        cpu.Resetta();
+                        g.Resetta();
                         if (g.GetPunteggi() == cpu.GetPunteggi())
                             s = "La partita è patta";
                         else
@@ -398,18 +387,24 @@ namespace CBriscola_For_Programmers
 
         private void NuovaPartita()
         {
-            if (livello != helper.GetLivello())
+            if (GetLivello() != helper.GetLivello())
             {
                 new ToastContentBuilder().AddArgument("La partita verrà riavviata").AddText($"Il livello è cambiato. La partita verrà riavviata.").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                 partite = 0;
             }
-            if (livello!=helper.GetLivello() || partite%2==0)
-            {
-                cpu.CancellaPunteggi();
-                g.CancellaPunteggi();
-            }
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             m = new Mazzo(e);
+            switch (GetLivello())
+            {
+                case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+                default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+            }
+            if (partite % 2 == 0)
+            {
+                cpu.CancellaPunteggi(helper);
+                g.CancellaPunteggi();
+            }
             briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
             for (UInt16 i = 0; i < 3; i++)
             {
@@ -435,7 +430,7 @@ namespace CBriscola_For_Programmers
             PuntiUtente.Text = $"Punti di {g.GetNome()}: {g.GetPunteggio()}";
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
-            PuntiCpu.Text = $"Punti di {cpu.GetNome()}: ${cpu.GetPunteggio()}";
+            PuntiCpu.Text = $"Punti di {cpu.GetNome()}: {cpu.GetPunteggio()}";
             PuntiUtente.Text = $"Punti di {g.GetNome()}: {g.GetPunteggio()}";
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             NelMazzoRimangono.Visibility = Visibility.Visible;

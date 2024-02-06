@@ -65,7 +65,7 @@
                 <TextBlock Text="ⓒ 2023 Giulio Sorrentino, some right reserved" Grid.Row="1" Style="{ThemeResource CustomTextBlockStyle}" />
                 <TextBlock Text="Simulatore del gioco della briscola a 2 giocatori, senza multiplayer" Grid.Row="2" Style="{ThemeResource CustomTextBlockStyle}" />
                 <TextBlock Text="Licenza: GPL v3 o, secondo la tua opionione, qualsiasi versione successiva" Grid.Row="3" Style="{ThemeResource CustomTextBlockStyle}" />
-                <TextBlock Text="Dedicato alle mie tre dame: Annachiara, Francesca e Giovanna." Grid.Row="4" Style="{ThemeResource CustomTextBlockStyle}" />
+                <TextBlock Text="Dedicato alle mie tre dame: Annachiara, Francesca e Giovanna e suo figlio." Grid.Row="4" Style="{ThemeResource CustomTextBlockStyle}" />
                 <TextBlock Text="Francesso ha fatto firmare un contratto vincolante che obbliga le persone a star lontano dall'inventore della wxbriscola." Grid.Row="5" Style="{ThemeResource CustomTextBlockStyle}" />
                 <Button Content="Maggiori Informazioni" Tapped="OnSito_Click" Grid.Row="6" Style="{ThemeResource CustomButtonStyle}"/>
                 <Button Content="Applicazione" Tapped="OnApp_Click" Grid.Row="7" Style="{ThemeResource CustomButtonStyle}"/>

@@ -129,17 +129,19 @@ namespace org.altervista.numerone.framework
 		}
 
 
-        public void Resetta(GiocatoreHelper h)
+        public void Resetta(GiocatoreHelper h=null)
         {
             if (numeroCarte > 1)
                 throw new Exception("Chiamato resetta con numeroCarte!=0");
             else
             {
                 numeroCarte = dimensioneMano;
-                helper = h;
+				if (h!=null)
+	                helper = h;
                 iCartaGiocata = (UInt16)(Carta_GIOCATA.NESSUNA_Carta_GIOCATA);
                 iCarta = 0;
-                punteggi.Add(GetPunteggio());
+				if (GetPunteggio()>0)
+	                punteggi.Add(GetPunteggio());
                 punteggio = 0;
                 for (UInt16 i = 0; i < dimensioneMano; i++)
                     mano[i] = null;
@@ -147,9 +149,17 @@ namespace org.altervista.numerone.framework
             }
         }
 
-        public void CancellaPunteggi()
+        public void CancellaPunteggi(GiocatoreHelper h=null)
         {
             punteggi.Clear();
+            numeroCarte = dimensioneMano;
+			if (h!=null)
+	            helper = h;
+            iCartaGiocata = (UInt16)(Carta_GIOCATA.NESSUNA_Carta_GIOCATA);
+            iCarta = 0;
+			punteggio = 0;
+            for (UInt16 i = 0; i < dimensioneMano; i++)
+                mano[i] = null;
         }
 
         public UInt64 GetPunteggi()
