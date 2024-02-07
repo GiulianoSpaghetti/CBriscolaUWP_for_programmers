@@ -7,11 +7,8 @@ https://youtu.be/2mpVOD7NkDs
 
 # Come ottenerla
 
-[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9NGV8ZD2HN70)
+[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9N00RWMTX2RV)
 
-# Come installare l'ultima versione
-
-https://youtu.be/mtWmls265BE
 
 # Come funziona
 Per festeggiare, vi spiego come funziona il mio algoritmo brevettato:
