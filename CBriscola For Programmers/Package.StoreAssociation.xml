@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StoreAssociation xmlns="http://schemas.microsoft.com/appx/2010/storeassociation">
-  <Publisher>CN=AC0F8650-1992-4799-948A-88BE66753B80</Publisher>
-  <PublisherDisplayName>numerone</PublisherDisplayName>
+  <Publisher>CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B</Publisher>
+  <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
   <DeveloperAccountType>MSA</DeveloperAccountType>
   <GeneratePackageHash>http://www.w3.org/2001/04/xmlenc#sha256</GeneratePackageHash>
   <SupportedLocales>
@@ -361,14 +361,44 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>62612numerone.CBriscolaforProgrammersforXBox</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.6245445F14426</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>CBriscola for Programmers for XBox</ReservedName>
+      <ReservedName>CBriscola for Programmers</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
-    <MainPackageIdentityName>62612numerone.CBriscolaforXBox</MainPackageIdentityName>
-    <MainPackageIdentityName>62612numerone.Giovannino</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.315940154655C</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronesfortune</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronesfortuneinmaui</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronesoeminformations</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.numeronessecurity</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.Thetrumpsuitgame</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.WinDateCalc</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.31974FA39EC07</MainPackageIdentityName>
+    <MainPackageIdentityName>21961GiulioSorrentino.WinStarDate</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9N00RWMTX2RV" />
+  <PackageInfoList LandingUrl="https://devcenterapi.dce.mp.microsoft.com/dashboard/Application?appId=9NGV8ZD2HN70">
+    <BundleInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>X86</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>X64</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Arm</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Arm64</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.0.13.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+    </BundleInfo>
+  </PackageInfoList>
 </StoreAssociation>

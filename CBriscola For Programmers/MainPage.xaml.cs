@@ -20,7 +20,7 @@ namespace CBriscola_For_Programmers
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private static Giocatore g, cpu, primo, secondo, temp;
+        private static MyGiocatore g, cpu, primo, secondo, temp;
         private static Mazzo m;
         private static Carta c, c1, briscola;
         private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
@@ -48,11 +48,11 @@ namespace CBriscola_For_Programmers
                 briscolaPunti = true;
             e = new ElaboratoreCarteBriscola(briscolaPunti);
             m = new Mazzo(e);
-            Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
+            Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e), "bastoni", "coppe", "denari", "spade");
             s = localSettings.Containers["CBriscola"].Values["numeUtente"] as string;
             if (s == null)
                 s = "numerone";
-            g = new Giocatore(new GiocatoreHelperUtente(), s, 3);
+            g = new MyGiocatore(new GiocatoreHelperUtente(), s, 3);
             s = localSettings.Containers["CBriscola"].Values["nomeCpu"] as string;
             if (s == null)
                 s = "Cpu";
@@ -63,7 +63,7 @@ namespace CBriscola_For_Programmers
                 default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
             }
 
-            cpu = new Giocatore(helper, s, 3);
+            cpu = new MyGiocatore(helper, s, 3);
             primo = g;
             secondo = cpu;
             briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
