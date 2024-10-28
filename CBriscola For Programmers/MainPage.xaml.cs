@@ -249,13 +249,17 @@ namespace CBriscola_For_Programmers
                     {
                         NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
                         CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
-                        if (Briscola.Visibility == Visibility.Visible && m.GetNumeroCarte() == 0)
+                        switch (m.GetNumeroCarte()) 
                         {
-                            NelMazzoRimangono.Visibility = Visibility.Collapsed;
-                            Briscola.Visibility = Visibility.Collapsed;
-                            if (avvisaTalloneFinito)
+                            case 2: if (avvisaTalloneFinito)
                                 new ToastContentBuilder().AddArgument("Tallone Finito").AddText($"Il tallone è finito").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-
+                            break;
+                            case 0: if (Briscola.Visibility == Visibility.Visible)
+                                    {
+                                        NelMazzoRimangono.Visibility = Visibility.Collapsed;
+                                        Briscola.Visibility = Visibility.Collapsed;
+                                    }
+                            break;
                         }
                         Utente0.Source = g.GetImmagine(0);
                         if (cpu.GetNumeroCarte() > 1)
@@ -362,9 +366,14 @@ namespace CBriscola_For_Programmers
                 secondi = UInt16.Parse(txtSecondi.Text); 
             } catch (FormatException ex)
             {
-                txtSecondi.Text = "Valore non valido";
+                 new ToastContentBuilder().AddArgument(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddText(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                return;
+            } catch (OverflowException ex)
+            {
+                 new ToastContentBuilder().AddArgument(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddText(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                 return;
             }
+
             if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
                 briscolaPunti = false;
             else
