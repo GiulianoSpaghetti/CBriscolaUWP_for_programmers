@@ -71,11 +71,22 @@ namespace CBriscola_For_Programmers
             try
             {
                 secondi = UInt16.Parse(s);
-            } catch (Exception ex)
-            {
-                secondi = 5;
-            }
-            delay = TimeSpan.FromSeconds(secondi);
+             catch (FormatException ex)
+             {
+                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                 return;
+             }
+             catch (OverflowException ex1)
+             {
+                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                 return;
+             }
+             if (secondi<1 || secondi > 10)
+             {
+                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                 return;
+             }
+             delay = TimeSpan.FromSeconds(secondi);
             s = localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] as string;
             if (s == null || s == "false")
                 avvisaTalloneFinito = false;
