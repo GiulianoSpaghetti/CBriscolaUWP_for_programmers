@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Media.Imaging;
 using org.altervista.numerone.framework;
 using Windows.System.Profile.SystemManufacturers;
 using Windows.UI.Popups;
+using System.Threading;
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
 
 namespace CBriscola_For_Programmers
@@ -112,12 +113,12 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface") && !SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+  /*          if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface") && !SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
                 IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
-            }
+            }*/
         }
 
         private UInt16 GetLivello()
@@ -315,8 +316,8 @@ namespace CBriscola_For_Programmers
                         string s, s1;
                         Applicazione.Visibility = Visibility.Collapsed;
                         partite++;
-                        cpu.Resetta();
-                        g.Resetta();
+                        cpu.Resetta(null, false);
+                        g.Resetta(null, false);
                         if (g.GetPunteggi() == cpu.GetPunteggi())
                             s = "La partita è patta";
                         else
@@ -445,11 +446,8 @@ namespace CBriscola_For_Programmers
                 case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
                 default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
             }
-            if (partite % 2 == 0)
-            {
-                cpu.CancellaPunteggi(helper);
-                g.CancellaPunteggi();
-            }
+            cpu.Resetta(helper, partite % 2 == 0);
+            g.Resetta(null, partite % 2 == 0);
             briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
             for (UInt16 i = 0; i < 3; i++)
             {
