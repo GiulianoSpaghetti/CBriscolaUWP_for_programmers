@@ -86,11 +86,6 @@ namespace CBriscola_For_Programmers
             {
                 secondi = 5;
             }
-             if (secondi<1 || secondi > 10)
-             {
-                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                 return;
-             }
              delay = TimeSpan.FromSeconds(secondi);
             s = localSettings.Containers["CBriscola"].Values["avvisaTalloneFinito"] as string;
             if (s == null || s == "false")
@@ -117,7 +112,7 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface"))
+            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface") && !SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
@@ -132,10 +127,19 @@ namespace CBriscola_For_Programmers
             s = localSettings.Containers["CBriscola"].Values["livello"] as string;
             if (s != null)
                 try { livello = UInt16.Parse(s); }
-                catch (NotFiniteNumberException ex)
+                catch (FormatException ex)
                 {
                     livello = 3;
                 }
+                catch (OverflowException ex)
+                {
+                    livello = 3;
+                }
+                catch (ArgumentNullException ex)
+                {
+                    livello = 3;
+                }
+
             return livello;
 
         }
@@ -373,22 +377,38 @@ namespace CBriscola_For_Programmers
         }
         private void OnOpOk_Click(object sender, TappedRoutedEventArgs e)
         {
+            UInt16 s;
             g.SetNome(txtNomeUtente.Text);
             cpu.SetNome(txtNomeCpu.Text);
             NomeUtente.Text = g.GetNome();
             NomeCpu.Text = cpu.GetNome();
             try
             {
-                secondi = UInt16.Parse(txtSecondi.Text); 
+                s = UInt16.Parse(txtSecondi.Text); 
             } catch (FormatException ex)
             {
                  new ToastContentBuilder().AddArgument("Valore Non Valido").AddText("Valore Non Valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                txtSecondi.Text = secondi.ToString();
                 return;
             } catch (OverflowException ex)
             {
                  new ToastContentBuilder().AddArgument("Valore Non Valido").AddText("ValoreNonValido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                txtSecondi.Text = secondi.ToString();
                 return;
             }
+            catch (ArgumentNullException ex)
+            {
+                new ToastContentBuilder().AddArgument("Valore Non Valido").AddText("ValoreNonValido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                txtSecondi.Text = secondi.ToString();
+                return;
+            }
+            if (s < 1 || s > 10)
+            {
+                new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                txtSecondi.Text = secondi.ToString();
+                return;
+            }
+            secondi = s;
 
             if (cbBriscolaDaPunti.IsChecked == null || cbBriscolaDaPunti.IsChecked == false)
                 briscolaPunti = false;
