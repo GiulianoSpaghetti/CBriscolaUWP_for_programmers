@@ -71,16 +71,21 @@ namespace CBriscola_For_Programmers
             try
             {
                 secondi = UInt16.Parse(s);
-             catch (FormatException ex)
-             {
-                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                 return;
-             }
-             catch (OverflowException ex1)
-             {
-                 new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
-                 return;
-             }
+            }
+            catch (FormatException ex)
+            {
+                new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                return;
+            }
+            catch (OverflowException ex1)
+            {
+                new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                return;
+            }
+            catch (ArgumentNullException ex)
+            {
+                secondi = 5;
+            }
              if (secondi<1 || secondi > 10)
              {
                  new ToastContentBuilder().AddArgument("Valore non valido").AddText("Valore non valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
@@ -112,7 +117,7 @@ namespace CBriscola_For_Programmers
             NelMazzoRimangono.Text = $"Nel mazzo rimangono: {m.GetNumeroCarte()} carte";
             CartaBriscola.Text = $"Il seme di Briscola è: {briscola.GetSemeStr()}";
             Briscola.Source = briscola.GetImmagine();
-            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface"))
             {
                 d = new MessageDialog("Piattaforma non supportata");
                 d.Commands.Add(new UICommand("Esci", new UICommandInvokedHandler(exit)));
@@ -377,11 +382,11 @@ namespace CBriscola_For_Programmers
                 secondi = UInt16.Parse(txtSecondi.Text); 
             } catch (FormatException ex)
             {
-                 new ToastContentBuilder().AddArgument(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddText(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                 new ToastContentBuilder().AddArgument("Valore Non Valido").AddText("Valore Non Valido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                 return;
             } catch (OverflowException ex)
             {
-                 new ToastContentBuilder().AddArgument(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddText(resourceMap.GetValue("ValoreNonValido", resourceContext).ValueAsString).AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
+                 new ToastContentBuilder().AddArgument("Valore Non Valido").AddText("ValoreNonValido").AddAudio(new Uri("ms-winsoundevent:Notification.Reminder")).Show();
                 return;
             }
 
@@ -489,7 +494,7 @@ namespace CBriscola_For_Programmers
 
         private async void OnSito_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://github.com/numerunix/cbriscolauwp_for_programmers"));
+            await Launcher.LaunchUriAsync(new Uri("https://github.com/GiulianoSpaghetti/cbriscolauwp_for_programmers"));
         }
 
     }
