@@ -1,13 +1,10 @@
 ## CBriscolaUWP_for_programmers
 La cbriscola con GUI in UWP, per xbox
 
-## Video di presentazione
-
-https://photos.onedrive.com/share/7413C8764C078E99!314334?cid=7413C8764C078E99&resId=7413C8764C078E99!314334&authkey=!AGIo-X4Z_4CrHyA&ithint=video&e=ZW8DDJ
-
-## Come ottenerla
-
-[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9N00RWMTX2RV)
+## Come ricompilare
+Per prima cosa occorre ricompilare la libreria cardframework.uwp.
+Poi, una volta ottenuta la DLL, bisogna importarla nel progetto, non si può usare nuget perché è nato dopo.
+Bisogna cliccare col tasto destro su riferimenti e quindi aggiungi riferimento, poi sfoglia, e selezionare la dll.
 
 
 ## Come funziona
