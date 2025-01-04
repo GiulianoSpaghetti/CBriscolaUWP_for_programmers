@@ -1,5 +1,6 @@
 ## CBriscolaUWP_for_programmers
 La cbriscola con GUI in UWP, per xbox
+Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato funziona su tutti i giochi di carte senza piatto.
 
 ## Come ricompilare
 Per prima cosa occorre ricompilare la libreria cardframework.uwp.
