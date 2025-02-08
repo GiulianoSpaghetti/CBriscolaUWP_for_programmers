@@ -2,7 +2,7 @@
 La cbriscola con GUI in UWP, per xbox
 Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato funziona su tutti i giochi di carte senza piatto.
 
-Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente, scritto in avalonia col dialetto material. Sembra strano a dirsi, ma è Hard Core, perché si ha in ogni istante il potere di cambiare in ogni istante l'andamento della parita coscientemente con le proprie scelte.
+Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente. Sembra strano a dirsi, ma è Hard Core, perché si ha il potere di cambiare in ogni istante l'andamento della parita coscientemente con le proprie scelte.
 
 ## Come ricompilare
 Per prima cosa occorre ricompilare la libreria cardframework.uwp.
