@@ -1,4 +1,13 @@
+## ATTENZIONE
+
+Il progetto così come è funziona, solo che venite invitati a ricompilarlo su pc impostando il debug sulla prima linea del main, scoprendo come si chiama la variabile di sistema che contiene la mainwindow ed a impostarla a NULL.
+
+Il progetto viene dichiarato legacy, per il momento.
+Su windows c'è la briscola in maui o in material, mentre su xbox al momento non c'è soluzione, ma ci stanno lavorando.
+
+
 ## CBriscolaUWP_for_programmers
+
 La cbriscola con GUI in UWP, per xbox
 Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato funziona su tutti i giochi di carte senza piatto.
 
