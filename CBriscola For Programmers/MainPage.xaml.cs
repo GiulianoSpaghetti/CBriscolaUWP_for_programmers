@@ -21,27 +21,35 @@ namespace CBriscola_For_Programmers
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private static MyGiocatore g, cpu, primo, secondo, temp;
-        private static Mazzo m;
-        private static Carta c, c1, briscola;
-        private static BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
-        private static Image i, i1;
-        private static bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
-        private static UInt64 partite = 0;
-        private static UInt16 secondi = 1;
-        private static TimeSpan delay;
-        private static ElaboratoreCarteBriscola e;
-        private static Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
+        private MyGiocatore g, cpu, primo, secondo, temp;
+        private Mazzo m;
+        private Carta c, c1, briscola;
+        private BitmapImage cartaCpu = new BitmapImage(new Uri("ms-appx:///Resources/retro_carte_pc.png"));
+        private Image i, i1;
+        private bool briscolaPunti = false, avvisaTalloneFinito = true, primoutente = true;
+        private UInt64 partite = 0;
+        private UInt16 secondi = 1;
+        private TimeSpan delay;
+        private ElaboratoreCarteBriscola e;
+        private Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings, container;
         private ThreadPoolTimer t;
         private GiocatoreHelperCpu helper;
         private MessageDialog d;
+        private readonly Uri uri= new Uri("https://github.com/GiulianoSpaghetti/cbriscolauwp_for_programmers")
         public MainPage()
         {
             string s;
             Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "it-IT";
             this.InitializeComponent();
             SystemNavigationManagerPreview.GetForCurrentView().CloseRequested += Close;
-            container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+            try
+            {
+                container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Existing);
+            } catch (Exception ex)
+            {
+                container = localSettings.CreateContainer("CBriscola", Windows.Storage.ApplicationDataCreateDisposition.Always);
+
+            }
             s = localSettings.Containers["CBriscola"].Values["briscolaDaPunti"] as string;
             if (s == null || s == "false")
                 briscolaPunti = false;
@@ -226,7 +234,7 @@ namespace CBriscola_For_Programmers
             img1.Visibility = Visibility.Collapsed;
             return img1;
         }
-        private static bool AggiungiCarte()
+        private bool AggiungiCarte()
         {
             try
             {
@@ -512,7 +520,7 @@ namespace CBriscola_For_Programmers
 
         private async void OnSito_Click(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://github.com/GiulianoSpaghetti/cbriscolauwp_for_programmers"));
+            await Launcher.LaunchUriAsync(uri);
         }
 
     }

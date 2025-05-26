@@ -2,9 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AppxShowAllApps>True</AppxShowAllApps>
-    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
     <AppxBuildConfigurationSelection>x64|arm64</AppxBuildConfigurationSelection>
-    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
     <Source>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</Source>
     <SmallTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</SmallTileSource>
     <MediumTileSource>C:\Users\numer\source\Repos\CBriscolaUWP_for_programmers\CBriscola For Programmers\background.jpg</MediumTileSource>
@@ -21,7 +21,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
     <AuthenticationMode>Universal</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
@@ -30,5 +30,18 @@
     <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
     <CommandLineArguments />
     <UseEmulator>false</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <RemoteDebugMachine>XBOXONE</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
   </PropertyGroup>
 </Project>

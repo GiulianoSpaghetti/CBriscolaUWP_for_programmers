@@ -8,10 +8,10 @@
 
   <Identity
     Name="21961GiulioSorrentino.6245445F14426"
-    Publisher="CN=Giulio Sorrentino"
+    Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B"
     Version="2.1.1.0" />
 
-  <mp:PhoneIdentity PhoneProductId="b6ceb6a5-165e-418b-a415-f26ab18a40b7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="2d43e794-62dd-4d8b-9b2f-a0879a99cd5e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CBriscola for Programmers</DisplayName>
