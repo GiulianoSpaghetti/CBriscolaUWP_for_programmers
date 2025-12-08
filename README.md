@@ -1,6 +1,6 @@
 ## ATTENZIONE
 
-fatti spiegare il progetto da Gemini di Google: https://g.co/gemini/share/42106da115d6 , basta loggarsi col proprio account.
+ [Fatti spiegare il progetto da Gemini di Google](https://gemini.google.com/share/0a6d1654dc2a): basta loggarsi col proprio account.
 
 Il progetto così come è funziona, solo che venite invitati a ricompilarlo su pc impostando il debug sulla prima linea del main, scoprendo come si chiama la variabile di sistema che contiene la mainwindow ed a impostarla a NULL.
 
